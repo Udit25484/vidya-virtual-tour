@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बीबीए (उद्यमिता एवं पारिवारिक व्यवसाय)</title>
+    <link rel="stylesheet" href="बीबीए (उद्यमिता एवं पारिवारिक व्यवसाय).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बीबीए (उद्यमिता एवं पारिवारिक व्यवसाय)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बीबीए (उद्यमिता एवं पारिवारिक व्यवसाय).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>बीबीए (उद्यमिता एवं पारिवारिक व्यवसाय)</h2><br>
+            <p>उद्यमिता और पारिवारिक व्यवसाय में बीबीए छात्रों को व्यावसायिक कौशल और नेतृत्व कौशल से लैस करता है। पाठ्यक्रम में व्यावसायिक रणनीति, वित्त, विपणन और नवाचार प्रबंधन शामिल हैं। व्यावहारिक केस स्टडी और सिमुलेशन निर्णय लेने की क्षमताओं को बढ़ाते हैं। छात्र स्टार्टअप इनक्यूबेशन प्रोग्राम और मेंटरशिप सेशन में शामिल होते हैं। नेटवर्किंग इवेंट सफल उद्यमियों और व्यावसायिक नेताओं के संपर्क में आते हैं। कार्यक्रम स्थिरता, डिजिटल परिवर्तन और वैश्विक बाजारों पर केंद्रित है। इंटर्नशिप छात्रों को उद्यमों के प्रबंधन में व्यावहारिक अनुभव प्राप्त करने में मदद करती है। संकाय सदस्य कक्षा में सीखने के लिए वास्तविक दुनिया की विशेषज्ञता लाते हैं। स्नातक स्टार्टअप शुरू कर सकते हैं या पारिवारिक व्यवसायों को सफलतापूर्वक प्रबंधित कर सकते हैं। पाठ्यक्रम उद्यमशीलता की सोच और समस्या-समाधान क्षमताओं को बढ़ावा देता है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. व्यवसाय स्वामी/उद्यमी
+                <br> 2. पारिवारिक व्यवसाय प्रबंधक
+                <br>3. व्यवसाय विकास कार्यकारी
+                <br>4. स्टार्टअप सलाहकार
+                <br>5. नवाचार प्रबंधक
+                <br>6. वेंचर कैपिटल विश्लेषक
+                <br>7. सामाजिक उद्यमी
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बीबीए (डिजिटल मार्केटिंग और इनोवेशन).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="बीबीए (खेल प्रबंधन).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

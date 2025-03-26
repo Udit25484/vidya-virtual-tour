@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बीबीए (डिजिटल मार्केटिंग और इनोवेशन)</title>
+    <link rel="stylesheet" href="बीबीए (डिजिटल मार्केटिंग और इनोवेशन).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बीबीए (डिजिटल मार्केटिंग और इनोवेशन)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बीबीए (डिजिटल मार्केटिंग और इनोवेशन).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>बीबीए (डिजिटल मार्केटिंग और इनोवेशन)</h2><br>
+            <p>विद्या विश्वविद्यालय में डिजिटल मार्केटिंग और इनोवेशन में बैचलर ऑफ बिजनेस एडमिनिस्ट्रेशन (बीबीए) एक विशेष स्नातक कार्यक्रम है, जो छात्रों को डिजिटल मार्केटिंग और तकनीकी नवाचार की लगातार विकसित होती दुनिया में कामयाब होने के लिए आवश्यक कौशल और ज्ञान से लैस करने के लिए डिज़ाइन किया गया है। यह तीन वर्षीय कार्यक्रम डिजिटल मार्केटिंग रणनीतियों, उभरती प्रौद्योगिकियों और अभिनव व्यावसायिक समाधानों पर ज़ोर देने के साथ मुख्य व्यवसाय प्रबंधन सिद्धांतों को एकीकृत करता है। यह कार्यक्रम सैद्धांतिक शिक्षा को व्यावहारिक अनुभव के साथ जोड़ता है, छात्रों को नेतृत्व की भूमिकाओं के लिए तैयार करता है जहाँ वे डिजिटल परिवर्तन को आगे बढ़ा सकते हैं, अभिनव विपणन अभियान बना सकते हैं और व्यावसायिक सफलता को बढ़ाने के लिए डेटा और प्रौद्योगिकी की शक्ति का उपयोग कर सकते हैं।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. डिजिटल मार्केटिंग मैनेजर
+                <br> 2. कंटेंट स्ट्रैटेजिस्ट
+                <br>3. सोशल मीडिया मैनेजर
+                <br>4. एसईओ विशेषज्ञ
+                <br>5. इनोवेशन कंसल्टेंट
+                <br>6. डेटा विश्लेषक
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बीबीए (बिजनेस एनालिटिक्स).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="बीबीए (उद्यमिता एवं पारिवारिक व्यवसाय).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

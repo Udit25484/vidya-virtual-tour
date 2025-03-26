@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बीएफए (पेंटिंग)</title>
+    <link rel="stylesheet" href="बीएफए (पेंटिंग).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बीएफए (पेंटिंग)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बीएफए (पेंटिंग).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>बीएफए (पेंटिंग)</h2><br>
+            <p>पेंटिंग प्रोग्राम में बैचलर ऑफ फाइन आर्ट्स (BFA) रचनात्मकता और कलात्मक अभिव्यक्ति को बढ़ावा देता है। छात्र तेल, ऐक्रेलिक, वॉटरकलर और मिश्रित मीडिया सहित विभिन्न पेंटिंग तकनीकों का पता लगाते हैं। पाठ्यक्रम में कला इतिहास, समकालीन रुझान और डिजिटल कला रूप शामिल हैं। व्यावहारिक स्टूडियो अभ्यास तकनीकी और वैचारिक कौशल को बढ़ाता है। अनुभवी संकाय और विज़िटिंग कलाकार मार्गदर्शन और उद्योग अंतर्दृष्टि प्रदान करते हैं। छात्रों को प्रदर्शनियों और कला निवासों में भाग लेने के अवसर मिलते हैं। दीर्घाओं और संग्रहालयों के साथ सहयोग कैरियर की संभावनाओं को बढ़ाता है। कार्यशालाएँ और क्षेत्र यात्राएँ प्रयोग और नवाचार को प्रोत्साहित करती हैं। स्नातक पेशेवर कलाकार, चित्रकार या शिक्षक के रूप में अपना करियर बना सकते हैं। कार्यक्रम दृश्य कहानी कहने और रचनात्मक अन्वेषण के लिए प्रशंसा को बढ़ावा देता है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                पेंटिंग में BFA विविध कैरियर के अवसर प्रदान करता है, जिसमें एक कलाकार के रूप में भूमिकाएँ शामिल हैं
+                <br>1. ललित कलाकार
+                <br>2. कला शिक्षक
+                <br>3. चित्रकार
+                <br>4. कला निर्देशक
+                <br>5. भित्ति चित्रकार
+                <br>6. गैलरी क्यूरेटर
+                <br>7. सेट डिजाइनर
+                <br>8. कला चिकित्सक
+                <br>9. कला समीक्षक
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बीएफए (एप्लाइड आर्ट्स).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="बी.ए. (अंग्रेजी).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

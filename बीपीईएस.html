@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बीपीईएस</title>
+    <link rel="stylesheet" href="बीपीईएस.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बीपीईएस</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बीपीईएस.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>  बीपीईएस</h2><br>
+            <p>बैचलर ऑफ फिजिकल एजुकेशन एंड स्पोर्ट्स 3 साल का डिग्री प्रोग्राम है जिसे यूनिवर्सिटी ग्रांट्स कमीशन (UGC) द्वारा मान्यता प्राप्त है।
+
+                <br>बैचलर ऑफ फिजिकल एजुकेशन एंड स्पोर्ट साइंस (BPES) कोर्स पूरा करने के बाद, उम्मीदवार फिजिकल एजुकेशन इंस्ट्रक्टर, प्रोफेशनल प्लेयर, स्पोर्ट्स एडमिनिस्ट्रेशन, स्पोर्ट्स जर्नलिस्ट, स्पोर्ट्स फोटो जर्नलिस्ट, अंपायर/रेफरी, ट्रेनर/इंस्ट्रक्टर/कोच/थेरेपिस्ट और स्पोर्ट्स इंडस्ट्री में रोजगार के अवसर पा सकते हैं।
+                
+                <br>बैचलर ऑफ फिजिकल एजुकेशन एंड स्पोर्ट्स (B.P.E.S) कोर्स छात्र को आवश्यक कौशल हासिल करने में सक्षम बनाता है जो उसे जमीनी स्तर पर एक पेशेवर तकनीकी विशेषज्ञ के रूप में परिभाषित करेगा।
+                
+                
+                 <br><br> <h2>कैरियर के अवसर</h2><br>
+                 खेल प्रशिक्षण और कोचिंग के क्षेत्र में एक मजबूत कैरियर विकल्प, साथ ही कमेंटेटर, खेल पत्रकार और खेल प्रशासन जैसे सहायक विषयों को बी.पी.ई.एस. कार्यक्रम के माध्यम से प्राप्त किया जा सकता है
+                 
+                 <br>बैचलर ऑफ फिजिकल एजुकेशन एंड स्पोर्ट्स (BPES) के स्नातकों के लिए कैरियर के दायरे में शारीरिक शिक्षा शिक्षक, खेल प्रशिक्षक, फिटनेस प्रशिक्षक, खेल प्रबंधक, खेल प्रशासक और खेल और फिटनेस उद्योग में विभिन्न अन्य पद शामिल हैं
+                 
+                 <br> छात्रों को खेल विज्ञान और शारीरिक शिक्षा के उभरते क्षेत्र के लिए तैयार करता है, और छात्रों को स्वास्थ्य, योग और फिटनेस प्रशिक्षक, फिटनेस परामर्शदाता, खेल सुविधा योजनाकार के रूप में करियर शुरू करने के लिए तैयार करता है।
+                 
+                 <br>राष्ट्रीय और राज्य स्तर की खेल कार्यशालाओं, प्रतियोगिताओं और आयोजनों में भागीदारी के अवसर देता है।</div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="खेल विभाग.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="खेल विभाग.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बीबीए (बिजनेस एनालिटिक्स)</title>
+    <link rel="stylesheet" href="बीबीए (बिजनेस एनालिटिक्स).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बीबीए (बिजनेस एनालिटिक्स)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बीबीए (बिजनेस एनालिटिक्स).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>बीबीए (बिजनेस एनालिटिक्स)</h2><br>
+            <p>विद्या विश्वविद्यालय में बिजनेस एनालिटिक्स में बैचलर ऑफ बिजनेस एडमिनिस्ट्रेशन (बीबीए) एक विशेष स्नातक कार्यक्रम है, जिसे छात्रों को डेटा-संचालित व्यावसायिक दुनिया में नेतृत्व की भूमिका के लिए तैयार करने के लिए डिज़ाइन किया गया है। यह तीन वर्षीय कार्यक्रम अत्याधुनिक व्यावसायिक विश्लेषण तकनीकों और प्रौद्योगिकियों के साथ मुख्य व्यवसाय प्रबंधन सिद्धांतों को एकीकृत करता है। छात्र सीखेंगे कि सूचित व्यावसायिक निर्णय लेने, संचालन को अनुकूलित करने और रणनीतिक विकास को आगे बढ़ाने के लिए डेटा और एनालिटिक्स टूल का लाभ कैसे उठाया जाए। सैद्धांतिक ज्ञान को व्यावहारिक अनुभव के साथ जोड़ते हुए, यह कार्यक्रम छात्रों को डेटा, सांख्यिकीय विधियों और विश्लेषणात्मक उपकरणों का उपयोग करके जटिल व्यावसायिक समस्याओं को हल करने के लिए तैयार करता है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                इस डिग्री के साथ स्नातक वित्त, विपणन, स्वास्थ्य सेवा, ई-कॉमर्स और परामर्श जैसे विभिन्न उद्योगों में डेटा विश्लेषण, बाजार अनुसंधान, वित्तीय विश्लेषण और रणनीतिक योजना में करियर बना सकते हैं। मुख्य कैरियर पथ हैं:
+                
+                <br>1. व्यवसाय विश्लेषक
+                <br>2. डेटा विश्लेषक
+                <br>3. संचालन प्रबंधक
+                <br>4. बाजार अनुसंधान विश्लेषक
+                <br>5. बिजनेस इंटेलिजेंस स्पेशलिस्ट
+                <br>6. डेटा साइंटिस्ट
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बीबीए (ब्रांडिंग और विज्ञापन).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="बीबीए (डिजिटल मार्केटिंग और इनोवेशन).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

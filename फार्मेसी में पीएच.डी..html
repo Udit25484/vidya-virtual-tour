@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> फार्मेसी में पीएच.डी.</title>
+    <link rel="stylesheet" href="फार्मेसी में पीएच.डी..css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center> फार्मेसी में पीएच.डी.</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src=" फार्मेसी में पीएच.डी..mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>  फार्मेसी में पीएच.डी.</h2><br>
+            <p> विद्या विश्वविद्यालय की स्थापना शिक्षा के सभी पहलुओं में उत्कृष्टता प्राप्त करने के मिशन के साथ की गई थी, साथ ही शैक्षणिक कठोरता के उच्चतम मानकों को बनाए रखा गया था। विश्वविद्यालय उत्तर भारत में एक अग्रणी के रूप में तेजी से उभर रहा है, जो गुणवत्ता, इसके असाधारण संकाय और इसके जीवंत शिक्षण वातावरण के प्रति इसकी अटूट प्रतिबद्धता को दर्शाता है। विद्या विश्वविद्यालय का पीएचडी कार्यक्रम पाठ्यक्रमों, सेमिनारों, परियोजनाओं और थीसिस कार्य के व्यापक मिश्रण के माध्यम से ज्ञान प्रदान करने के लिए डिज़ाइन किया गया है। कार्यक्रम का उद्देश्य विद्वानों को अवधारणाओं की अपनी समझ को गहरा करने, उनके बौद्धिक कौशल को बढ़ाने और अपने संबंधित शोध क्षेत्रों में ज्ञान का विश्लेषण करने की क्षमता का पता लगाने में मदद करना है। जांच के लिए एक स्वतंत्र और वस्तुनिष्ठ दृष्टिकोण को बढ़ावा देकर, कार्यक्रम विद्वानों को सामाजिक आवश्यकताओं को प्रभावी ढंग से संबोधित करने के लिए तैयार करता है।
+                1. आर एंड डी: अनुसंधान और विकास<br>
+2. एफ एंड डी: फॉर्मूलेशन विकास<br>
+3. अकादमिक में करियर<br>
+4. अनुसंधान वैज्ञानिक<br>
+5. गुणवत्ता आश्वासन प्रमुख<br>
+6. गुणवत्ता नियंत्रण प्रमुख<br>
+7. उत्पादन प्रमुख<br>
+8. प्लांट हेड<br>
+9. फार्माकोविजिलेंस<br>
+10. बाजार अनुसंधान विश्लेषक<br>
+11. दवा नियामक मामले<br>
+12. उद्यमी<br>
+13. नैदानिक ​​अनुसंधान<br>
+14. बौद्धिक संपदा विश्लेषक<br>
+15. चिकित्सा लेखन<br>
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="फार्मेसी में डिप्लोमा.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="औद्योगिक किण्वन और अल्कोहल प्रौद्योगिकी में डिप्लोमा.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

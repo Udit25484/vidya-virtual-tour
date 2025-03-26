@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बी.डिजाइन (फैशन डिजाइन और स्टाइलिंग)</title>
+    <link rel="stylesheet" href="बी.डिजाइन (फैशन डिजाइन और स्टाइलिंग).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बी.डिजाइन (फैशन डिजाइन और स्टाइलिंग)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बी.डिजाइन (फैशन डिजाइन और स्टाइलिंग).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2> बी.डिजाइन (फैशन डिजाइन और स्टाइलिंग)</h2><br>
+            <p>विद्या विश्वविद्यालय का बी.डेस कार्यक्रम चार साल की यात्रा है जिसे आपकी रचनात्मक चिंगारी को प्रज्वलित करने और आपको एक कुशल और अभिनव डिजाइनर में बदलने के लिए डिज़ाइन किया गया है। अपने आप को एक गतिशील सीखने के माहौल में डुबोएँ जहाँ आप डिजाइन की असीम संभावनाओं का पता लगाएँगे।
+
+                <br>हमारा कार्यक्रम विशेषज्ञता की एक विविध श्रेणी प्रदान करता है, जो आपको अपनी शिक्षा को अपने अनूठे जुनून और कैरियर के लक्ष्यों के अनुरूप बनाने के लिए सशक्त बनाता है। चाहे आप फैशन की दुनिया, डिजिटल क्षेत्र या इंटीरियर स्पेस की कला की ओर आकर्षित हों, आपको एक विशेषज्ञता मिलेगी जो आपकी रचनात्मक भावना के साथ प्रतिध्वनित होती है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                फैशन डिज़ाइन और स्टाइलिंग में बी.डेस छात्रों को फैशन उद्योग में रचनात्मक करियर की एक श्रृंखला के लिए तैयार करता है। स्नातक फैशन डिजाइनर, स्टाइलिस्ट या फैशन सलाहकार के रूप में काम कर सकते हैं, फोटो शूट और फैशन शो के लिए संग्रह या स्टाइलिंग बना सकते हैं। वे फैशन मर्चेंडाइजिंग, टेक्सटाइल डिज़ाइन या फैशन मार्केटिंग में करियर भी बना सकते हैं, शीर्ष ब्रांडों, डिज़ाइन हाउस या रिटेल कंपनियों के लिए काम कर सकते हैं। फैशन उद्यमी अपने खुद के डिज़ाइन लेबल या बुटीक शुरू कर सकते हैं, जबकि अन्य लोग थिएटर और फिल्म में फैशन खरीदार, विज़ुअल मर्चेंडाइज़र या कॉस्ट्यूम डिज़ाइनर के रूप में भूमिकाएँ पा सकते हैं। फैशन से जुड़े करियर फैशन पत्रकारिता और ब्रांडिंग में भी विस्तारित होते हैं।
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="डिज़ाइन विभाग.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="बी. डिजाइन (ग्राफिक्स और यूआई-यूएक्स).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

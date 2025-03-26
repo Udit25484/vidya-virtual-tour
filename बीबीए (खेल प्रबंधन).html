@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बीबीए (खेल प्रबंधन)</title>
+    <link rel="stylesheet" href="बीबीए (खेल प्रबंधन).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बीबीए (खेल प्रबंधन)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बीबीए (खेल प्रबंधन).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>बीबीए (खेल प्रबंधन)</h2><br>
+            <p>विद्या विश्वविद्यालय में खेल प्रबंधन में बैचलर ऑफ बिजनेस एडमिनिस्ट्रेशन (बीबीए) एक विशेष स्नातक कार्यक्रम है जिसे छात्रों को खेल उद्योग में नेतृत्व की भूमिका के लिए तैयार करने के लिए डिज़ाइन किया गया है। यह तीन वर्षीय कार्यक्रम खेल संचालन, विपणन और इवेंट प्रबंधन के विशेष ज्ञान के साथ मुख्य व्यवसाय प्रबंधन सिद्धांतों को जोड़ता है। सैद्धांतिक शिक्षा को व्यावहारिक अनुभव के साथ जोड़कर, यह कार्यक्रम छात्रों को खेल टीमों, आयोजनों और संगठनों को प्रभावी ढंग से प्रबंधित करने के लिए आवश्यक कौशल से लैस करता है। छात्रों को खेल अर्थशास्त्र, मीडिया और प्रायोजन के बारे में भी जानकारी मिलेगी, जो उन्हें खेल प्रबंधन की गतिशील दुनिया में प्रभावशाली करियर के लिए तैयार करेगी।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. इवेंट मैनेजर (खेल)
+                <br>2. खेल विपणन कार्यकारी
+                <br>3. खेल विश्लेषक
+                <br>4. खेल कार्यक्रम समन्वयक
+                <br>5. प्रायोजन प्रबंधक
+                <br>6. फिटनेस और वेलनेस प्रबंधक
+                <br>7. खेल उद्यमी
+                <br>8. जनसंपर्क प्रबंधक (खेल)
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बीबीए (उद्यमिता एवं पारिवारिक व्यवसाय).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="एमबीए प्लस (विमानन प्रबंधन).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

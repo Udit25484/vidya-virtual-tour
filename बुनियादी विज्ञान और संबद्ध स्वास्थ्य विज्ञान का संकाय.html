@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बुनियादी विज्ञान और संबद्ध स्वास्थ्य विज्ञान का संकाय</title>
+    <link rel="stylesheet" href="बुनियादी विज्ञान और संबद्ध स्वास्थ्य विज्ञान का संकाय.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बुनियादी विज्ञान और संबद्ध स्वास्थ्य विज्ञान का संकाय</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A3935.JPG" alt=""></span>
+                    <span> <img src="166A3920.JPG" alt=""></span>
+                    <span> <img src="166A3963.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="166A3990.JPG" alt=""></span>
+                    <span> <img src="IMG_7142.JPG" alt=""></span>
+                    <span> <img src="IMG_5431.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बुनियादी विज्ञान और संबद्ध स्वास्थ्य विज्ञान का संकाय.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>बुनियादी विज्ञान और संबद्ध स्वास्थ्य विज्ञान का संकाय</h2><br>
+            <p>विद्या विश्वविद्यालय के बेसिक साइंस और एलाइड हेल्थ साइंसेज फैकल्टी अंतरविभागीय अध्ययन और नवाचार का एक प्रकाशस्तंभ है। हमारा लक्ष्य अगली पीढ़ी के वैज्ञानिकों, स्वास्थ्य पेशेवरों और शोधकर्ताओं को पोषित करना है जो एक निरंतर विकसित हो रहे विश्व की चुनौतियों का सामना करने के लिए तैयार हैं। स्नातक कार्यक्रमों की एक विस्तृत श्रृंखला प्रदान करते हुए, विभाग शैक्षणिक उत्कृष्टता, व्यावहारिक अध्ययन और अनुसंधान-आधारित शिक्षा पर जोर देता है ताकि छात्रों को स्वास्थ्य देखभाल और विज्ञान में प्रभावशाली करियर के लिए तैयार किया जा सके। विभाग के केंद्र में बौद्धिक विकास और पेशेवर विकास को बढ़ावा देने की प्रतिबद्धता है। यहां के छात्र न केवल सैद्धांतिक ज्ञान प्राप्त करते हैं बल्कि अत्याधुनिक प्रयोगशालाओं, उद्योग के नेताओं के साथ सहयोग और क्रांतिकारी अनुसंधान में भाग लेने के अवसरों के माध्यम से व्यावहारिक विशेषज्ञता भी प्राप्त करते हैं। यदि आप विज्ञान और स्वास्थ्य देखभाल के क्षेत्रों में बदलाव लाने की आकांक्षा रखते हैं, तो यहीं से आपकी यात्रा शुरू होती है।</p>
+
+        </div>
+        <div class="course">
+            <h2>प्रस्तावित पाठ्यक्रम:</h2>विद्या विश्वविद्यालय के मूल विज्ञान और संबद्ध स्वास्थ्य विज्ञान संकाय विभिन्न पाठ्यक्रम प्रदान करता है।
+             <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="बुनियादी विज्ञान विभाग.html" "><h4>बुनियादी विज्ञान विभाग</h4></A></li>
+                    <li><a href="संबद्ध स्वास्थ्य विज्ञान विभाग.html" ><h4>संबद्ध स्वास्थ्य विज्ञान विभाग</h4></a></li>
+                   
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="वाणिज्य और व्यवसाय संकाय.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="डिजाइन मीडिया और ललित कला संकाय.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div>
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>    
+</body>
+</html>

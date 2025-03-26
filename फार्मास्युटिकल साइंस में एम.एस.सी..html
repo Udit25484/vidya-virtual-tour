@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>फार्मास्युटिकल साइंस में एम.एस.सी.</title>
+    <link rel="stylesheet" href="फार्मास्युटिकल साइंस में एम.एस.सी..css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>फार्मास्युटिकल साइंस में एम.एस.सी.</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="फार्मास्युटिकल साइंस में एम.एस.सी..mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>फार्मास्युटिकल साइंस में एम.एस.सी.</h2><br>
+            <p>फार्मास्युटिकल केमिस्ट्री दवाओं और दवा विकास का अध्ययन है। इस अनुशासन में दवा की खोज, वितरण, अवशोषण, चयापचय, बायोमेडिकल विश्लेषण, फार्माकोलॉजी, फार्माकोकाइनेटिक्स और फार्माकोडायनामिक्स के तत्व की अवधारणाएँ और प्रक्रियाएँ शामिल हैं।
+
+                <br>फार्मास्युटिकल केमिस्ट्री के स्नातकोत्तर को विभिन्न क्षमताओं जैसे गुणवत्ता नियंत्रण और गुणवत्ता आश्वासन विश्लेषक, वैज्ञानिक, शोधकर्ता, अनुसंधान कार्यकारी, वैज्ञानिक डेटा प्रविष्टि विशेषज्ञ, फार्मास्युटिकल पेटेंट विश्लेषक आदि में काम पर रखा जा सकता है।
+                <br>फार्मास्युटिकल केमिस्ट्री में एमएससी विशेष रूप से रसायन विज्ञान-आधारित डिग्री वाले स्नातकों के लिए डिज़ाइन किया गया है ताकि वे फार्मास्युटिकल उद्योग में नौकरियों के लिए अपनी विशेषज्ञता को तैयार कर सकें। फार्मास्युटिकल उद्योग एक वैश्विक उद्योग है, इसलिए यह पुरस्कार विशेष रूप से विदेशी स्नातकों के लिए आकर्षक है जो दुनिया भर में नौकरियों को सुरक्षित करने के लिए अपने कौशल को बढ़ाना चाहते हैं। <br><br> <h2>करियर के अवसर</h2>
+                <br>1. फार्मास्युटिकल विश्लेषक
+                <br>2. गुणवत्ता आश्वासन अधिकारी
+                <br>3. फार्मास्युटिकल डेटा विज्ञान अधिकारी
+                <br>4. प्रक्रिया विकास रसायनज्ञ
+                <br>5. गुणवत्ता नियंत्रण विश्लेषक
+                <br>6. निर्माण और विकास (एफ एंड डी)
+                <br>7. विश्लेषणात्मक/गुणवत्ता नियंत्रण
+                <br>8. उत्पादन
+                <br>9. सरकारी विश्लेषक
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="माइक्रोबायोलॉजी में एम.एस.सी..html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="विज्ञान में पीएच.डी..html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बी. डिजाइन (ग्राफिक्स और यूआई-यूएक्स)</title>
+    <link rel="stylesheet" href=" बी. डिजाइन (ग्राफिक्स और यूआई-यूएक्स).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बी. डिजाइन (ग्राफिक्स और यूआई-यूएक्स)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बी. डिजाइन (ग्राफिक्स और यूआई-यूएक्स).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2> बी. डिजाइन (ग्राफिक्स और यूआई-यूएक्स)</h2><br>
+            <p>ग्राफ़िक्स और UI-UX डिज़ाइन में बैचलर ऑफ़ डिज़ाइन (B.Des) एक अंतःविषय कार्यक्रम है जो सहज, नेत्रहीन आकर्षक और उपयोगकर्ता-केंद्रित डिजिटल अनुभव बनाने की कला और विज्ञान पर केंद्रित है। यह कार्यक्रम छात्रों को वेबसाइट से लेकर मोबाइल एप्लिकेशन तक विभिन्न प्लेटफ़ॉर्म के लिए डिजिटल इंटरफ़ेस और उपयोगकर्ता अनुभव डिज़ाइन करने के लिए आवश्यक तकनीकी कौशल और रचनात्मक ज्ञान से लैस करता है।
+
+                <br>पाठ्यक्रम ग्राफ़िक डिज़ाइन की बुनियादी बातों को उपयोगकर्ता अनुभव (UX) और उपयोगकर्ता इंटरफ़ेस (UI) डिज़ाइन के सिद्धांतों के साथ जोड़ता है, यह सुनिश्चित करता है कि छात्र सहज, सौंदर्यपूर्ण रूप से मनभावन और कार्यात्मक डिज़ाइन तैयार करने की अच्छी समझ के साथ स्नातक हों।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. <b>ग्राफिक डिज़ाइनर:</b>प्रिंट और डिजिटल सहित कई तरह के मीडिया के लिए विज़ुअल कॉन्सेप्ट बनाएँ।
+<br>2. <b>UI/UX डिज़ाइनर:</b> वेबसाइट और ऐप के लिए उपयोगकर्ता के अनुकूल इंटरफ़ेस डिज़ाइन करें।
+<br>3. <b>वेब डिज़ाइनर:</b> वेबसाइट और वेब एप्लिकेशन बनाएँ और उनका रखरखाव करें।
+<br>4. <b>इलस्ट्रेटर:</b> किताबों, पत्रिकाओं और अन्य मीडिया के लिए चित्र बनाएँ।
+<br>5. <b>आर्ट डायरेक्टर:</b> डिज़ाइन प्रोजेक्ट की रचनात्मक दिशा की देखरेख करें।</div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बी.डिजाइन (फैशन डिजाइन और स्टाइलिंग).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="एम.डेस.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

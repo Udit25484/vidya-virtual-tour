@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>फार्मेसी का संकाय</title>
+    <link rel="stylesheet" href="फार्मेसी का संकाय.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>फार्मेसी का संकाय</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A3963.JPG" alt=""></span>
+                    <span> <img src="IMG_7102.JPG" alt=""></span>
+                    <span> <img src="166A3981.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="166A3920.JPG" alt=""></span>
+                    <span> <img src="IMG_7120.JPG" alt=""></span>
+                    <span> <img src="IMG_7080.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload="" >
+                <source src="फार्मेसी का संकाय.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>फार्मेसी का संकाय</h2><br>
+            <p>विद्या विश्वविद्यालय के फार्मेसी संकाय का उद्देश्य छात्रों को फार्मास्यूटिकल और स्वास्थ्य देखभाल उद्योगों में करियर बनाने के लिए विश्व स्तरीय शिक्षा, अत्याधुनिक अनुसंधान और व्यावहारिक अनुभव प्रदान करना है। सैद्धांतिक ज्ञान और व्यावहारिक अनुप्रयोग पर जोर देते हुए, हमारा कार्यक्रम छात्रों को फार्मेसी के गतिशील और लगातार विकसित हो रहे क्षेत्र में उत्कृष्टता प्राप्त करने के लिए आवश्यक कौशल से लैस करने के लिए डिज़ाइन किया गया है। विद्या विश्वविद्यालय के फार्मेसी संकाय आपके लिए फार्मास्यूटिकल विज्ञान में एक संतोषजनक और प्रभावशाली करियर का द्वार है। चाहे आप एक शोधकर्ता, एक फार्मासिस्ट, या एक उद्योग विशेषज्ञ बनना चाहते हों, हमारे व्यापक कार्यक्रम और उद्योग भागीदारी आपके फार्मास्यूटिकल क्षेत्र में सफलता के लिए आधार प्रदान करते हैं।</p>
+
+        </div>
+        <div class="course">
+            <h2>प्रस्तावित पाठ्यक्रम:</h2>विद्या विश्वविद्यालय का फार्मेसी संकाय विभिन्न पाठ्यक्रम प्रदान करता है।
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="बी. फार्मेसी.html" "><h4>बी. फार्मेसी</h4></A></li>
+                    <li><a href="फार्मेसी में डिप्लोमा.html" ><h4>फार्मेसी में डिप्लोमा</h4></a></li>
+                    <li><a href="फार्मेसी में पीएच.डी..html" ><h4>फार्मेसी में पीएच.डी.</h4></a></li>
+                    <li><a href="औद्योगिक किण्वन और अल्कोहल प्रौद्योगिकी में डिप्लोमा.html" ><h4>औद्योगिक किण्वन और अल्कोहल प्रौद्योगिकी में डिप्लोमा</h4></a></li>
+                    
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="डिजाइन मीडिया और ललित कला संकाय.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="शिक्षा और खेल संकाय.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div>   
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>  
+</body>
+</html>

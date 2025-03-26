@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बीबीए (विमानन)</title>
+    <link rel="stylesheet" href="बीबीए (विमानन).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बीबीए (विमानन)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बीबीए (विमानन).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>बीबीए (विमानन)</h2><br>
+            <p>विद्या विश्वविद्यालय में एविएशन में बैचलर ऑफ बिजनेस एडमिनिस्ट्रेशन (बीबीए) एक विशेष स्नातक कार्यक्रम है, जिसे छात्रों को तेजी से बढ़ते विमानन उद्योग में नेतृत्व की भूमिका के लिए तैयार करने के लिए डिज़ाइन किया गया है। यह तीन वर्षीय कार्यक्रम विमानन संचालन, विमानन सुरक्षा और हवाई अड्डे के प्रबंधन की व्यापक समझ के साथ मुख्य व्यवसाय प्रबंधन सिद्धांतों को जोड़ता है। छात्र सैद्धांतिक ज्ञान और व्यावहारिक अनुभव दोनों प्राप्त करेंगे, जिससे वे विमानन क्षेत्र की जटिलताओं को समझने और एयरलाइनों, हवाई अड्डों और विमानन से संबंधित संगठनों की वृद्धि और दक्षता में योगदान करने में सक्षम होंगे।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                यह पाठ्यक्रम हवाई अड्डे के संचालन, एयरलाइन प्रबंधन, सुरक्षा अनुपालन, रसद और विपणन में विविध कैरियर के अवसर खोलता है। स्नातक हवाई अड्डों, एयरलाइनों, कार्गो फर्मों, ग्राउंड हैंडलिंग कंपनियों और विमानन नियामक निकायों में भूमिकाएँ पा सकते हैं। कुछ प्रमुख कैरियर पथ हैं:
+                
+                <br>1. एयरपोर्ट मैनेजर
+                <br>2. एविएशन ऑपरेशन मैनेजर
+                <br>3. एयरलाइन ग्राहक सेवा प्रबंधक
+                <br>4. एविएशन सुरक्षा अधिकारी
+                <br>5. ग्राउंड ऑपरेशन एग्जीक्यूटिव
+                <br>6. विमानन विपणन विशेषज्ञ
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="व्यवसाय विभाग.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="बीबीए (ब्रांडिंग और विज्ञापन).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

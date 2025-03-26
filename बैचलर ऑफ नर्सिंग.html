@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बैचलर ऑफ नर्सिंग</title>
+    <link rel="stylesheet" href="बैचलर ऑफ नर्सिंग.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>बैचलर ऑफ नर्सिंग</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="बैचलर ऑफ नर्सिंग.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>बैचलर ऑफ नर्सिंग</h2><br>
+            <p>नर्सें दयालु और व्यक्तिगत देखभाल प्रदान करके समाज के स्वास्थ्य और कल्याण को बनाए रखने में महत्वपूर्ण भूमिका निभाती हैं जो समुदायों के भीतर चिकित्सा कल्याण में महत्वपूर्ण योगदान देती है। नर्सिंग संकाय एक व्यापक चार वर्षीय बैचलर ऑफ साइंस इन नर्सिंग (बी.एससी. नर्सिंग) कार्यक्रम प्रदान करता है, जिसे विशेष रूप से कुशल नर्सिंग पेशेवरों को विकसित करने के लिए डिज़ाइन किया गया है जो शीर्ष-स्तरीय रोगी देखभाल प्रदान करने में कुशल हैं। नर्सिंग एक प्रतिष्ठित पेशा है जो न केवल शारीरिक स्वास्थ्य बल्कि व्यक्तियों के भावनात्मक और मानसिक कल्याण को भी संबोधित करता है।
+
+                <br> नर्सिंग संकाय में पाठ्यक्रम को सैद्धांतिक ज्ञान और स्वास्थ्य सेवा में व्यावहारिक विशेषज्ञता दोनों को संतुलित करने के लिए सावधानीपूर्वक तैयार किया गया है, जो छात्रों को वैश्विक स्वास्थ्य सेवा परिदृश्य में सफलता के लिए तैयार करता है। कार्यक्रम मुख्य नर्सिंग कौशल विकसित करने पर जोर देता है जबकि आवश्यक पारस्परिक संचार कौशल को बढ़ावा देता है, यह सुनिश्चित करता है कि छात्र रोगियों और उनके परिवारों के साथ सार्थक संबंध बना सकें। यह समग्र दृष्टिकोण छात्रों को प्रभावी स्वास्थ्य सेवा प्रदाता और दयालु देखभाल करने वाले बनने के लिए सशक्त बनाता है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                नर्सिंग कार्यक्रम में बैचलर ऑफ साइंस के स्नातकों के पास करियर के कई अवसर हैं, जिनमें शामिल हैं:
+                <br>1. नर्स प्रशासक
+                <br>2. प्रमाणित पंजीकृत नर्स एनेस्थेटिस्ट
+                <br>3. प्रमाणित नर्स-मिडवाइफ
+                <br>4. फैमिली नर्स प्रैक्टिशनर
+                <br>5. महिला स्वास्थ्य नर्स प्रैक्टिशनर
+                <br>6. मुख्य नर्सिंग अधिकारी
+                <br>7. नर्स प्रशासक
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="डेयरी प्रौद्योगिकी में डिप्लोमा.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="फिजियोथेरेपी में बी.एस.सी..html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

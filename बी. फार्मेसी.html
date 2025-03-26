@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बी. फार्मेसी</title>
+    <link rel="stylesheet" href="बी. फार्मेसी.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center> बी. फार्मेसी</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src=" बी. फार्मेसी.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>  बी. फार्मेसी</h2><br>
+            <p>बैचलर ऑफ फार्मेसी (बी. फार्म) एक व्यापक चार वर्षीय स्नातक कार्यक्रम है जिसे छात्रों को फार्मास्युटिकल विज्ञान में व्यापक ज्ञान और व्यावहारिक कौशल प्रदान करने के लिए डिज़ाइन किया गया है। कार्यक्रम दवाओं के निर्माण, निर्माण, वितरण और सुरक्षित उपयोग पर ध्यान केंद्रित करता है, साथ ही फार्मेसी अभ्यास के नैदानिक ​​और चिकित्सीय पहलुओं पर भी महत्वपूर्ण जोर देता है। एक अच्छी तरह से संरचित पाठ्यक्रम के माध्यम से, छात्र दवाओं के गुणों, मानव शरीर के साथ उनकी बातचीत और विभिन्न चिकित्सा स्थितियों के उपचार में उनकी चिकित्सीय भूमिकाओं की गहन समझ प्राप्त करते हैं।
+
+                <br>बी. फार्म कार्यक्रम छात्रों को अस्पतालों, फार्मेसियों, दवा कंपनियों और नियामक निकायों सहित विविध स्वास्थ्य सेवा सेटिंग्स में प्रभावी ढंग से काम करने के लिए आवश्यक विशेषज्ञता से लैस करता है। स्नातक दवाओं के सुरक्षित और प्रभावी उपयोग को सुनिश्चित करके स्वास्थ्य सेवा उद्योग में योगदान करने के लिए अच्छी तरह से तैयार हैं, इस प्रकार रोगी देखभाल और समग्र सार्वजनिक स्वास्थ्य को बढ़ाने में महत्वपूर्ण भूमिका निभाते हैं।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                बी. फार्म प्रोग्राम के स्नातक विभिन्न क्षेत्रों में कैरियर के अवसरों की एक विस्तृत श्रृंखला का पता लगा सकते हैं, जिनमें शामिल हैं:<br>
+
+                1. फार्मास्युटिकल उद्योग<br>
+                
+                2. रिटेल फार्मेसी<br>
+                
+                3. अस्पताल फार्मेसी<br>
+                
+                4. फार्माकोविजिलेंस<br>
+                
+                5. क्लिनिकल रिसर्च<br>
+                
+                6. शिक्षाविद: अनुभव प्राप्त करने या उच्च अध्ययन करने के बाद, फार्मेसी कॉलेजों में संकाय सदस्य के रूप में काम करें।<br>
+                
+                7. उद्यमिता<br>
+                
+                8. सरकारी फार्मासिस्ट<br>
+                
+                9. ड्रग कंट्रोल डिपार्टमेंट, FDA (खाद्य और औषधि प्रशासन), और सेंट्रल ड्रग्स स्टैंडर्ड कंट्रोल ऑर्गनाइजेशन (CDSCO) में ड्रग इंस्पेक्टर<br>
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="फार्मेसी का संकाय.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="फार्मेसी में डिप्लोमा.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
