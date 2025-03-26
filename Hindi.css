@@ -1,0 +1,113 @@
+html, body{
+    overflow: hidden;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    max-width: 1350px;
+    height: auto;
+    min-height: 680px;
+    background-image:url('texture.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.header{
+    text-align: center;
+    padding: 40px;
+    height: auto;
+    color: rgb(161, 39, 39);
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between; /* Maintain original order */
+    align-items: flex-start;
+    flex-wrap: nowrap; /* Prevent items from stacking */
+}
+
+/* Make sure all columns stay in one row */
+.col1, .col2 {
+    width: 40%;
+    min-width: 300px;
+}
+
+/* Google Map (Stay on Right Side) */
+.col3 {
+    width: 20%;
+    max-width: 500px;
+    height: auto;
+    text-align: center;
+    align-self: flex-start; /* Keep it aligned with col2 */
+}
+
+/* Map Size */
+.col3 iframe {
+    width: 100%;
+    height: 300px;
+}
+.AB{
+    color: black;
+    }
+    
+    .VICT:hover{
+        color: blue;
+    }
+    .VGS:hover{
+        color: blue;
+    }
+    .VSB:hover{
+        color: blue;
+    }
+    .VISB:hover{
+        color: blue;
+    }
+    .C:hover{
+        color: blue;
+    }
+    .VCE:hover{
+        color: blue;
+    }
+    .VIFT:hover{
+        color: blue;
+    }
+    .VISA:hover{
+        color: blue;
+    }
+    .VIMS:hover{
+        color: blue;
+    }
+    .SBA:hover{
+        color: blue;
+    }
+    .SBB:hover{
+        color: blue;
+    }
+    .ABH:hover{
+        color: blue;
+    }
+    .GH:hover{
+        color: blue;
+    }
+    a:hover{
+        color:blue;
+    }
+    a{
+        color: black;
+    }
+    
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .row1 {
+        flex-wrap: wrap; /* Allow stacking only when needed */
+    }
+
+    .col1, .col2, .col3 {
+        width: 100%; /* Adjust width on small screens */
+    }
+}
