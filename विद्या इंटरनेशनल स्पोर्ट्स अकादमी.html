@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>विद्या इंटरनेशनल स्पोर्ट्स अकादमी.html</title>
+    <link rel="stylesheet" href="विद्या इंटरनेशनल स्पोर्ट्स अकादमी.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>विद्या इंटरनेशनल स्पोर्ट्स अकादमी</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A3266.JPG" alt=""></span>
+                    <span> <img src="166A3382.JPG" alt=""></span>
+                    <span> <img src="939A6076.jpg" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="IMG_6236.JPG" alt=""></span>
+                    <span> <img src="939A6238.jpg" alt=""></span>
+                    <span> <img src="IMG_6542.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="विद्या इंटरनेशनल स्पोर्ट्स अकादमी.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>विद्या इंटरनेशनल स्पोर्ट्स अकादमी</h2><br>
+            <p>आज की भागदौड़ भरी दुनिया में, अच्छे स्वास्थ्य को बनाए रखना बहुत ज़रूरी हो गया है। इसे समझते हुए, विद्या इंटरनेशनल स्पोर्ट्स अकादमी (VISA) एक स्वस्थ और सक्रिय जीवनशैली को बढ़ावा देने के लिए समर्पित है। विश्व स्तरीय खेल सुविधाएँ और विशेषज्ञ कोचिंग प्रदान करके, VISA छात्रों को उनके शारीरिक और मानसिक स्वास्थ्य को प्राथमिकता देने में सक्षम बनाता है। VISA हमारे छात्रों की विविध आवश्यकताओं को पूरा करने के लिए अत्याधुनिक सुविधाएँ प्रदान करने के लिए प्रतिबद्ध है। हमारे परिसर में ये सुविधाएँ हैं:
+
+                <h4>आधुनिक खेल परिसर:</h4>
+                इनडोर और आउटडोर खेलों के लिए अत्याधुनिक तकनीक और सुविधाओं से लैस।
+                
+                <h4>आधा ओलंपिक आकार का स्विमिंग पूल:</h4>
+                तैराकी, वाटर एरोबिक्स और अन्य जलीय गतिविधियों के लिए आदर्श।
+                
+                <h4>फिटनेस सेंटर:</h4>
+                शक्ति प्रशिक्षण, कार्डियो वर्कआउट और योग के लिए उन्नत फिटनेस उपकरण की सुविधा।
+                
+                <h4>खेल मैदान:</h4>
+                फुटबॉल, क्रिकेट और अन्य आउटडोर खेलों के लिए अच्छी तरह से बनाए रखा गया मैदान।</p>
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="कैंटीन.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="स्वर्णा गर्ल्स हॉस्टल.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>    
+</body>
+</html>

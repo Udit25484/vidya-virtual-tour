@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>साइबर सुरक्षा फोरेंसिक में बीसीए</title>
+    <link rel="stylesheet" href="साइबर सुरक्षा फोरेंसिक में बीसीए.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>साइबर सुरक्षा फोरेंसिक में बीसीए</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="साइबर सुरक्षा फोरेंसिक में बीसीए.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>साइबर सुरक्षा फोरेंसिक में बीसीए</h2><br>
+            <p>विद्या विश्वविद्यालय में साइबर सुरक्षा फोरेंसिक कार्यक्रम एक व्यापक और उद्योग-प्रासंगिक पाठ्यक्रम प्रदान करता है, जो छात्रों को साइबर खतरों की दुनिया में उत्कृष्टता प्राप्त करने के लिए आवश्यक कौशल और ज्ञान से लैस करने के लिए डिज़ाइन किया गया है। कार्यक्रम सैद्धांतिक नींव को व्यावहारिक अनुभव के साथ जोड़ता है, जो नेटवर्क सुरक्षा, क्रिप्टोग्राफी, नैतिक हैकिंग और जोखिम प्रबंधन जैसे प्रमुख क्षेत्रों को कवर करता है। सैद्धांतिक समझ और व्यावहारिक अनुभव दोनों पर ध्यान देने के साथ, छात्र वास्तविक दुनिया की परियोजनाओं पर काम करेंगे, समस्या-समाधान कौशल विकसित करेंगे और नवीनतम सुरक्षा उपकरणों और तकनीकों से परिचित होंगे।<br>
+                <br> <h2>करियर के अवसर</h2><br>
+                विद्या विश्वविद्यालय से बैचलर ऑफ कंप्यूटर एप्लीकेशन- साइबर सुरक्षा फोरेंसिक के साथ स्नातक होने पर निम्नलिखित क्षेत्रों में रोमांचक और पुरस्कृत करियर के अवसरों की एक विस्तृत श्रृंखला खुलती है:<br>
+                1. साइबर सुरक्षा विश्लेषक<br>
+                2. नैतिक हैकर<br>
+                3. नेटवर्क सुरक्षा इंजीनियर<br>
+                4. मुख्य सूचना सुरक्षा अधिकारी (CISO)<br>
+                5. सुरक्षा सलाहकार<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="क्लाउड कंप्यूटिंग में बीसीए.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="आर्टिफिशियल इंटेलिजेंस में एमसीए.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

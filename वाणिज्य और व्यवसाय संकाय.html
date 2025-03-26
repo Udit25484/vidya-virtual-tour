@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वाणिज्य और व्यवसाय संकाय</title>
+    <link rel="stylesheet" href="वाणिज्य और व्यवसाय संकाय.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>वाणिज्य और व्यवसाय संकाय</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A4025.JPG" alt=""></span>
+                    <span> <img src="166A4048.JPG" alt=""></span>
+                    <span> <img src="166A4163.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="166A4199.JPG" alt=""></span>
+                    <span> <img src="166A4182.JPG" alt=""></span>
+                    <span> <img src="166A4214.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="वाणिज्य और व्यवसाय संकाय.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>वाणिज्य और व्यवसाय संकाय</h2><br>
+            <p>विद्या विश्वविद्यालय का वाणिज्य और व्यवसाय संकाय भविष्य के व्यापार नेताओं को विकसित करने के लिए एक स्तंभ के रूप में खड़ा है। यह विभिन्न शैक्षणिक यात्रा के चरणों में छात्रों की आवश्यकताओं को पूरा करने के लिए कार्यक्रमों का एक व्यापक सेट प्रदान करता है, जिसमें स्नातक बी.कॉम और बीबीए कार्यक्रम, स्नातकोत्तर एमबीए कार्यक्रम और एक डॉक्टोरल कार्यक्रम शामिल हैं। संकाय का पाठ्यक्रम एक समग्र दृष्टिकोण को प्राथमिकता देता है, जो सैद्धांतिक ज्ञान को व्यावहारिक अनुप्रयोगों के साथ सहजता से मिलाता है। छात्र केस स्टडीज, परियोजनाओं और उद्योग सहयोगों के माध्यम से अमूल्य व्यावहारिक अनुभव प्राप्त करते हैं, जो उन्हें व्यापार की दुनिया की गतिशील वास्तविकताओं के लिए तैयार करता है।</p>
+
+        </div>
+        <div class="course">
+            <h2>प्रस्तावित पाठ्यक्रम:</h2>विद्या विश्वविद्यालय के वाणिज्य और व्यवसाय संकाय विभिन्न पाठ्यक्रम प्रदान करता है।
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="व्यवसाय विभाग.html" "><h4>व्यवसाय विभाग</h4></A></li>
+                    <li><a href="वाणिज्य कर विभाग.html" ><h4>वाणिज्य कर विभाग</h4></a></li>
+                    
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="कानूनी अध्ययन और अनुसंधान का संकाय.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="बुनियादी विज्ञान और संबद्ध स्वास्थ्य विज्ञान का संकाय.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div>
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>विद्या ग्लोबल स्कूल</title>
+    <link rel="stylesheet" href="विद्या ग्लोबल स्कूल.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>विद्या ग्लोबल स्कूल</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A4461.JPG" alt=""></span>
+                    <span> <img src="166A4474.JPG" alt=""></span>
+                    <span> <img src="166A4519.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="IMG_5431.JPG" alt=""></span>
+                    <span> <img src="IMG_5480.JPG" alt=""></span>
+                    <span> <img src="IMG_6653.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="विद्या ग्लोबल स्कूल.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>विद्या ग्लोबल स्कूल</h2><br>
+            <p>विद्या ग्लोबल स्कूल मेरठ, एक सीनियर सेकेंडरी स्कूल (XI-XII) है, जो केंद्रीय माध्यमिक शिक्षा बोर्ड (CBSE), इंटरनेशनल बैकालॉरिएट (IB), कैम्ब्रिज असेसमेंट इंटरनेशनल एजुकेशन से संबद्ध है। यह एक सह-शिक्षा दिवस और बोर्डिंग स्कूल है, जिसमें नर्सरी से XII तक की कक्षाएं हैं। यह एक अंग्रेजी माध्यम का स्कूल है। स्कूल उत्तर प्रदेश के मेरठ के पंचली खुर्द क्षेत्र में स्थित है। विद्या ग्लोबल स्कूल की स्थापना हुई थी। यह एक निजी स्कूल है। विद्या ग्लोबल स्कूल पंचली खुर्द एक सह-शिक्षा दिवस और बोर्डिंग स्कूल है, जो नर्सरी से XII तक के सैकड़ों छात्रों की शैक्षिक आवश्यकताओं को पूरा करता है। विद्या ग्लोबल स्कूल में हर शैक्षणिक वर्ष की कक्षाएं अप्रैल में शुरू होती हैं। विद्या ग्लोबल स्कूल, मेरठ केंद्रीय माध्यमिक शिक्षा बोर्ड (CBSE), इंटरनेशनल बैकालॉरिएट (IB), कैम्ब्रिज असेसमेंट इंटरनेशनल एजुकेशन के तहत पंचली खुर्द क्षेत्र के सबसे अच्छे स्कूलों में से एक है और मेरठ के शीर्ष स्कूलों में रैंक करता है। यहां, समर्पित और पेशेवर शिक्षक सुनिश्चित करते हैं कि बच्चे इस केंद्रीय माध्यमिक शिक्षा बोर्ड (CBSE), अंतर्राष्ट्रीय बैकालॉरिएट (IB), कैम्ब्रिज असेसमेंट इंटरनेशनल एजुकेशन स्कूल में अपनी शिक्षा का अधिकतम लाभ उठाएं। स्कूल ने शैक्षणिक क्षेत्र में असाधारण परिणाम दिए हैं और इसके छात्रों ने अतिरिक्त सह-पाठ्यक्रम गतिविधियों में भी उत्कृष्टता प्राप्त की है।</p>
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="शिक्षा और खेल संकाय.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="कैंटीन.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>   
+</body>
+</html>

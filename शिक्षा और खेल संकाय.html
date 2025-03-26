@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शिक्षा और खेल संकाय</title>
+    <link rel="stylesheet" href="शिक्षा और खेल संकाय.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>शिक्षा और खेल संकाय</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A4336.JPG" alt=""></span>
+                    <span> <img src="166A4303.JPG" alt=""></span>
+                    <span> <img src="166A4206.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="939A6238.jpg" alt=""></span>
+                    <span> <img src="939A6301.jpg" alt=""></span>
+                    <span> <img src="166A4839.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="शिक्षा और खेल संकाय.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>शिक्षा और खेल संकाय</h2><br>
+            <p>विद्या विश्वविद्यालय के शिक्षा और खेल संकाय का उद्देश्य भविष्य के शिक्षकों और खेल पेशेवरों को विकसित करना है। हम स्नातक से लेकर डॉक्टरेट स्तर तक के कार्यक्रमों की एक विविध श्रृंखला प्रदान करते हैं, जो शिक्षा और खेल विज्ञान में एक मजबूत आधार प्रदान करते हैं। हमारा पाठ्यक्रम सैद्धांतिक ज्ञान को व्यावहारिक अनुभव के साथ मिलाने के लिए डिज़ाइन किया गया है। अनुभवी संकाय सदस्य छात्रों को व्याख्यान, सेमिनार, कार्यशालाओं और व्यावहारिक प्रशिक्षण सहित विभिन्न शिक्षण विधियों के माध्यम से मार्गदर्शन करते हैं। अकादमिक के अलावा, हम छात्रों को सह-पाठ्यक्रम गतिविधियों, खेलों और सांस्कृतिक कार्यक्रमों में भाग लेने के लिए प्रोत्साहित करते हैं। ये गतिविधियाँ समग्र विकास को बढ़ावा देती हैं और टीमवर्क, नेतृत्व और संचार जैसे आवश्यक कौशल को विकसित करती हैं। हमारे स्नातक शिक्षा और खेल में विभिन्न करियर के लिए अच्छी तरह से तैयार होते हैं, जिसमें शिक्षण, कोचिंग, खेल प्रबंधन, खेल पत्रकारिता और शारीरिक चिकित्सा शामिल हैं। विद्या विश्वविद्यालय के शिक्षा और खेल संकाय को चुनकर, आप सकारात्मक प्रभाव डालने के लिए तैयार होंगे। </p>
+
+        </div>
+        <div class="course">
+            <h2>पाठ्यक्रम की पेशकश की :</h2>विद्या विश्वविद्यालय शिक्षा एवं खेल संकाय विभिन्न पाठ्यक्रम प्रदान करता है।
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="शिक्षा विभाग.html" "><h4>शिक्षा विभाग</h4></A></li>
+                    <li><a href="खेल विभाग.html" ><h4>खेल विभाग</h4></a></li>
+                    
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="फार्मेसी का संकाय.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="विद्या ग्लोबल स्कूल.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>   
+</body>
+</html>

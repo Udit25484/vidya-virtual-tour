@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वाणिज्य में पीएच.डी.</title>
+    <link rel="stylesheet" href=" वाणिज्य में पीएच.डी..css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>वाणिज्य में पीएच.डी.</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="वाणिज्य में पीएच.डी..mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>वाणिज्य में पीएच.डी.</h2><br>
+            <p>विद्या विश्वविद्यालय में वाणिज्य में पीएचडी एक प्रतिष्ठित और शोध-केंद्रित कार्यक्रम है, जो उन व्यक्तियों के लिए डिज़ाइन किया गया है जो वाणिज्य के क्षेत्र में ज्ञान की उन्नति में योगदान करने की इच्छा रखते हैं। यह कार्यक्रम लेखांकन, वित्त, कराधान, व्यवसाय कानून, विपणन, उद्यम पूंजी, बीमा, बैंकिंग और अधिक सहित वाणिज्य के महत्वपूर्ण पहलुओं का पता लगाने का अवसर प्रदान करता है। शोध विद्वान व्यापक शोध में संलग्न होंगे जो सैद्धांतिक रूपरेखाओं को व्यावहारिक अंतर्दृष्टि के साथ जोड़ता है, उन्हें शैक्षणिक पदों, उच्च-स्तरीय परामर्श भूमिकाओं और वाणिज्यिक क्षेत्र में नेतृत्व पदों के लिए तैयार करता है। वाणिज्य में पीएचडी समकालीन व्यापार और आर्थिक चुनौतियों के लिए नए सिद्धांतों और समाधानों के विकास के लिए अनुकूल वातावरण को बढ़ावा देता है।
+                
+                 
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बैंकिंग और बीमा में बी.कॉम..html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="वाणिज्य कर विभाग.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वाणिज्य कर विभाग</title>
+    <link rel="stylesheet" href="वाणिज्य कर विभाग.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>वाणिज्य कर विभाग</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="वाणिज्य कर विभाग.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>वाणिज्य कर विभाग</h2><br>
+            <p>वाणिज्य विभाग एक महत्वपूर्ण सरकारी इकाई है जो व्यापार, वाणिज्य और उद्योग को बढ़ावा देने और विनियमित करने के लिए जिम्मेदार है। भारत में, वाणिज्य विभाग भारत सरकार के वाणिज्य और उद्योग मंत्रालय का हिस्सा है।¹
+
+                <br><br><h4>मुख्य कार्य:</h4>
+                
+                - व्यापार नीति: विभाग भारत के व्यापार हितों को बढ़ावा देने के लिए व्यापार नीतियों को तैयार करता है और उन्हें लागू करता है।
+                <br>- निर्यात संवर्धन: यह भारतीय निर्यातकों को वैश्विक बाजार में अपनी प्रतिस्पर्धात्मकता बढ़ाने के लिए सहायता प्रदान करता है।
+                <br>- विनियमन: विभाग टैरिफ, कोटा और व्यापार समझौतों सहित व्यापार के विभिन्न पहलुओं को विनियमित करता है।
+                
+                <br> <br><h4>संगठन संरचना:</h4>
+                
+                वाणिज्य विभाग का नेतृत्व वाणिज्य सचिव करते हैं, जिन्हें कई संयुक्त सचिव और निदेशक सहायता प्रदान करते हैं। विभाग में व्यापार नीति प्रभाग, निर्यात संवर्धन प्रभाग और नियामक प्रभाग सहित विभिन्न प्रभाग हैं।
+                
+                <br><br><h4>पहल:</h4>
+                
+                वाणिज्य विभाग ने व्यापार और वाणिज्य को बढ़ावा देने के लिए कई पहल शुरू की हैं, जिसमें "एक पेड़ माँ के नाम" अभियान भी शामिल है, जिसका उद्देश्य पर्यावरणीय स्थिरता को बढ़ावा देना है।
+                
+                <br><br><h4>शैक्षणिक संस्थान:</h4>
+                
+                वाणिज्य विभाग, वाणिज्य और व्यवसाय संकाय जैसे शैक्षणिक संस्थान भी हैं, जो वाणिज्य और संबंधित क्षेत्रों में पाठ्यक्रम और शोध कार्यक्रम प्रदान करते हैं।
+                
+                 </div>
+        <div class="course">
+            <h2>प्रस्तावित कार्यक्रम:</h2> हम ऐसे कार्यक्रमों की एक श्रृंखला प्रदान करते हैं जो खेल विज्ञान, शारीरिक शिक्षा और खेल प्रबंधन का मिश्रण हैं:
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="बैंकिंग और बीमा में बी.कॉम..html" "><h4>बैंकिंग और बीमा में बी.कॉम.</h4></A></li>
+                    <li><A HREF="वाणिज्य में पीएच.डी..html" "><h4>वाणिज्य में पीएच.डी.</h4></A></li>
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="व्यवसाय विभाग.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="वाणिज्य और व्यवसाय संकाय.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

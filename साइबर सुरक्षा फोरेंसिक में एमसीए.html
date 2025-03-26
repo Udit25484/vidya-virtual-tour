@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>साइबर सुरक्षा फोरेंसिक में एमसीए</title>
+    <link rel="stylesheet" href="साइबर सुरक्षा फोरेंसिक में एमसीए.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>साइबर सुरक्षा फोरेंसिक में एमसीए</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="साइबर सुरक्षा फोरेंसिक में एमसीए.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>साइबर सुरक्षा फोरेंसिक में एमसीए</h2><br>
+            <p>साइबर सुरक्षा और फोरेंसिक में एमसीए एक व्यापक कार्यक्रम है जो साइबर सुरक्षा के बढ़ते क्षेत्र और डिजिटल अपराधों की जांच पर केंद्रित है। यह छात्रों को नेटवर्क सुरक्षा, नैतिक हैकिंग, डिजिटल फोरेंसिक और संगठनों को साइबर खतरों से बचाने के लिए जोखिम प्रबंधन रणनीतियों की समझ प्रदान करता है। पाठ्यक्रम में क्रिप्टोग्राफी, घुसपैठ का पता लगाने वाली प्रणाली, मैलवेयर विश्लेषण और साइबर अपराध के कानूनी पहलू जैसे विषय शामिल हैं। छात्र वास्तविक दुनिया की सुरक्षा चुनौतियों पर काम करके व्यावहारिक कौशल विकसित करते हैं, जिससे वे कुशल साइबर सुरक्षा पेशेवर बनने के लिए तैयार होते हैं। यह कार्यक्रम स्नातकों को महत्वपूर्ण सूचना प्रणालियों की सुरक्षा, साइबर अपराधों की जांच करने और सार्वजनिक और निजी दोनों क्षेत्रों में विभिन्न भूमिकाओं में काम करने के लिए ज्ञान और विशेषज्ञता से लैस करने के लिए डिज़ाइन किया गया है।<br>
+                <br> <h2>करियर के अवसर</h2><br>
+                विद्या विश्वविद्यालय से मास्टर ऑफ कंप्यूटर एप्लीकेशन- साइबर सिक्योरिटी फोरेंसिक के साथ पोस्ट-ग्रेजुएटिंग के बाद निम्नलिखित क्षेत्रों में रोमांचक और पुरस्कृत करियर के अवसरों की एक विस्तृत श्रृंखला खुलती है:<br>
+                1. साइबर सुरक्षा विश्लेषक<br>
+                2. एथिकल हैकर<br>
+                3. नेटवर्क सुरक्षा इंजीनियर<br>
+                4. मुख्य सूचना सुरक्षा अधिकारी (CISO)<br>
+                5. सुरक्षा सलाहकार<br>
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="कंप्यूटर एप्लीकेशन में एमसीए.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="कंप्यूटर एवं अनुप्रयोग विभाग.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

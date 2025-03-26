@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>विज्ञान में पीएच.डी.</title>
+    <link rel="stylesheet" href="विज्ञान में पीएच.डी..css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>विज्ञान में पीएच.डी.</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="विज्ञान में पीएच.डी..mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>विज्ञान में पीएच.डी.</h2><br>
+            <p>प्रौद्योगिकी और विज्ञान की उभरती धाराओं के परिणामस्वरूप जो विशाल ज्ञान सृजित हुआ है, उसने अनुसंधान को अत्यधिक महत्व का स्थान दिया है। विद्या विश्वविद्यालय पूर्णकालिक के लिए न्यूनतम 3 वर्ष और अंशकालिक के लिए 4 वर्ष की अवधि का डॉक्टरेट कार्यक्रम और साथ ही न्यूनतम 1 वर्ष की अवधि का पोस्ट-डॉक्टरेट कार्यक्रम प्रदान करता है। कार्यक्रमों को इस तरह से विशिष्ट रूप से डिजाइन किया गया है जो प्राकृतिक विज्ञान, सामाजिक विज्ञान, गणितीय, राजनीति विज्ञान और आर्थिक प्रतिमानों में अनुसंधान समस्याओं के बारे में जानकारी प्रदान करता है। इस तरह के प्रदर्शन के माध्यम से, हमारे पीएचडी विद्वानों को विशेषज्ञ मार्गदर्शकों की देखरेख में पोषित और तैयार किया जाता है, जो पूरी शोध प्रक्रिया में उम्मीदवारों की सहायता करते हैं और उन्हें शामिल करते हैं। हमारे शोध आधारित डॉक्टरेट और पोस्ट-डॉक्टरेट अध्ययन विद्वानों को ज्ञान की अंतहीन धाराओं की खोज करने के लिए शिक्षा के नए क्षेत्रों में उद्यम करने की अनुमति देते हैं।    
+               
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="फार्मास्युटिकल साइंस में एम.एस.सी..html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="बुनियादी विज्ञान विभाग.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

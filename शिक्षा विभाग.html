@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शिक्षा विभाग</title>
+    <link rel="stylesheet" href="शिक्षा विभाग.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>शिक्षा विभाग</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="शिक्षा विभाग.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>शिक्षा विभाग</h2><br>
+            <p>
+
+                खेल और शिक्षा संकाय के अंतर्गत शिक्षा विभाग, भविष्य के शिक्षकों, प्रशिक्षकों और खेल पेशेवरों को आकार देने के लिए समर्पित है। विभाग शैक्षणिक सिद्धांतों, व्यावहारिक शिक्षण पद्धतियों और खेल शिक्षा को एकीकृत करता है ताकि ऐसे सर्वांगीण व्यक्तियों का विकास किया जा सके जो शिक्षा और खेल क्षेत्रों में प्रभावी रूप से योगदान दे सकें।
+
+नवीन शिक्षण तकनीकों, सीखने के मनोवैज्ञानिक पहलुओं और खेल विज्ञान पर ज़ोर देते हुए, विभाग का लक्ष्य कुशल शिक्षकों और खेल पेशेवरों को तैयार करना है जो अकादमिक और एथलेटिक क्षेत्रों में प्रेरणा और नेतृत्व कर सकें।
+                 </div>
+        <div class="course">
+            <h2>प्रस्तावित कार्यक्रम :</h2> हम उद्योग की मांगों और वैश्विक मानकों को पूरा करने के लिए डिज़ाइन किए गए स्नातक, स्नातकोत्तर और डॉक्टरेट कार्यक्रमों की एक श्रृंखला प्रदान करते हैं:
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="B.Ed..html" "><h4>B.Ed</h4></A></li>
+                    <li><a href="प्रारंभिक शिक्षा में डिप्लोमा डी.एल.एड..html" ><h4>प्रारंभिक शिक्षा में डिप्लोमा डी.एल.एड.</h4></a></li>
+                    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="शिक्षा और खेल संकाय.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="खेल विभाग.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
