@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एप्पल लैब</title>
+    <link rel="stylesheet" href="एप्पल लैब.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>एप्पल लैब</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A3563.JPG" alt=""></span>
+                    <span> <img src="166A3561.JPG" alt=""></span>
+                    <span> <img src="166A3553.JPG" alt=""></span>
+                    
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एप्पल लैब.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>एप्पल लैब</h2><br>
+            <p>विद्या विश्वविद्यालय में एप्पल लैब एक अत्याधुनिक सुविधा है जिसे छात्रों को एप्पल के अत्याधुनिक पारिस्थितिकी तंत्र में व्यावहारिक अनुभव प्रदान करने के लिए डिज़ाइन किया गया है। नवीनतम मैकबुक, आईपैड और विकास उपकरणों से सुसज्जित, यह लैब नवाचार, रचनात्मकता और तकनीकी उत्कृष्टता के लिए एक केंद्र के रूप में कार्य करता है।<br>
+                <br><b>प्रमुख विशेषताऐं:</b><br>
+                
+                
+                <b>मैक इकोसिस्टम -</b> लैब में शक्तिशाली एम-सीरीज़ प्रोसेसर के साथ उच्च-प्रदर्शन वाले iMacs और MacBooks हैं, जो निर्बाध सॉफ़्टवेयर विकास और डिज़ाइन कार्य को सक्षम करते हैं।
+
+<br> <b>iOS ऐप डेवलपमेंट -</b> छात्र Xcode, Swift और Objective-C का उपयोग करके एप्लिकेशन बना सकते हैं, उनका परीक्षण कर सकते हैं और उन्हें तैनात कर सकते हैं, जिससे iOS डेवलपमेंट में विशेषज्ञता प्राप्त होती है।
+
+<br> <b>डिज़ाइन और रचनात्मकता - </b> फ़ाइनल कट प्रो, लॉजिक प्रो और एडोब क्रिएटिव क्लाउड जैसे उद्योग-अग्रणी टूल के साथ, छात्र UI/UX डिज़ाइन, वीडियो संपादन और संगीत उत्पादन का पता लगा सकते हैं।
+
+<br> <b> क्लाउड और AI एकीकरण -</b> Apple के CloudKit, Core ML और ARKit तक पहुँच छात्रों को क्लाउड स्टोरेज, मशीन लर्निंग और संवर्धित वास्तविकता क्षमताओं के साथ बुद्धिमान एप्लिकेशन विकसित करने में सक्षम बनाती है।
+
+<br><b>व्यावहारिक शिक्षा और प्रमाणन - </b>यह प्रयोगशाला छात्रों को उद्योग-मान्यता प्राप्त प्रमाण-पत्र प्राप्त करने में मदद करने के लिए प्रशिक्षण सत्र, कार्यशालाएं और स्विफ्ट डेवलपर प्रमाणन जैसे प्रमाणन कार्यक्रम प्रदान करती है।
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="कंप्यूटर विज्ञान और इंजीनियरिंग संकाय.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="कंप्यूटर लैब-1.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <footer><div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div></footer>
+        
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

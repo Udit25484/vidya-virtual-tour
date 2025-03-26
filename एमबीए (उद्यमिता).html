@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एमबीए (उद्यमिता)</title>
+    <link rel="stylesheet" href="एमबीए (उद्यमिता).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>एमबीए (उद्यमिता)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एमबीए (उद्यमिता).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>एमबीए (उद्यमिता)</h2><br>
+            <p>विद्या विश्वविद्यालय में उद्यमिता में मास्टर ऑफ बिजनेस एडमिनिस्ट्रेशन (एमबीए) उन गतिशील व्यक्तियों के लिए डिज़ाइन किया गया है जो अभिनव विचारों को सफल उद्यमों में बदलने के लिए उत्सुक हैं। यह दो वर्षीय विशेष कार्यक्रम छात्रों को स्टार्ट-अप बनाने और प्रबंधित करने, व्यवसायों को बढ़ाने और उद्यमी पारिस्थितिकी तंत्र की चुनौतियों का सामना करने के लिए आवश्यक ज्ञान, उपकरण और कौशल प्रदान करता है। एक ऐसे पाठ्यक्रम के साथ जो मौलिक व्यावसायिक सिद्धांतों को उद्यमी रणनीतियों के साथ जोड़ता है, छात्र अपने स्वयं के उद्यम चलाने या उभरते स्टार्टअप के विकास में योगदान करने के लिए आत्मविश्वास और विशेषज्ञता प्राप्त करते हैं। कार्यक्रम व्यावहारिक शिक्षा, रचनात्मकता, रणनीतिक योजना और वित्तीय कौशल पर जोर देता है, जो छात्रों को उद्यमी परिदृश्य में नेतृत्व की भूमिकाओं के लिए तैयार करता है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. स्टार्टअप के संस्थापक/सह-संस्थापक
+                <br> 2. उद्यमी सलाहकार
+                <br>3. व्यवसाय विकास प्रबंधक
+                <br> 4. वेंचर कैपिटल विश्लेषक
+                <br>5. सामाजिक उद्यमी
+                <br>6. कॉर्पोरेट उद्यमी
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="एमबीए (बिजनेस एनालिटिक्स और एआई).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="एमबीए (एचआरएम).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

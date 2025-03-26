@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एमबीए प्लस (विमानन प्रबंधन)</title>
+    <link rel="stylesheet" href="एमबीए प्लस (विमानन प्रबंधन).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>एमबीए प्लस (विमानन प्रबंधन)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एमबीए प्लस (विमानन प्रबंधन).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>एमबीए प्लस (विमानन प्रबंधन)</h2><br>
+            <p>विद्या विश्वविद्यालय में एमबीए प्लस अतिरिक्त प्रक्रियाएँ, शिक्षण, कौशल विकास और विशेषज्ञता प्रदान करता है, जो इसे एक अत्याधुनिक स्नातकोत्तर कार्यक्रम बनाता है, जो हमेशा विकसित हो रहे विमानन उद्योग में आगे बढ़ने के इच्छुक महत्वाकांक्षी व्यक्तियों के लिए डिज़ाइन किया गया है। दो साल तक चलने वाला यह विशेष पाठ्यक्रम मुख्य व्यावसायिक कौशल को उन्नत विमानन विशेषज्ञता के साथ जोड़ता है, जो परिचालन प्रबंधन, विमानन अर्थशास्त्र, रसद और नियामक ढांचे जैसे महत्वपूर्ण पहलुओं को संबोधित करता है। कार्यक्रम रणनीतिक निर्णय लेने, नेतृत्व विकास और व्यावहारिक अनुप्रयोग पर जोर देता है, जो स्नातकों को विमानन परिदृश्य की जटिलताओं को नेविगेट करने के लिए तैयार करता है। व्यावहारिक परियोजनाओं, उद्योग भागीदारी और केस-आधारित सीखने के साथ, छात्र सैद्धांतिक अवधारणाओं को वास्तविक दुनिया की चुनौतियों के साथ सहजता से एकीकृत करते हैं, जिससे वे एयरलाइनों, हवाई अड्डों, नियामक एजेंसियों और उससे आगे की महत्वपूर्ण भूमिकाओं के लिए तैयार होते हैं।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. एयरपोर्ट मैनेजर
+                <br>2. एयरलाइन ऑपरेशन मैनेजर
+                <br>3. एविएशन कंसल्टेंट
+                <br>4. लॉजिस्टिक्स और सप्लाई चेन मैनेजर
+                <br>5. एविएशन मार्केटिंग स्पेशलिस्ट
+                <br>6. कार्गो ऑपरेशन मैनेजर
+        
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बीबीए (खेल प्रबंधन).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="एमबीए प्लस (स्वास्थ्य देखभाल प्रबंधन).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

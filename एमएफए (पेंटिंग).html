@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एमएफए (पेंटिंग)</title>
+    <link rel="stylesheet" href="एमएफए (पेंटिंग).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>एमएफए (पेंटिंग)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एमएफए (पेंटिंग).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>एमएफए (पेंटिंग)</h2><br>
+            <p>पेंटिंग में मास्टर ऑफ फाइन आर्ट्स (MFA) एक उन्नत स्नातक कार्यक्रम है जो एक कला के रूप में पेंटिंग के अभ्यास में गहन प्रशिक्षण और विकास प्रदान करता है। छात्र विभिन्न पेंटिंग तकनीकों, शैलियों और माध्यमों की खोज करते हुए अपने तकनीकी कौशल, वैचारिक समझ और कलात्मक अभिव्यक्ति को निखारते हैं। पाठ्यक्रम में आमतौर पर स्टूडियो अभ्यास, कला सिद्धांत, कला इतिहास और पेंटिंग में समकालीन मुद्दे शामिल होते हैं। इसके अतिरिक्त, छात्र एक अनूठी कलात्मक आवाज़ विकसित करने के लिए आलोचनात्मक सोच, स्व-निर्देशित परियोजनाओं और शोध में संलग्न होते हैं। कार्यक्रम एक अंतिम थीसिस या प्रदर्शनी में समाप्त होता है जो छात्र की कलात्मक यात्रा को प्रदर्शित करता है। पेंटिंग में MFA स्नातकों को पेशेवर कलाकार, शिक्षक, क्यूरेटर या कला समीक्षक के रूप में करियर के लिए तैयार करता है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                पेंटिंग में MFA विविध करियर के अवसर प्रदान करता है, जिसमें एक कलाकार के रूप में भूमिकाएँ शामिल हैं।
+<br>1. ललित कलाकार
+<br>2. कला शिक्षक
+<br>3. चित्रकार
+<br>4. कला निर्देशक
+<br>5. भित्ति चित्रकार
+<br>6. गैलरी क्यूरेटर
+<br>7. सेट डिजाइनर
+<br>8. कला चिकित्सक
+<br>9. कला समीक्षक
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="एमएफए (अनुप्रयुक्त कला).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="एमए (अंग्रेजी).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एमएफए (अनुप्रयुक्त कला)</title>
+    <link rel="stylesheet" href="एमएफए (अनुप्रयुक्त कला).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>एमएफए (अनुप्रयुक्त कला)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एमएफए (अनुप्रयुक्त कला).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>एमएफए (अनुप्रयुक्त कला)</h2><br>
+            <p>एप्लाइड आर्ट में मास्टर ऑफ फाइन आर्ट्स (MFA) एक उन्नत स्नातक कार्यक्रम है जो क्षेत्र में मूलभूत ज्ञान पर आधारित है। यह ग्राफिक डिज़ाइन, औद्योगिक डिज़ाइन, मल्टीमीडिया कला और दृश्य संचार जैसे क्षेत्रों में नवाचार, आलोचनात्मक सोच और पेशेवर अभ्यास पर जोर देते हुए कलात्मक कौशल को निखारने पर केंद्रित है। यह कार्यक्रम छात्रों को डिज़ाइन और एप्लाइड आर्ट्स के लिए नई तकनीकों, तकनीकों और अंतःविषय दृष्टिकोणों का पता लगाने के लिए प्रोत्साहित करता है। मुख्य घटकों में आमतौर पर उन्नत स्टूडियो कार्य, अनुसंधान, सिद्धांत, डिज़ाइन इतिहास और अंतिम थीसिस या रचनात्मक परियोजना शामिल होती है। MFA स्नातकों को रचनात्मक उद्योगों, शिक्षण या आगे की कलात्मक खोज में नेतृत्व की भूमिकाओं के लिए तैयार करता है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                एप्लाइड आर्ट्स में MFA से ऐसे क्षेत्रों में करियर के अवसर खुलते हैं
+
+                <br>1. ग्राफिक डिज़ाइन
+<br>2. उत्पाद डिज़ाइन
+<br>3. चित्रण
+<br>4. विज्ञापन उद्योग
+<br>5. डिजिटल मीडिया
+<br>6. कला निर्देशक
+<br>7. ब्रांडिंग विशेषज्ञ
+<br>8. रचनात्मक निर्देशन
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बीए (इवेंट मैनेजमेंट).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="एमएफए (पेंटिंग).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

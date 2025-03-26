@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एमए (अंग्रेजी)</title>
+    <link rel="stylesheet" href="एमए (अंग्रेजी).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>एमए (अंग्रेजी)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एमए (अंग्रेजी).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>एमए (अंग्रेजी)</h2><br>
+            <p>अंग्रेजी में एमए एक स्नातक कार्यक्रम है जो अंग्रेजी साहित्य, भाषा विज्ञान और भाषा सिद्धांत के बारे में छात्रों की समझ को गहरा करने पर केंद्रित है। पाठ्यक्रम में विविध साहित्यिक अवधियों, शैलियों और आलोचनात्मक दृष्टिकोणों को शामिल किया गया है, जिससे छात्रों को मजबूत विश्लेषणात्मक और संचार कौशल विकसित करने में मदद मिलती है। साहित्य के अलावा, कार्यक्रम अनुसंधान पद्धति, रचनात्मक लेखन और भाषा अधिग्रहण पर भी जोर देता है। छात्रों को ग्रंथों का आलोचनात्मक मूल्यांकन करने, स्वतंत्र शोध करने और अपनी लेखन क्षमताओं को बढ़ाने की क्षमता प्राप्त होती है, जो उन्हें शिक्षा, लेखन, प्रकाशन और मीडिया में करियर के लिए तैयार करती है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. शिक्षा और अकादमिक
+<br>2. प्रकाशन और संपादन
+<br>3. रचनात्मक लेखन और कहानी सुनाना
+<br>4. जनसंपर्क और कॉर्पोरेट संचार
+<br>5. विज्ञापन और विपणन
+<br>6. सिविल सेवा और लोक प्रशासन
+<br>7. अनुवाद और व्याख्या
+<br>8. सांस्कृतिक और कला प्रबंधन
+<br>9. फ्रीलांसिंग और उद्यमिता
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="एमएफए (पेंटिंग).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="एम.ए. (इवेंट मैनेजमेंट).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

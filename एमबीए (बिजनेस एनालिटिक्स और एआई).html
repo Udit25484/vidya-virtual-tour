@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एमबीए (बिजनेस एनालिटिक्स और एआई)</title>
+    <link rel="stylesheet" href="एमबीए (बिजनेस एनालिटिक्स और एआई).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>एमबीए (बिजनेस एनालिटिक्स और एआई)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एमबीए (बिजनेस एनालिटिक्स और एआई).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>एमबीए (बिजनेस एनालिटिक्स और एआई)</h2><br>
+            <p>विद्या विश्वविद्यालय में बिजनेस एनालिटिक्स और एआई में मास्टर ऑफ बिजनेस एडमिनिस्ट्रेशन (एमबीए) एक दो साल का विशेष कार्यक्रम है, जो उन व्यक्तियों के लिए डिज़ाइन किया गया है जो व्यवसाय प्रबंधन, डेटा एनालिटिक्स और आर्टिफिशियल इंटेलिजेंस के चौराहे पर उत्कृष्टता प्राप्त करना चाहते हैं। यह कार्यक्रम छात्रों को डेटा द्वारा संचालित उद्योगों में नेतृत्व की भूमिकाओं के लिए तैयार करने के लिए अत्याधुनिक एनालिटिक्स और एआई तकनीकों के साथ मुख्य व्यावसायिक सिद्धांतों को एकीकृत करता है। छात्र बड़े डेटा का उपयोग करने, एआई-संचालित मॉडल बनाने और सूचित निर्णय लेने और व्यवसाय परिवर्तन को आगे बढ़ाने के लिए पूर्वानुमानित विश्लेषण का उपयोग करने के लिए आवश्यक कौशल विकसित करेंगे। यह कार्यक्रम व्यावहारिक अनुप्रयोग, रणनीतिक समस्या-समाधान और डेटा-संचालित नेतृत्व पर जोर देता है, जो छात्रों को डिजिटल परिवर्तन के युग में नेतृत्व करने के लिए तैयार करता है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. डेटा विश्लेषक
+                <br>2. बिजनेस एनालिटिक्स मैनेजर
+                <br>3. एआई सॉल्यूशन आर्किटेक्ट
+                <br>4. बिजनेस इंटेलिजेंस कंसल्टेंट
+                <br>5. एआई रिसर्च एनालिस्ट
+                <br>6. डिजिटल ट्रांसफॉर्मेशन स्पेशलिस्ट
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="एमबीए प्लस (स्वास्थ्य देखभाल प्रबंधन).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="एमबीए (उद्यमिता).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

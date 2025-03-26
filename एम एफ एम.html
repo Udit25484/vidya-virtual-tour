@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एम एफ एम</title>
+    <link rel="stylesheet" href="एम एफ एम.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>एम एफ एम</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एम एफ एम.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>एम एफ एम</h2><br>
+            <p>एमएफएम (मास्टर ऑफ फैशन मैनेजमेंट) एक स्नातकोत्तर कार्यक्रम है जो फैशन उद्योग के व्यावसायिक पक्ष पर केंद्रित है। यह फैशन के रचनात्मक तत्वों को मार्केटिंग, ब्रांडिंग, खुदरा रणनीति और आपूर्ति श्रृंखला प्रबंधन जैसी व्यावसायिक प्रबंधन अवधारणाओं के साथ जोड़ता है। कार्यक्रम फैशन के रुझान, बिक्री, उपभोक्ता व्यवहार और फैशन उद्यमिता जैसे आवश्यक क्षेत्रों को कवर करता है, जो छात्रों को वैश्विक फैशन क्षेत्र में नेतृत्व की भूमिका निभाने के लिए तैयार करता है। छात्र वास्तविक दुनिया के केस स्टडी, इंटर्नशिप और प्रोजेक्ट में शामिल होते हैं, जिससे उन्हें उद्योग की गतिशीलता की गहरी समझ मिलती है। एमएफएम कार्यक्रम के स्नातक फैशन व्यवसायों का प्रबंधन करने, ब्रांड विकास को आगे बढ़ाने और तेजी से आगे बढ़ने वाली फैशन दुनिया की जटिलताओं को नेविगेट करने के लिए सुसज्जित हैं, जिससे वे किसी भी फैशन से संबंधित उद्यम के लिए मूल्यवान संपत्ति बन जाते हैं।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. ब्रांड प्रबंधक
+                <br>2. उत्पाद प्रबंधक
+                <br>3. मार्केटिंग प्रबंधक।
+                <br>4. फैशन मार्केटिंग विशेषज्ञ
+                <br>5. डिजिटल मार्केटिंग प्रबंधक
+                <br>6. जनसंपर्क (पीआर) प्रबंधक
+                <br>7. सोशल मीडिया प्रबंधक
+                <br>8. क्रेता
+                <br>9. व्यापारी
+                <br>10. स्टोर संचालन प्रबंधक   
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="एम.डेस.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="डिजाइन में पीएच.डी..html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एमबीए (मार्केटिंग)</title>
+    <link rel="stylesheet" href="एमबीए (मार्केटिंग).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>एमबीए (मार्केटिंग)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एमबीए (मार्केटिंग).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>एमबीए (मार्केटिंग)</h2><br>
+            <p>विद्या विश्वविद्यालय में मार्केटिंग में मास्टर ऑफ बिजनेस एडमिनिस्ट्रेशन (MBA) एक विशेष दो वर्षीय कार्यक्रम है, जो मार्केटिंग की प्रतिस्पर्धी दुनिया में उत्कृष्टता प्राप्त करने के इच्छुक व्यक्तियों के लिए डिज़ाइन किया गया है। यह कार्यक्रम गतिशील और निरंतर विकसित हो रहे मार्केटिंग उद्योग में नेतृत्व की भूमिकाओं के लिए छात्रों को तैयार करने के लिए उन्नत मार्केटिंग रणनीतियों के साथ मुख्य व्यवसाय प्रबंधन सिद्धांतों को जोड़ता है। डिजिटल परिवर्तन, उपभोक्ता व्यवहार, ब्रांडिंग और वैश्विक मार्केटिंग रुझानों पर ध्यान केंद्रित करने के साथ, छात्र प्रभावशाली मार्केटिंग रणनीतियाँ बनाने और व्यवसाय विकास को आगे बढ़ाने के लिए आवश्यक ज्ञान और कौशल प्राप्त करेंगे। यह कार्यक्रम व्यावहारिक अनुप्रयोग, रणनीतिक निर्णय लेने और नवाचार पर जोर देता है, जिससे छात्रों को उच्चतम स्तरों पर मार्केटिंग कार्यों का प्रबंधन करने के लिए तैयार किया जाता है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. ब्रांड मैनेजर
+                <br>2. डिजिटल मार्केटिंग मैनेजर
+                <br>3. मार्केटिंग रिसर्च एनालिस्ट
+                <br>4. विज्ञापन कार्यकारी
+                <br>5. पब्लिक रिलेशन मैनेजर
+                <br>6. मार्केटिंग कंसल्टेंट
+                <br>7. सोशल मीडिया स्ट्रैटेजिस्ट
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="एमबीए (वित्त प्रबंधन).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="प्रबंधन में पीएच.डी..html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

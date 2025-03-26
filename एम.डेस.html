@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एम.डेस</title>
+    <link rel="stylesheet" href=" एम.डेस.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>एम.डेस</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एम.डेस.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2> एम.डेस</h2><br>
+            <p>एम.डेस. (मास्टर ऑफ डिजाइन) कार्यक्रम रचनात्मकता, नवाचार और तकनीकी कौशल को मिलाकर डिजाइन के लिए एक अंतःविषय दृष्टिकोण प्रदान करता है। यह उत्पाद डिजाइन, इंटरैक्शन डिजाइन, ग्राफिक डिजाइन और उपयोगकर्ता अनुभव सहित डिजाइन विषयों की एक विस्तृत श्रृंखला को कवर करता है। कार्यक्रम छात्रों को डिजाइन सोच, समस्या-समाधान और मानव-केंद्रित डिजाइन पद्धतियों का पता लगाने के लिए प्रोत्साहित करता है, जिससे उन्हें जटिल सामाजिक चुनौतियों के लिए प्रभावशाली समाधान बनाने के लिए तैयार किया जाता है। छात्र सीखते हैं कि कैसे सौंदर्यशास्त्र को कार्यक्षमता के साथ एकीकृत किया जाए और कार्यशालाओं, डिजाइन परियोजनाओं और उद्योगों के साथ सहयोग के माध्यम से व्यावहारिक अनुभव प्राप्त करें। एम.डेस. कार्यक्रम उन व्यक्तियों के लिए आदर्श है जो डिजाइन में अग्रणी बनना चाहते हैं, यह डिजाइन कौशल को निखारने और डिजाइन की दुनिया में सार्थक योगदान देने के लिए एक मंच प्रदान करता है।</div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बी. डिजाइन (ग्राफिक्स और यूआई-यूएक्स).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="एम एफ एम.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

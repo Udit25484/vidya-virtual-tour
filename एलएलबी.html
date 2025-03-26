@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> एलएलबी</title>
+    <link rel="stylesheet" href="एलएलबी.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center> एलएलबी</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="एलएलबी.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2> एलएलबी</h2><br>
+            <p>एलएलबी (बैचलर ऑफ लॉज़) एक पेशेवर स्नातक कानून की डिग्री है जो छात्रों को कानूनी सिद्धांतों, रूपरेखाओं और प्रथाओं की व्यापक समझ प्रदान करती है। यह कार्यक्रम आम तौर पर उन लोगों के लिए तीन साल का होता है जिन्होंने स्नातक की डिग्री पूरी कर ली है। इसमें संवैधानिक कानून, आपराधिक कानून, अनुबंध कानून, नागरिक प्रक्रिया और कानूनी नैतिकता सहित विषयों की एक विस्तृत श्रृंखला शामिल है। पाठ्यक्रम आलोचनात्मक सोच, कानूनी लेखन और वकालत और शोध जैसे व्यावहारिक कौशल पर जोर देता है। छात्र इंटर्नशिप, मूट कोर्ट और कानूनी सहायता गतिविधियों के माध्यम से वास्तविक दुनिया के कानूनी मुद्दों से भी परिचित होते हैं। एलएलबी की डिग्री स्नातकों को कानूनी अभ्यास, कॉर्पोरेट कानून, सरकार और उससे परे विविध कैरियर पथों के लिए तैयार करती है। <br><br> <h2>करियर के अवसर</h2><br>
+                एलएलबी की डिग्री पारंपरिक कानूनी अभ्यास से लेकर कॉर्पोरेट, सरकारी, शैक्षणिक और गैर-लाभकारी क्षेत्रों में भूमिकाओं तक, करियर के कई रास्ते खोलती है।<br>
+                1. कानूनी अभ्यास<br>
+                2. कॉर्पोरेट क्षेत्र<br>
+                3. सरकारी नौकरियाँ<br>
+                4. शिक्षा और अनुसंधान<br>
+                5. गैर-लाभकारी क्षेत्र<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बीबीए एलएलबी.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="एलएलएम.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
