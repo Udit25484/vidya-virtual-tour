@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पीएच.डी. कंप्यूटर विज्ञान और इंजीनियरिंग</title>
+    <link rel="stylesheet" href="पीएच.डी. कंप्यूटर विज्ञान और इंजीनियरिंग.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>पीएच.डी. कंप्यूटर विज्ञान और इंजीनियरिंग</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="पीएच.डी. कंप्यूटर विज्ञान और इंजीनियरिंग.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>पीएच.डी. कंप्यूटर विज्ञान और इंजीनियरिंग</h2><br>
+            <p>विद्या विश्वविद्यालय का कंप्यूटर विज्ञान और इंजीनियरिंग में पीएचडी एक कठोर तीन वर्षीय कार्यक्रम है जिसे असाधारण शोधकर्ताओं और नवप्रवर्तकों को विकसित करने के लिए डिज़ाइन किया गया है। छात्र शोध पद्धति सहित उन्नत पाठ्यक्रम में शामिल होते हैं और अनुभवी संकाय मार्गदर्शन के तहत गहन शोध करते हैं। कार्यक्रम मूल शोध योगदान पर जोर देता है, विद्वानों को प्रसिद्ध पत्रिकाओं में निष्कर्ष प्रकाशित करने और उद्योग विशेषज्ञों के साथ सहयोग करने के लिए प्रोत्साहित करता है। अत्याधुनिक सुविधाएँ और एक सहायक शैक्षणिक वातावरण विद्वानों की खोज के लिए आदर्श सेटिंग प्रदान करता है। स्नातक शिक्षा, उद्योग और सरकारी क्षेत्रों में विविध कैरियर के अवसरों के लिए अच्छी तरह से तैयार हैं।
+                <br><br> <h2>कैरियर के अवसर</h2><br>
+                कंप्यूटर विज्ञान और इंजीनियरिंग में पीएचडी करने से शिक्षा, उद्योग और अनुसंधान में उन्नत और प्रतिष्ठित भूमिकाओं के द्वार खुलते हैं। स्नातक तकनीकी नवाचार में योगदान देने और कंप्यूटिंग में जटिल चुनौतियों का समाधान करने के लिए विशेषज्ञता से लैस होते हैं।
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="डिप्लोमा कंप्यूटर विज्ञान और इंजीनियरिंग.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="कंप्यूटर विज्ञान और इंजीनियरिंग विभाग.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पीएच.डी. (ललित कला)</title>
+    <link rel="stylesheet" href="पीएच.डी. (ललित कला).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>पीएच.डी. (ललित कला)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="पीएच.डी. (ललित कला).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>पीएच.डी. (ललित कला)</h2><br>
+            <p>ललित कला में पीएचडी एक शोध-गहन कार्यक्रम है जिसे ललित कला के क्षेत्र में अकादमिक और रचनात्मक उत्कृष्टता प्राप्त करने के इच्छुक व्यक्तियों के लिए डिज़ाइन किया गया है। यह कार्यक्रम सैद्धांतिक अन्वेषण को उन्नत रचनात्मक अभ्यास के साथ जोड़ता है, जो कला और संस्कृति में अभिनव योगदान को प्रोत्साहित करता है। छात्र प्रतिष्ठित संकाय के मार्गदर्शन में कला इतिहास, समकालीन प्रथाओं, सौंदर्यशास्त्र, मल्टीमीडिया कला आदि जैसे क्षेत्रों में शोध कर सकते हैं। अंतःविषय सीखने और आलोचनात्मक जांच पर ध्यान देने के साथ, कार्यक्रम स्नातकों को शिक्षाविदों, संग्रहालयों, सांस्कृतिक संस्थानों और रचनात्मक उद्योगों में नेतृत्व की भूमिकाओं के लिए तैयार करता है।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. कला विद्वान
+                <br>2. प्रोफेसर
+                <br>3. क्यूरेटर
+                <br>4. आलोचक
+                <br>5. रचनात्मक निर्देशक
+                <br>6. स्वतंत्र कलाकार  
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="पीएच.डी. (अंग्रेजी).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="मीडिया एवं उदार कला विभाग.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>डिजाइन मीडिया और ललित कला संकाय</title>
+    <link rel="stylesheet" href="डिजाइन मीडिया और ललित कला संकाय.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>डिजाइन मीडिया और ललित कला संकाय</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A5067.JPG" alt=""></span>
+                    <span> <img src="166A5072.JPG" alt=""></span>
+                    <span> <img src="166A5084.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="166A5092.JPG" alt=""></span>
+                    <span> <img src="166A4976.JPG" alt=""></span>
+                    <span> <img src="DSC03056.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="डिजाइन मीडिया और ललित कला संकाय.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>डिजाइन मीडिया और ललित कला संकाय</h2><br>
+            <p>विद्या विश्वविद्यालय के डिज़ाइन, मीडिया और फाइन आर्ट्स के संकाय में रचनात्मक अभिव्यक्ति और बौद्धिक अन्वेषण का केंद्र है। हम ऐसे विविध कार्यक्रम प्रदान करते हैं जो उभरते कलाकारों, डिज़ाइनरों और विचारकों की आकांक्षाओं को पूरा करते हैं। डिज़ाइन, लिबरल आर्ट्स और फाइन आर्ट्स में हमारे अंडरग्रेजुएट और पोस्टग्रेजुएट कार्यक्रम रचनात्मकता, आलोचनात्मक सोच और तकनीकी कौशल को विकसित करने के लिए डिज़ाइन किए गए हैं। संकाय का पाठ्यक्रम सिद्धांत और प्रथा के बीच संतुलन पर जोर देता है। छात्रों को व्यावहारिक परियोजनाओं, कार्यशालाओं और उद्योग सहयोगों से लाभ होता है, जो उन्हें गतिशील रचनात्मक उद्योगों के लिए तैयार करता है। हमारे समर्पित संकाय सदस्य, जो accomplished कलाकार और डिज़ाइनर हैं, कक्षा में वास्तविक दुनिया का अनुभव लाते हैं, छात्रों को उनकी रचनात्मकता की सीमाओं को बढ़ाने के लिए प्रेरित करते हैं।</p>
+
+        </div>
+        <div class="course">
+            <h2>प्रस्तावित पाठ्यक्रम:</h2>विद्या विश्वविद्यालय के डिजाइन मीडिया और ललित कला संकाय विभिन्न पाठ्यक्रम प्रदान करता है।
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="डिज़ाइन विभाग.html" "><h4>डिज़ाइन विभाग</h4></A></li>
+                    <li><a href="मल्टीमीडिया एवं जनसंचार विभाग.html" ><h4>मल्टीमीडिया एवं जनसंचार विभाग</h4></a></li>
+                    <li><a href="मीडिया एवं उदार कला विभाग.html" ><h4>मीडिया एवं उदार कला विभाग</h4></a></li>
+                    
+                </ul>
+
+            </div>
+            </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="बुनियादी विज्ञान और संबद्ध स्वास्थ्य विज्ञान का संकाय.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="फार्मेसी का संकाय.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div>
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>    
+</body>
+</html>

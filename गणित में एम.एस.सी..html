@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गणित में एम.एस.सी.</title>
+    <link rel="stylesheet" href="गणित में एम.एस.सी..css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>गणित में एम.एस.सी.</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="गणित में एम.एस.सी..mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>गणित में एम.एस.सी.</h2><br>
+            <p>एप्लाइड साइंसेज संकाय गणित में दो वर्षीय स्नातकोत्तर डिग्री कार्यक्रम प्रदान करता है, जो छात्रों को गणित में तार्किक, वैचारिक, सैद्धांतिक, विश्लेषणात्मक और निगमनात्मक कौशल की समझ प्रदान करने का प्रयास करता है। कार्यक्रम को दिमाग के प्रयोग के माध्यम से प्रत्येक छात्र की समस्या समाधान विशेषताओं को विकसित करने और तेज करने के लिए विशिष्ट रूप से डिज़ाइन किया गया है। संकाय दुनिया के सबसे प्रसिद्ध IIM और IIT के व्याख्याताओं और शिक्षण संसाधनों के कुलीन समूह से सुसज्जित है जो हमारे छात्रों को अत्यधिक व्यक्तिगत शैक्षणिक अनुभव प्रदान करते हैं। पाठ्यक्रम को छात्रों के भीतर गणित की मूलभूत अवधारणाओं जैसे कि कलन, त्रिकोणमिति, बीजगणित, ज्यामिति, सांख्यिकी और विभिन्न तार्किक सिद्धांतों की समझ पैदा करने के लिए रणनीतिक रूप से डिज़ाइन किया गया है। सीखने की पद्धति वास्तविक समय के मुद्दों पर दिमाग के व्यावहारिक अनुप्रयोग पर आधारित है जो आज दुनिया को प्रभावित कर रहे हैं और छात्र इन मुद्दों को कम करने की दिशा में कैसे काम कर सकते हैं। कार्यक्रम एक अंतःविषय दृष्टिकोण प्रदान करता है जो छात्रों को विज्ञान और इंजीनियरिंग के अन्य विषयों के साथ अपने गणितीय कौशल को जोड़ने की अनुमति देता है। शैक्षणिक क्षेत्र के अलावा, संकाय छात्रों की योग्यता के विकास पर ध्यान केंद्रित करता है, साथ ही अन्य प्रासंगिक पारस्परिक कौशल भी विकसित करता है, ताकि प्रशिक्षित व्यक्तियों को शेयर बाजार, कॉर्पोरेट क्षेत्र, औद्योगिक क्षेत्र, सैन्य, कंप्यूटर प्रोग्रामिंग और शैक्षिक फर्मों में कैरियर दक्षताओं के साथ विकसित किया जा सके।
+                  </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="रसायन विज्ञान में एम.एस.सी..html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="फोरेंसिक विज्ञान में एम.एस.सी..html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>डिजाइन में पीएच.डी.</title>
+    <link rel="stylesheet" href=" डिजाइन में पीएच.डी..css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>डिजाइन में पीएच.डी.</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="डिजाइन में पीएच.डी..mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2> डिजाइन में पीएच.डी.</h2><br>
+            <p>डिजाइन में पीएचडी एक उन्नत शैक्षणिक कार्यक्रम है जिसका उद्देश्य ऐसे व्यक्तियों को तैयार करना है जो डिजाइन के क्षेत्र में मौलिक ज्ञान का योगदान करना चाहते हैं। यह विद्वानों को शिक्षा, उद्योग और रचनात्मक अभ्यास में अनुसंधान, शिक्षण और नेतृत्व की भूमिकाओं के लिए तैयार करता है। विद्या विश्वविद्यालय में डिजाइन में पीएचडी करने से, आप एक परिवर्तनकारी यात्रा पर निकलेंगे जो आपको एक व्यापक कौशल सेट से लैस करेगी। आप न केवल डिजाइन के सैद्धांतिक ज्ञान में गहराई से उतरेंगे, बल्कि वास्तविक दुनिया की चुनौतियों के लिए डिजाइन सिद्धांतों को लागू करने में व्यावहारिक अनुभव भी प्राप्त करेंगे। यह कठोर कार्यक्रम आपके आलोचनात्मक सोच कौशल को निखारेगा, जिससे आप जटिल समस्याओं का विश्लेषण करने और अभिनव समाधान विकसित करने में सक्षम होंगे। आप मजबूत समस्या-समाधान क्षमताओं का भी विकास करेंगे, जिससे आप रचनात्मकता और दक्षता के साथ चुनौतियों का सामना कर सकेंगे।
+
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="एम एफ एम.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="डिज़ाइन विभाग.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

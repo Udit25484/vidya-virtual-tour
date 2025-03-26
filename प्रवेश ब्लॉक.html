@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्रवेश ब्लॉक</title>
+    <link rel="stylesheet" href="प्रवेश ब्लॉक.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>प्रवेश ब्लॉक</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="addmission-cell-1.jpg" alt=""></span>
+                    <span> <img src="addmission-cell-2.jpg" alt=""></span>
+                    <span> <img src="addmission-cell-4jpg.jpg" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="addmission-cell-5.jpg" alt=""></span>
+                    <span> <img src="addmission-cell-6.jpg" alt=""></span>
+                    <span> <img src="addmission-cell-7.jpg" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="प्रवेश ब्लॉक.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>प्रवेश ब्लॉक</h2><br>
+            <p>विद्या विश्वविद्यालय में, हम ज्ञान, नवाचार और व्यक्तिगत विकास को बढ़ावा देने के लिए समर्पित हैं। विविध प्रकार के कार्यक्रमों, विशेषज्ञ संकाय और अत्याधुनिक सुविधाओं के साथ, हम बौद्धिक रूप से उत्तेजक वातावरण प्रदान करते हैं जहाँ छात्र अपने जुनून का पता लगा सकते हैं, शोध में संलग्न हो सकते हैं और वास्तविक दुनिया के कौशल प्राप्त कर सकते हैं। हमारा परिसर रचनात्मकता, सहयोग और आजीवन सीखने का केंद्र है, जिसे अच्छी तरह से गोल व्यक्तियों को आकार देने के लिए डिज़ाइन किया गया है जो न केवल शिक्षाविदों में बल्कि नेतृत्व, उद्यमशीलता और आलोचनात्मक सोच में भी उत्कृष्टता प्राप्त करते हैं।
+
+                शिक्षाविदों से परे, विद्या विश्वविद्यालय एक गतिशील और समावेशी परिसर जीवन प्रदान करता है, जहाँ छात्रों को पाठ्येतर गतिविधियों, उद्योग सहयोग और वैश्विक विनिमय कार्यक्रमों में भाग लेने का अवसर मिलता है। समग्र शिक्षा के लिए हमारी प्रतिबद्धता यह सुनिश्चित करती है कि छात्र न केवल सफल करियर के लिए तैयार हों बल्कि समाज में सार्थक योगदान देने के लिए भी सुसज्जित हों। नवाचार, नैतिकता और अनुभवात्मक शिक्षा पर ज़ोर देते हुए, हम भविष्य के नेताओं का पोषण करते हैं जो बदलाव लाने के लिए तैयार हैं।
+                
+                जैसे ही आप इस यात्रा की शुरुआत करते हैं, नए अनुभवों का स्वागत करें, सार्थक संबंध विकसित करें और अपने रास्ते में आने वाले हर अवसर को अपनाएँ। चाहे वह शिक्षाविदों, पाठ्येतर गतिविधियों या उद्योग के संपर्क के माध्यम से हो, विद्या विश्वविद्यालय आपको बढ़ने, नवाचार करने और आकांक्षाओं को उपलब्धियों में बदलने के लिए सशक्त बनाता है। यह सिर्फ अध्ययन करने की जगह नहीं है - यह आपकी क्षमता का पता लगाने, दूसरों को प्रेरित करने और अपने सपनों को वास्तविकता में बदलने का स्थान है।
+                
+                अनंत संभावनाओं की दुनिया में आपका स्वागत है!</p>
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="hindi.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="कंप्यूटर विज्ञान और इंजीनियरिंग संकाय.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div>    
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script> 
+</body>
+</html>
