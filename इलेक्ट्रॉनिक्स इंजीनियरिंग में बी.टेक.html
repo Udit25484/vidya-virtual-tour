@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>इलेक्ट्रॉनिक्स इंजीनियरिंग में बी.टेक</title>
+    <link rel="stylesheet" href="इलेक्ट्रॉनिक्स इंजीनियरिंग में बी.टेक.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>इलेक्ट्रॉनिक्स इंजीनियरिंग में बी.टेक</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="इलेक्ट्रॉनिक्स इंजीनियरिंग में बी.टेक.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>इलेक्ट्रॉनिक्स इंजीनियरिंग में बी.टेक</h2><br>
+            <p>
+                ECE कार्यक्रम में बी.टेक संचार प्रणालियों और एम्बेडेड प्रौद्योगिकी पर केंद्रित है। छात्र डिजिटल इलेक्ट्रॉनिक्स, माइक्रोप्रोसेसर और सिग्नल प्रोसेसिंग का अध्ययन करते हैं। पाठ्यक्रम में IoT, VLSI डिज़ाइन और वायरलेस संचार शामिल हैं। उद्योग सहयोग वास्तविक दुनिया के इलेक्ट्रॉनिक अनुप्रयोगों के बारे में जानकारी प्रदान करते हैं। व्यावहारिक प्रयोगशालाएँ सर्किट डिज़ाइन में व्यावहारिक विशेषज्ञता को बढ़ाती हैं। कार्यक्रम छात्रों को दूरसंचार और स्वचालन में करियर के लिए तैयार करता है। AI और रोबोटिक्स में शोध के अवसर करियर की संभावनाओं का विस्तार करते हैं। स्नातक सेमीकंडक्टर उद्योग, एयरोस्पेस या IT क्षेत्रों में काम कर सकते हैं। उन्नत प्रयोगशाला सुविधाएँ इलेक्ट्रॉनिक सिस्टम डिज़ाइन में व्यावहारिक अनुभव प्रदान करती हैं। पाठ्यक्रम आधुनिक इंजीनियरिंग अवधारणाओं को व्यावहारिक अनुप्रयोगों के साथ एकीकृत करता है।
+                 <br>
+            <br>
+            <h2>कैरियर के अवसर</h2><br>
+            विद्या विश्वविद्यालय से इलेक्ट्रॉनिक्स और संचार इंजीनियरिंग में बी.टेक. करने से निम्नलिखित क्षेत्रों में रोमांचक और पुरस्कृत करियर के अवसरों की एक विस्तृत श्रृंखला खुलती है:<br>
+1. दूरसंचार इंजीनियर<br>
+2. एम्बेडेड सिस्टम डेवलपर<br>
+3. IoT और ऑटोमेशन विशेषज्ञ<br>
+4. VLSI डिज़ाइन इंजीनियर<br>
+5. रोबोटिक्स और AI इंजीनियर<br>
+6. इलेक्ट्रॉनिक्स उत्पाद डिजाइनर<br>
+7. अनुसंधान और विकास (R&D) विशेषज्ञ<br>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="इलेक्ट्रॉनिक्स इंजीनियरिंग विभाग.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="इलेक्ट्रॉनिक्स और संचार में एम.टेक.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"></a><h5>DESIGNED BY PANCHTATVA </h5>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
