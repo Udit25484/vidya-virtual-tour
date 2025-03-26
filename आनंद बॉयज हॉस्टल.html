@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आनंद बॉयज हॉस्टल</title>
+    <link rel="stylesheet" href="आनंद बॉयज हॉस्टल.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>आनंद बॉयज हॉस्टल</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="image-1.png" alt=""></span>
+                    <span> <img src="image-2.png" alt=""></span>
+                    <span> <img src="image-3.png" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="image-4.png" alt=""></span>
+                    <span> <img src="image-5.png" alt=""></span>
+                    <span> <img src="image-6.png" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="आनंद बॉयज हॉस्टल.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>आनंद बॉयज हॉस्टल</h2><br>
+            <p>लड़कों का हॉस्टल एक और अत्याधुनिक वास्तुकला की सुविधा है जो 250 कमरों में 500 छात्रों को जुड़वां साझा आधार पर आवास प्रदान करता है। शांति और सुकून भरे वातावरण में, जो शोर और अन्य प्रदूषणों से दूर है, हॉस्टल का देखभाल डीन स्टूडेंट अफेयर्स, मुख्य वार्डन और वार्डन करते हैं। हॉस्टल में अपना मेस है, एक ऐसा क्षेत्र जहां अच्छा पोषण युक्त भोजन परोसा जाता है। VKP परिसर में लड़कों और लड़कियों के लिए अलग-अलग जुड़वां साझा प्रारूप में आवास है। कमरे विशाल, स्वच्छ, अच्छी तरह हवादार और निवासियों के लिए पूरी तरह से सुसज्जित हैं। हॉस्टल 24 घंटे बिजली, पानी की आपूर्ति, पानी के कूलर, मनोरंजन सुविधाओं जैसे कि टी.वी. और टेबल टेनिस, जिम्नेशियम, शतरंज, कैरम और बहुत कुछ के साथ अच्छी तरह से सुसज्जित हैं। वाई-फाई सक्षम हॉस्टल परिसर पूरी तरह से सीसीटीवी कैमरों और चौबीसों घंटे सुरक्षा के साथ सुरक्षित है। परिसर में 24×7 एंबुलेंस सुविधा के साथ चिकित्सा सहायता भी है। भोजन छात्रावास में रहने का एक अनिवार्य हिस्सा है और हमारे प्रत्येक छात्रावास में एक समर्पित छात्रावास मेस है, जो आधुनिक उपकरणों से सुसज्जित है और शुद्ध शाकाहारी, पौष्टिक और स्वच्छ भोजन प्रदान करता है। प्रत्येक छात्रावास का प्रबंधन एक प्यार करने वाले, देखभाल करने वाले और सुरक्षात्मक वार्डन द्वारा किया जाता है, जो छात्रावास परिसर में निवास करता है और छात्रों की दिन-प्रतिदिन की आवश्यकताओं का ध्यान रखता है। हमारी गहरी चिंता और नियमित मार्गदर्शन सुनिश्चित करता है कि घर से दूर सुरक्षित और खुशहाल जीवन हो।</p>
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="स्वर्णा गर्ल्स हॉस्टल.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Hindi.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div>  
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>   
+</body>
+</html>
