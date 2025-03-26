@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>माइक्रोबायोलॉजी में एम.एस.सी.</title>
+    <link rel="stylesheet" href="माइक्रोबायोलॉजी में एम.एस.सी..css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>माइक्रोबायोलॉजी में एम.एस.सी.</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="माइक्रोबायोलॉजी में एम.एस.सी..mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>माइक्रोबायोलॉजी में एम.एस.सी.</h2><br>
+            <p>जीव विज्ञान के क्षेत्र में प्रौद्योगिकी के बढ़ते दायरे के साथ, माइक्रोबायोलॉजिकल सूक्ष्म स्तर पर जैविक जांच से संबंधित है। अनुप्रयुक्त विज्ञान संकाय के अंतर्गत माइक्रोबायोलॉजी विभाग माइक्रोबायोलॉजी के क्षेत्र में दो वर्षीय मास्टर डिग्री प्रोग्राम प्रदान करता है, जिसका उद्देश्य छात्रों में क्षेत्र के समकालीन तत्वों की समझ विकसित करना है। यह कार्यक्रम शोध-आधारित है और विश्वविद्यालय के अनुप्रयुक्त विज्ञान संकाय के अंतर्गत पेश किया जाता है। छात्रों की व्यावहारिक समझ विकसित करने के तरीके के रूप में, यह विभिन्न शोध-आधारित गतिविधियों के लिए संपर्क प्रदान करता है। कार्यक्रम बैक्टीरिया, कवक, वायरस, शैवाल, प्रतिरक्षा विज्ञान आदि जैसे सूक्ष्म जीवों की समझ पर केंद्रित है। यह अनुशासन अन्य संबंधित विषयों जैसे कि जैव रसायन, शरीर विज्ञान, कोशिका जीव विज्ञान, पारिस्थितिकी, सूक्ष्मजीवों के विकास और नैदानिक ​​पहलुओं का एक परस्पर संबंधित अध्ययन है और छात्रों के भीतर इन एजेंटों के लिए मेजबान प्रतिक्रिया की समझ विकसित करता है। हमारे विशेषज्ञ शिक्षण संकाय, न केवल हमारे छात्रों को अतीत और वर्तमान खोजों का विश्लेषण करने के लिए तैयार करते हैं, बल्कि उन्हें नए नवाचारों को आगे बढ़ाने के लिए प्रशिक्षित भी करते हैं। <br><br> <h2>करियर के अवसर</h2>
+                एमएससी माइक्रोबायोलॉजी कार्यक्रम के स्नातकों के पास विविध क्षेत्रों में करियर के कई विकल्प हैं, जिनमें शामिल हैं:
+                <br>1. अनुसंधान और विकास
+                <br>2. गुणवत्ता आश्वासन और नियंत्रण
+                <br>3. चिकित्सा और स्वास्थ्य सेवा उद्योग
+                <br>4. डीएनए विश्लेषण और आनुवंशिक अनुसंधान
+                <br>5. स्वास्थ्य सेवा सेटिंग्स में गुणवत्ता नियंत्रण
+                <br>6. दवा खोज और जैव प्रौद्योगिकी
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="फोरेंसिक विज्ञान में एम.एस.सी..html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="फार्मास्युटिकल साइंस में एम.एस.सी..html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

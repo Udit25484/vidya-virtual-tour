@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मैकेनिकल इंजीनियरिंग में बी.टेक</title>
+    <link rel="stylesheet" href="मैकेनिकल इंजीनियरिंग में बी.टेक.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>मैकेनिकल इंजीनियरिंग में बी.टेक</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="मैकेनिकल इंजीनियरिंग में बी.टेक.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>मैकेनिकल इंजीनियरिंग में बी.टेक</h2><br>
+            <p>विद्या विश्वविद्यालय में मैकेनिकल इंजीनियरिंग कार्यक्रम छात्रों को ऑटोमोटिव, एयरोस्पेस, ऊर्जा, विनिर्माण और रोबोटिक्स सहित उद्योगों के व्यापक स्पेक्ट्रम में डिजाइन, विश्लेषण और नवाचार करने के लिए कौशल और ज्ञान से लैस करता है। यांत्रिकी, ऊष्मप्रवैगिकी और सामग्री विज्ञान जैसे मूल सिद्धांतों में एक मजबूत आधार के साथ, कार्यक्रम अत्याधुनिक प्रयोगशालाओं, वास्तविक दुनिया की परियोजनाओं और इंटर्नशिप के माध्यम से व्यावहारिक शिक्षा पर जोर देता है। छात्र टिकाऊ इंजीनियरिंग और स्वचालन सहित अत्याधुनिक तकनीकों का पता लगाते हैं, जो उन्हें गतिशील कैरियर के अवसरों या उन्नत अध्ययनों के लिए तैयार करता है। हमारा पाठ्यक्रम समस्या-समाधान, रचनात्मकता और सहयोग को बढ़ावा देता है, स्नातकों को वैश्विक इंजीनियरिंग चुनौतियों का समाधान करने और लगातार विकसित हो रही दुनिया में तकनीकी प्रगति को आगे बढ़ाने के लिए सशक्त बनाता है। विद्या विश्वविद्यालय से मैकेनिकल इंजीनियरिंग में स्नातक करने से निम्नलिखित क्षेत्रों में रोमांचक और पुरस्कृत करियर के अवसरों की एक विस्तृत श्रृंखला खुलती है:<br>
+                1. डिजाइन और उत्पाद विकास<br>
+                2. विनिर्माण और उत्पादन<br>
+                3. ऊर्जा और बिजली क्षेत्र<br>
+                4. ऑटोमोटिव और एयरोस्पेस उद्योग<br>
+                5. रोबोटिक्स और स्वचालन<br>
+                6. अनुसंधान और विकास (आर एंड डी)<br>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="मैकेनिकल इंजीनियरिंग विभाग.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="मैकेनिकल इंजीनियरिंग विभाग.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

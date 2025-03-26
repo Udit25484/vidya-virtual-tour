@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मल्टीमीडिया और मास कम्युनिकेशन में मास्टर</title>
+    <link rel="stylesheet" href="मल्टीमीडिया और मास कम्युनिकेशन में मास्टर.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>मल्टीमीडिया और मास कम्युनिकेशन में मास्टर</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="मल्टीमीडिया और मास कम्युनिकेशन में मास्टर.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>मल्टीमीडिया और मास कम्युनिकेशन में मास्टर</h2><br>
+            <p>मल्टीमीडिया और मास कम्युनिकेशन का मास्टर एक स्नातकोत्तर कार्यक्रम है जो मीडिया, पत्रकारिता, फिल्म निर्माण, जनसंपर्क और डिजिटल संचार के क्षेत्रों में सैद्धांतिक ज्ञान और व्यावहारिक कौशल दोनों को जोड़ता है। छात्रों को टेलीविजन, रेडियो, प्रिंट और ऑनलाइन मीडिया सहित मीडिया प्लेटफ़ॉर्म की एक विस्तृत श्रृंखला से अवगत कराया जाता है, और उन्हें सामग्री निर्माण, संपादन, प्रसारण और मीडिया प्रबंधन में प्रशिक्षित किया जाता है। पाठ्यक्रम में आलोचनात्मक सोच, मीडिया नैतिकता और समाज पर मीडिया के प्रभाव पर भी जोर दिया जाता है। इंटर्नशिप और परियोजनाओं के माध्यम से व्यावहारिक अनुभव के साथ, स्नातक प्रसारण, मीडिया उत्पादन, डिजिटल सामग्री निर्माण, विज्ञापन और जनसंपर्क में करियर के लिए अच्छी तरह से सुसज्जित हैं।
+                <br><br> <h2>करियर के अवसर</h2><br>
+                1. रिपोर्टर और न्यूज़ एंकर (प्रिंट, टीवी या डिजिटल मीडिया)
+                <br>2. सामग्री निर्माण और कॉपीराइटिंग
+                <br>3. फिल्म और टीवी प्रोडक्शन
+                <br>4. जनसंपर्क और विज्ञापन विशेषज्ञ
+                <br>5. सोशल मीडिया और डिजिटल रणनीतिकार
+                <br>6. फ़ोटोग्राफ़र
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="मल्टीमीडिया और मास कम्युनिकेशन में स्नातक.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="पत्रकारिता एवं जनसंचार में पीएच.डी..html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
