@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कंप्यूटर एवं अनुप्रयोग विभाग</title>
+    <link rel="stylesheet" href="कंप्यूटर एवं अनुप्रयोग विभाग.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>कंप्यूटर एवं अनुप्रयोग विभाग</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="कंप्यूटर एवं अनुप्रयोग विभाग.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>कंप्यूटर एवं अनुप्रयोग विभाग</h2><br>
+            <p>इलेक्ट्रॉनिक्स इंजीनियरिंग विभाग नवाचार, अनुसंधान और व्यावहारिक अनुप्रयोगों के माध्यम से प्रौद्योगिकी को आगे बढ़ाने के लिए समर्पित है। हमारा लक्ष्य छात्रों को इलेक्ट्रॉनिक्स, एम्बेडेड सिस्टम, संचार प्रौद्योगिकी, वीएलएसआई डिजाइन और IoT में एक मजबूत आधार प्रदान करना है।
+
+                सैद्धांतिक ज्ञान और व्यावहारिक प्रशिक्षण के मिश्रण के साथ, हम छात्रों को सेमीकंडक्टर, दूरसंचार, रोबोटिक्स और एम्बेडेड सिस्टम जैसे विविध क्षेत्रों में करियर के लिए तैयार करते हैं।<br>
+                
+
+        </div>
+        <div class="course">
+            <h2>प्रस्तावित कार्यक्रम :</h2> हम उद्योग-प्रासंगिक कार्यक्रम प्रदान करते हैं जो आधुनिक इलेक्ट्रॉनिक्स और संचार प्रौद्योगिकियों पर ध्यान केंद्रित करते हैं:
+             <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="आर्टिफिशियल इंटेलिजेंस में बीसीए.html" "><h4>आर्टिफिशियल इंटेलिजेंस में बीसीए</h4></A></li>
+                    <li><a href="क्लाउड कंप्यूटिंग में बीसीए.html" ><h4>क्लाउड कंप्यूटिंग में बीसीए</h4></a></li>
+                    <li><A HREF="साइबर सुरक्षा फोरेंसिक में बीसीए.html" ><h4>साइबर सुरक्षा फोरेंसिक में बीसीए</h4></A></li>
+                    <li><A HREF="आर्टिफिशियल इंटेलिजेंस में एमसीए.html" "><h4>आर्टिफिशियल इंटेलिजेंस में एमसीए </h4></A></li>
+                    <li><A HREF="क्लाउड कंप्यूटिंग में एमसीए.html" "><h4>क्लाउड कंप्यूटिंग में एमसीए</h4></A></li>
+                    <li><A HREF="कंप्यूटर एप्लीकेशन में एमसीए.html" "><h4>कंप्यूटर एप्लीकेशन में एमसीए</h4></A></li>
+                    <li><A HREF="साइबर सुरक्षा फोरेंसिक में एमसीए.html" "><h4>साइबर सुरक्षा फोरेंसिक में एमसीए</h4></A></li>
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="कंप्यूटर विज्ञान और इंजीनियरिंग विभाग.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="इलेक्ट्रॉनिक्स इंजीनियरिंग विभाग.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
+

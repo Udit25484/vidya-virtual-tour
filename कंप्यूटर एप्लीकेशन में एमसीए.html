@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कंप्यूटर एप्लीकेशन में एमसीए</title>
+    <link rel="stylesheet" href="कंप्यूटर एप्लीकेशन में एमसीए.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>कंप्यूटर एप्लीकेशन में एमसीए</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="कंप्यूटर एप्लीकेशन में एमसीए.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>कंप्यूटर एप्लीकेशन में एमसीए</h2><br>
+            <p>कंप्यूटर एप्लीकेशन में एमसीए कार्यक्रम छात्रों को सॉफ्टवेयर विकास, प्रोग्रामिंग और कंप्यूटर विज्ञान की बुनियादी बातों में व्यापक ज्ञान और व्यावहारिक कौशल प्रदान करता है। पाठ्यक्रम में डेटा संरचना, एल्गोरिदम, डेटाबेस प्रबंधन, वेब विकास और मोबाइल एप्लिकेशन विकास जैसे विषय शामिल हैं। छात्र सॉफ्टवेयर इंजीनियरिंग, कंप्यूटर नेटवर्क और साइबर सुरक्षा जैसे क्षेत्रों में भी विशेषज्ञता हासिल करते हैं। व्यावहारिक परियोजनाओं और इंटर्नशिप के माध्यम से, वे वास्तविक दुनिया की समस्या-समाधान कौशल और उद्योग-मानक उपकरणों और प्रौद्योगिकियों के साथ अनुभव विकसित करते हैं। कार्यक्रम तकनीकी और विश्लेषणात्मक सोच दोनों पर ध्यान केंद्रित करता है, छात्रों को सॉफ्टवेयर विकास, आईटी प्रबंधन और सिस्टम विश्लेषण में कई तरह की भूमिकाओं के लिए तैयार करता है। स्नातक प्रौद्योगिकी, वित्त और स्वास्थ्य सेवा सहित विविध क्षेत्रों में काम करने के लिए सुसज्जित हैं। कंप्यूटर एप्लीकेशन में एमसीए लगातार विकसित हो रहे आईटी उद्योग में मजबूत कैरियर की संभावनाओं को सुनिश्चित करता है।<br>
+                 <br><h2>कैरियर के अवसर</h2><br>
+                एमसीए (मास्टर ऑफ कंप्यूटर एप्लीकेशन) स्नातकों के पास कंप्यूटर विज्ञान, प्रोग्रामिंग, सॉफ्टवेयर विकास और आईटी प्रबंधन के गहन ज्ञान के कारण विभिन्न क्षेत्रों में करियर के कई अवसर हैं। कुछ प्रमुख करियर अवसरों में शामिल हैं:<br>
+1. सॉफ्टवेयर डेवलपर/इंजीनियर<br>
+2. वेब डेवलपर<br>
+3. मोबाइल ऐप डेवलपर<br>
+4. डेटा साइंटिस्ट/विश्लेषक<br>
+5. सिस्टम विश्लेषक<br>
+6. नेटवर्क प्रशासक<br>
+7. डेटाबेस प्रशासक (डीबीए)<br>
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="क्लाउड कंप्यूटिंग में एमसीए.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="साइबर सुरक्षा फोरेंसिक में एमसीए.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

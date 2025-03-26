@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कानूनी अध्ययन और अनुसंधान का संकाय</title>
+    <link rel="stylesheet" href="कानूनी अध्ययन और अनुसंधान का संकाय.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>कानूनी अध्ययन और अनुसंधान का संकाय</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A4322.JPG" alt=""></span>
+                    <span> <img src="166A4327.JPG" alt=""></span>
+                    <span> <img src="166A4333.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="166A4339.JPG" alt=""></span>
+                    <span> <img src="166A4324.JPG" alt=""></span>
+                    <span> <img src="166A4350.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload="" >
+                <source src="कानूनी अध्ययन और अनुसंधान का संकाय.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>कानूनी अध्ययन और अनुसंधान का संकाय</h2><br>
+            <p>कानूनी उत्कृष्टता की ओर कदम बढ़ाते हुए, विद्या विश्वविद्यालय का विधि संकाय भविष्य के कानूनी दिमागों को विकसित करने के लिए एक स्तंभ के रूप में खड़ा है। यह विभिन्न शैक्षणिक यात्रा के चरणों में छात्रों के लिए एक व्यापक कार्यक्रमों का सेट प्रदान करता है, जिसमें स्नातक LLB, BBA LLB और LLM कार्यक्रम, और एक डॉक्टोरल कार्यक्रम शामिल हैं। संकाय का पाठ्यक्रम एक समग्र दृष्टिकोण को प्राथमिकता देता है, जो सैद्धांतिक ज्ञान को व्यावहारिक अनुप्रयोगों के साथ सहजता से मिलाता है। छात्र मूट कोर्ट प्रतियोगिताओं, कानूनी सहायता क्लीनिकों और इंटर्नशिप के माध्यम से अमूल्य व्यावहारिक अनुभव प्राप्त करते हैं, जो उन्हें कानूनी पेशे की गतिशील वास्तविकताओं के लिए तैयार करता है।</p>
+
+        </div>
+        <div class="course">
+            <h2>Courses Offered :</h2>Vidya University's Faculty of Legal Studies & Research offers various courses.
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="बीबीए एलएलबी.html" "><h4>बीबीए एलएलबी</h4></A></li>
+                    <li><a href="एलएलबी.html" ><h4>एलएलबी</h4></a></li>
+                    <li><a href="एलएलएम.html" ><h4>एलएलएम</h4></a></li>
+                    <li><a href="कानून में पीएच.डी..html" ><h4>कानून में पीएच.डी.</h4></a></li>
+                    
+    
+                </ul>
+
+            </div>
+            </div>
+            
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="कंप्यूटर विज्ञान और इंजीनियरिंग संकाय.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="वाणिज्य और व्यवसाय संकाय.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>    
+</body>
+</html>

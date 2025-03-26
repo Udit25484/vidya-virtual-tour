@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>औद्योगिक किण्वन और अल्कोहल प्रौद्योगिकी में डिप्लोमा</title>
+    <link rel="stylesheet" href="औद्योगिक किण्वन और अल्कोहल प्रौद्योगिकी में डिप्लोमा.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>औद्योगिक किण्वन और अल्कोहल प्रौद्योगिकी में डिप्लोमा</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A3963.JPG" alt=""></span>
+                    <span> <img src="IMG_7102.JPG" alt=""></span>
+                    <span> <img src="166A3981.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="166A3920.JPG" alt=""></span>
+                    <span> <img src="IMG_7120.JPG" alt=""></span>
+                    <span> <img src="IMG_7080.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="औद्योगिक किण्वन और अल्कोहल प्रौद्योगिकी में डिप्लोमा.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>औद्योगिक किण्वन और अल्कोहल प्रौद्योगिकी में डिप्लोमा</h2><br>
+            <p>औद्योगिक किण्वन और अल्कोहल प्रौद्योगिकी में डिप्लोमा एक विशेष कार्यक्रम है जिसे किण्वन और संबंधित प्रौद्योगिकियों पर ध्यान केंद्रित करते हुए अल्कोहल के उत्पादन और प्रसंस्करण में गहन ज्ञान और व्यावहारिक प्रशिक्षण प्रदान करने के लिए डिज़ाइन किया गया है। यह कार्यक्रम डिस्टिलरी और अल्कोहल-आधारित उद्योगों में अपना करियर बनाने के इच्छुक व्यक्तियों को पूरा करता है।
+
+                <br>यह पेशेवरों को डिस्टिलरी उद्योग के आर्थिक विकास की खोज का समर्थन करने के लिए आवश्यक ज्ञान और कौशल से लैस करने के लिए डिज़ाइन किया गया है। यह कार्यक्रम उद्योग की चुनौतियों पर प्रभावी ढंग से जोर देता है, संधारणीय प्रथाओं में योगदान देता है, और बढ़ी हुई परिचालन दक्षता के लिए अभिनव समाधानों को अपनाने को बढ़ावा देता है। यह पर्यावरण और ऊर्जा संरक्षण मानकों का पालन करते हुए आर्थिक विकास प्राप्त करने के डिस्टिलरी उद्योग के लक्ष्यों के साथ संरेखित है।
+                
+                <br> कार्यक्रम के प्रमुख पहलुओं में शामिल हैं: मुख्य फोकस क्षेत्र, कौशल विकास, स्थिरता और नवाचार। </div>
+       
+       
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="फार्मेसी में पीएच.डी..html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="फार्मेसी का संकाय.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div>    
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>    
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कैंटीन</title>
+    <link rel="stylesheet" href="कैंटीन.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>कैंटीन</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload="" >
+                <source src="कैंटीन.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>कैंटीन</h2><br>
+            <p>विद्या विश्वविद्यालय में, परिसर में कई कैंटीन हैं ताकि छात्रों को विभिन्न खाद्य विकल्पों तक आसान पहुंच मिल सके।<br>
+
+               <h3>खाद्य विकल्पों की विविधता:</h3> 
+                विभिन्न स्वादों के लिए एक विस्तृत श्रृंखला के व्यंजन प्रदान करता है, जिसमें शाकाहारी और मांसाहारी विकल्प शामिल हैं। छात्रों और स्टाफ की विविध प्राथमिकताओं के अनुसार स्नैक्स, पेय और भोजन की एक विविधता।<br>
+                
+                <h3>स्वच्छता और सफाई:</h3>
+                खाद्य तैयारी और भोजन क्षेत्रों में उच्च स्वच्छता और सफाई मानकों को बनाए रखता है। खाद्य गुणवत्ता और सफाई सुनिश्चित करने के लिए नियमित स्वास्थ्य और सुरक्षा जांच।<br>
+                
+                <h3>सस्ती कीमतें:</h3>
+                स्वास्थ्यवर्धक और पौष्टिक भोजन तक पहुंच सुनिश्चित करने के लिए विभिन्न आर्थिक पृष्ठभूमियों के छात्रों के लिए सस्ती दरों पर भोजन प्रदान करता है। अक्सर छात्रों के लिए सब्सिडी मूल्य निर्धारण होता है।<br>
+                
+                <h3>स्वस्थ भोजन के विकल्प:</h3>
+                स्वस्थ भोजन के विकल्प शामिल हैं, जिसमें सलाद, फल और पौष्टिक स्नैक्स शामिल हैं, जो समग्र कल्याण को बढ़ावा देते हैं। संतुलित भोजन पर ध्यान केंद्रित करते हुए, प्रोटीन, सब्जियों और कार्बोहाइड्रेट का अच्छा मिश्रण प्रदान करते हैं।</p>
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="विद्या ग्लोबल स्कूल.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="विद्या इंटरनेशनल स्पोर्ट्स अकादमी.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>     
+</body>
+</html>

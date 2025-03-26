@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कानून में पीएच.डी</title>
+    <link rel="stylesheet" href="कानून में पीएच.डी.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center> कानून में पीएच.डी</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="कानून में पीएच.डी.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2> कानून में पीएच.डी</h2><br>
+            <p>कानून में पीएचडी एक उन्नत शोध कार्यक्रम है जो छात्रों को संवैधानिक कानून, आपराधिक कानून, मानवाधिकार और अंतर्राष्ट्रीय कानून जैसे कानून के विभिन्न क्षेत्रों में गहन अध्ययन और मूल शोध में संलग्न होने की अनुमति देता है। कार्यक्रम के लिए उम्मीदवारों को शोध प्रबंध कार्य और विद्वत्तापूर्ण शोध के माध्यम से क्षेत्र में नए ज्ञान का योगदान करने की आवश्यकता होती है। छात्र कानून के अपने चुने हुए क्षेत्र में विशेषज्ञता वाले संकाय सदस्यों के मार्गदर्शन में काम करते हैं, और शोध से समकालीन कानूनी मुद्दों को संबोधित करने और समाधान प्रदान करने की उम्मीद की जाती है। कार्यक्रम के स्नातक अक्सर शिक्षा, नीति-निर्माण, कानूनी परामर्श, या अनुसंधान संस्थानों में करियर बनाते हैं, अपने चुने हुए कानूनी डोमेन में विशेषज्ञ बन जाते हैं। <br><br> <h2>करियर के अवसर</h2><br>
+                बीबीए एलएलबी पाठ्यक्रम के स्नातक विभिन्न क्षेत्रों में करियर के अवसरों की एक विस्तृत श्रृंखला का पता लगा सकते हैं:<br>
+                1. कानूनी अभ्यास<br>
+                2. कॉर्पोरेट क्षेत्र<br>
+                3. शिक्षा<br>
+                4. सरकार और सार्वजनिक क्षेत्र<br>
+                5. निजी क्षेत्र और परामर्श<br>
+                6. वैकल्पिक करियर<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="एलएलएम.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="कानूनी अध्ययन और अनुसंधान का संकाय.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

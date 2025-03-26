@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>क्लाउड कंप्यूटिंग में एमसीए</title>
+    <link rel="stylesheet" href="क्लाउड कंप्यूटिंग में एमसीए.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>क्लाउड कंप्यूटिंग में एमसीए</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="क्लाउड कंप्यूटिंग में एमसीए.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h2>क्लाउड कंप्यूटिंग में एमसीए</h2><br>
+            <p>क्लाउड कंप्यूटिंग में एमसीए कार्यक्रम छात्रों को क्लाउड-आधारित सिस्टम और सेवाओं को डिजाइन, विकसित और प्रबंधित करने के लिए आवश्यक कौशल से लैस करने पर केंद्रित है। छात्र क्लाउड इंफ्रास्ट्रक्चर, वर्चुअलाइजेशन, डेटा स्टोरेज और क्लाउड सुरक्षा में विशेषज्ञता हासिल करते हैं। पाठ्यक्रम में AWS, Microsoft Azure और Google Cloud जैसे लोकप्रिय क्लाउड प्लेटफ़ॉर्म के साथ-साथ कंटेनरीकरण और DevOps जैसी प्रमुख तकनीकें शामिल हैं। व्यावहारिक परियोजनाएँ और इंटर्नशिप क्लाउड एप्लिकेशन बनाने और उन्हें तैनात करने में व्यावहारिक अनुभव प्रदान करती हैं। छात्र क्लाउड सिस्टम को स्केल करने और क्लाउड संसाधनों को कुशलतापूर्वक प्रबंधित करने में चुनौतियों और समाधानों के बारे में भी सीखते हैं। कार्यक्रम क्लाउड आर्किटेक्चर, क्लाउड सुरक्षा और क्लाउड सेवा प्रबंधन में भूमिकाओं के लिए स्नातकों को तैयार करता है। क्लाउड तकनीकों को अपनाने के बढ़ते चलन के साथ, यह विशेषज्ञता तकनीकी उद्योग में मजबूत कैरियर के अवसर प्रदान करती है।<br>
+
+                <br> <h2>करियर के अवसर</h2><br>
+                विद्या विश्वविद्यालय में, क्लाउड कंप्यूटिंग कार्यक्रम से स्नातक करने वाले छात्रों के पास कैरियर के कई अवसर उपलब्ध हैं। विश्वविद्यालय का मजबूत शैक्षणिक ढांचा स्नातकों को ऐसी भूमिकाओं में कदम रखने के लिए तैयार करता है जो तकनीकी नवाचार में सबसे आगे हैं। यहाँ कुछ कैरियर के अवसर दिए गए हैं जिन्हें छात्र अपना सकते हैं:<br>
+                1. क्लाउड आर्किटेक्ट<br>
+                2. क्लाउड इंजीनियर<br>
+                3. DevOps इंजीनियर<br>
+                4. क्लाउड सिक्योरिटी इंजीनियर<br>
+                5. बिग डेटा इंजीनियर<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="आर्टिफिशियल इंटेलिजेंस में एमसीए.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="कंप्यूटर एप्लीकेशन में एमसीए.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
