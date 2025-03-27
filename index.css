@@ -1,4 +1,8 @@
 /* Make the main container responsive */
+html, body{
+    overflow: hidden;
+    height: 100%;
+}
 .main {
     width: 100%;
     max-width: 1350px;
@@ -9,7 +13,9 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Maintain structure */
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100vh;/* Maintain structure */
 }
 
 /* Row 1: Logo (Left) + Links (Right) */
