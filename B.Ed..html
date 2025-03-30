@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Ed.</title>
+    <link rel="stylesheet" href=" B.Ed..css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Ed</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="B.ED-1.jpg" alt=""></span>
+                    <span> <img src="B.ED-2.jpg" alt=""></span>
+                    <span> <img src="B.ED-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Ed..mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>  B.Ed</h1><br>
+            <p>बी.एड. बैचलर ऑफ एजुकेशन प्रोग्राम जिसे बी.एड. के नाम से जाना जाता है, एक व्यावसायिक पाठ्यक्रम है जिसे राष्ट्रीय तकनीकी शिक्षा परिषद (एनसीटीई) द्वारा मान्यता प्राप्त है, जो उच्च प्राथमिक या मध्य स्तर - (VI-VIII) और माध्यमिक स्तर - (IX-X) और वरिष्ठ कक्षा XI-XIII के लिए शिक्षकों को तैयार करता है।
+                 <br>कौशल आधारित समावेशी शिक्षण के साथ व्यापक पाठ्यक्रम कवरेज द्वारा।
+
+                 <br>इसका उद्देश्य एक सहायक वातावरण बनाना है जो मेंटरशिप अनुभवों को बढ़ाता है और व्यक्तिगत और सामूहिक विकास में योगदान देता है।
+                 
+                 <br>शिक्षा अंतःविषय ज्ञान का एक क्षेत्र है जो केवल कुछ मुख्य विषयों का अनुप्रयोग नहीं है, बल्कि एक अभ्यास और एक संदर्भ है जहाँ कौशल के सिद्धांत और व्यावहारिक ज्ञान लगातार उत्पन्न होते हैं।
+                 <br><br> <h2>करियर के अवसर</h2><br>
+                 बी.एड. (बैचलर ऑफ एजुकेशन) स्नातकों के पास शिक्षा क्षेत्र में करियर के कई अवसर हैं। आमतौर पर, वे स्कूल शिक्षक बन जाते हैं, सरकारी और निजी दोनों स्कूलों में प्राथमिक, माध्यमिक या उच्चतर माध्यमिक स्तर पर पढ़ाते हैं। गुणवत्तापूर्ण शिक्षा की बढ़ती मांग के साथ, बी.एड. स्नातक शैक्षिक संस्थानों में शैक्षिक परामर्शदाता, पाठ्यक्रम डेवलपर या प्रशासक के रूप में भी काम कर सकते हैं। कुछ लोग ट्यूशन सेंटर, एनजीओ या शिक्षा-केंद्रित कंपनियों में काम करना चुन सकते हैं जो शिक्षण सहायक सामग्री, डिजिटल लर्निंग टूल या शैक्षिक सामग्री डिज़ाइन करते हैं। इसके अतिरिक्त, एक बी.एड. यह उन लोगों के लिए एक कदम साबित हो सकता है जो उच्च शिक्षा प्राप्त करना चाहते हैं और शिक्षा में शोध करना चाहते हैं या विशेष शिक्षा या शैक्षिक नेतृत्व जैसे क्षेत्रों में विशेषज्ञता हासिल करना चाहते हैं।
+                 </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="शिक्षा विभाग.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Hindi.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="प्रारंभिक शिक्षा में डिप्लोमा डी.एल.एड..html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
