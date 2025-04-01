@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Lab-3</title>
+    <link rel="stylesheet" href="Computer Lab-3.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Computer Lab-3</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="Computer Lab DS (2).png" alt=""></span>
+                    <span> <img src="Computer Lab DS (3).png" alt=""></span>
+                    <span> <img src="Computer Lab DS (4).png" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Computer Lab-3.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Computer Lab-3</h1><br>
+            <p>Computer Lab 3 is a dedicated facility for students specializing in Data Science, providing them with high-performance computing resources, advanced data analytics tools, and cloud-based platforms. The lab is designed to support data processing, machine learning, big data analytics, and visualization, helping students gain hands-on experience in real-world data-driven applications.
+                
+                <br><br><h4>Lab Features & Infrastructure</h4>
+                
+                ✅ High-Performance Computing Systems optimized for data processing and machine learning.<br>
+                ✅ Big Data & Cloud Integration with access to Google Cloud, AWS, Azure, and Databricks.<br>
+                ✅ Pre-installed Data Science & Analytics Software, including:<br><br>
+                
+                <b>Programming Languages:</b> Python, R, SQL<br>
+                
+                <b>Data Processing & Analysis:</b> Pandas, NumPy, SciPy<br>
+                
+                <b>Big Data Technologies:</b> Hadoop, Spark, Kafka<br>
+                
+                <b>Machine Learning Frameworks:</b> TensorFlow, Scikit-learn, PyTorch<br>
+                
+                <b>Data Visualization Tools:</b> Tableau, Power BI, Matplotlib, Seaborn<br>
+                
+                <b>Database Management:</b> MySQL, PostgreSQL, MongoDB<br><br>
+                
+                
+                <h4>Purpose & Usage</h4>
+                
+                <b>Data Analytics Training:</b> Supports data cleaning, preprocessing, statistical modeling, and predictive analytics.
+                
+                <br><b>Big Data & Cloud Computing:</b> Enables students to work on large-scale datasets using Hadoop, Spark, and cloud platforms.
+                
+                <br><b>Machine Learning & AI Applications:</b> Facilitates model development, deep learning, and NLP projects.
+                
+                <br><b>Research & Industry Collaboration:</b> Provides a platform for real-world projects, hackathons, and workshops with industry experts.
+                
+                
+                <br><br><h4>Guidelines & Access</h4>
+                
+                Open for Data Science students during academic hours with extended access for research projects.
+                
+                <br>Supervised by faculty members and lab assistants to ensure best practices.
+                
+                <br>Adherence to ethical data usage policies and responsible computing.
+                
+            
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Computer Lab-2.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Central Library.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

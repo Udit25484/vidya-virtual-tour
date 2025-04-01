@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA in Cloud Computing</title>
+    <link rel="stylesheet" href="BCA in Cloud Computing.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BCA in Cloud Computing</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BCA-CC-1.jpg" alt=""></span>
+                    <span> <img src="BCA-CC-2.jpg" alt=""></span>
+                    <span> <img src="BCA-CC-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BCA in Cloud Computing.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>BCA in Cloud Computing</h1><br>
+            <p>The BCA in Cloud Computing program focuses on modern cloud technologies. Students learn cloud architecture, virtualization, and cloud security. The curriculum covers AWS, Microsoft Azure, and Google Cloud platforms. Hands-on labs provide practical experience in deploying cloud applications. Industry collaborations enable exposure to real-world cloud solutions. The program includes subjects like DevOps, big data, and serverless computing. Graduates can pursue careers as cloud engineers, system administrators, or IT consultants. Practical projects help students gain proficiency in cloud infrastructure management. The course prepares students for cloud certifications and professional growth. Cloud computing skills are in high demand across industries.<br>
+            <br> <h2>Career Opportunities</h2><br>
+                At Vidya University, students graduating from the Cloud Computing program have access to a wide range of career opportunities. The university’s strong academic framework prepares graduates to step into roles that are at the forefront of technological innovation. Here are some career opportunities that students can pursue:<br>
+                1. Cloud Architect<br>
+                2. Cloud Engineer<br>
+                3. DevOps Engineer<br>
+                4. Cloud Security Engineer<br>
+                5. Big Data Engineer<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BCA in Artificial Intelligence.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="BCA in Cyber Security Forensics.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

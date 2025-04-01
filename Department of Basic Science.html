@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Basic Science</title>
+    <link rel="stylesheet" href="Department of Basic Science.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Department of Basic Science</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="D-Basic Science-1.jpg" alt=""></span>
+                    <span> <img src="D-Basic Science-2.jpg" alt=""></span>
+                    <span> <img src="D-Basic Science-3.jpg" alt=""></span>
+                   
+        
+                </div>
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Department of Basic Science.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Department of Basic Science</h1><br>
+            <p>The Department of Basic Science is a fundamental part of any educational institution, research organization, or university. Its primary focus is on providing education, research, and training in the fundamental sciences, which include:
+
+                <br><br><h4>Disciplines</h4>
+                1. Physics: Studies the fundamental laws of nature, matter, energy, and the universe.
+                <br>2. Chemistry: Examines the composition, properties, and reactions of matter.
+                <br>3. Mathematics: Develops and applies mathematical theories, models, and techniques to solve problems.
+                <br>4. Biology: Explores the structure, function, growth, evolution, and distribution of living organisms.
+
+        </div>
+        <div class="course">
+            <h2>Programs Offered :</h2> 
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="B.Sc. in Biotechnolog.html" "><h4>B.Sc. in Biotechnology</h4></A></li>
+                    <li><a href="B.Sc. in Physics.html" ><h4>B.Sc. in Physics</h4></a></li>
+                    <li><A HREF="B.Sc. in Chemistry.html" ><h4>B.Sc. in Chemistry</h4></A></li>
+                    <li><A HREF="B.Sc. in Mathematics.html" "><h4>B.Sc. in Mathematics </h4></A></li>
+                    <li><A HREF="B.Sc. in Forensics Science.html" "><h4>B.Sc. in Forensics Science</h4></A></li>
+                    <li><A HREF="B.Sc. in Microbiology.html" "><h4>B.Sc. in Microbiology</h4></A></li>
+                    <li><A HREF="M.Sc. in Biotechnology.html" "><h4>M.Sc. in Biotechnology</h4></A></li>
+                    <li><A HREF="M.Sc. in Physics.html" "><h4>M.Sc. in Physics</h4></A></li>
+                    <li><A HREF="M.Sc. in Chemistry.html" "><h4>M.Sc. in Chemistry</h4></A></li>
+                    <li><A HREF="M.Sc. in Mathematics.html" "><h4>M.Sc. in Mathematics</h4></A></li>
+                    <li><A HREF="M.Sc. in Forensics Science.html" "><h4>M.Sc. in Forensics Science</h4></A></li>
+                    <li><A HREF="M.Sc. in Microbiology.html" "><h4>M.Sc. in Microbiology</h4></A></li>
+                    <li><A HREF="M.Sc. in Pharmaceutical Science.html" "><h4>M.Sc. in Pharmaceutical Science</h4></A></li>
+                    <li><A HREF="Ph.D in Sciences.html" "><h4>Ph.D in Sciences</h4></A></li>
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Faculty of Basic Science & Allied Health Sciences.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Allied Health Sciences.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

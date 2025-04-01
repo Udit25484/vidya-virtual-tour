@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBA (Sports Management)</title>
+    <link rel="stylesheet" href="BBA (Sports Management).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BBA (Sports Management)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BBA Sports-1.jpg" alt=""></span>
+                    <span> <img src="BBA Sports-2.jpg" alt=""></span>
+                    
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BBA (Sports Management).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>BBA (Sports Management)</h1><br>
+            <p>The Bachelor of Business Administration (BBA) in Sports Management at Vidya University is a specialized undergraduate program designed to prepare students for leadership roles in the sports industry. This three-year program blends core business management principles with specialized knowledge of sports operations, marketing, and event management. By combining theoretical learning with practical exposure, the program equips students with the skills necessary to manage sports teams, events, and organizations effectively. Students will also gain insights into sports economics, media, and sponsorship, positioning them for impactful careers in the dynamic world of sports management.
+                 <br><br> <h2>Career Opportunities</h2><br>
+                1. Event Manager (Sports)
+                <br>2. Sports Marketing Executive
+                <br>3. Sports Analyst
+                <br>4. Sports Event Coordinator
+                <br>5. Sponsorship Manager
+                <br>6. Fitness and Wellness Manager
+                <br>7. Sports Entrepreneur
+                <br>8. Public Relations Manager (Sports)
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BBA (Entrepreneurship & Family Business).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MBA PLUS (Aviation Management).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

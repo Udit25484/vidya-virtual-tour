@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen</title>
+    <link rel="stylesheet" href="C.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Canteen</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="canteen.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Canteen</h1><br>
+            <p>At Vidya University, the campus offers multiple canteens to ensure that students have easy access to a variety of food options throughout the <day class="br"><h3>Variety of Food Options:</h3></day>Offers a wide range of dishes catering to different tastes, including vegetarian and non-vegetarian options.
+
+                A variety of snacks, beverages, and meals to suit the diverse preferences of students and staff.<br><h3>Hygiene & Cleanliness:</h3>Maintains high standards of cleanliness and hygiene in food preparation and dining areas.
+
+                Regular health and safety checks to ensure food quality and  cleanliness.<br><h3>Affordable Prices:</h3>Provides meals at affordable rates to ensure that students from different economic backgrounds can access healthy and nutritious food.
+
+                Often features subsidized pricing for students <br><h3>Healthy Food Choices:</h3>Includes healthy meal options, including salads, fruits, and nutritious snacks to promote overall well-being.
+
+                Focus on balanced meals, offering a good mix of proteins, vegetables, and carbohydrates <br></p>
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="VGS.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="VISA.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>A PROJECT BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

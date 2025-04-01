@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma in Dairy Technology</title>
+    <link rel="stylesheet" href="Diploma in Dairy Technology.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Diploma in Dairy Technology</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="Diploma Dairy-1.jpeg" alt=""></span>
+                    <span> <img src="Diploma Dairy-2.jpg" alt=""></span>
+                   
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Diploma in Dairy Technology.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Diploma in Dairy Technology</h1><br>
+            <p>With the growing significance of the dairy industry across the nation, there has been an increasing demand for experts who are skilled with the knowledge and abilities related to this field. The Faculty of Science Department of Dairy Technology offers a one-year diploma program in Dairy Technology which focuses on equipping students with the relevant competencies required in order to navigate this field. The program provides entry level knowledge which includes an understanding of the basic fundamentals of Dairy Technology. It goes on to provide students with an in-depth learning experience to the technical and the commercial aspects of the program. The fields of study in this course include dairy technology, dairy engineering, dairy microbiology, chemistry and business management. The program is conducted under the instruction of top notch faculties who have immense industrial knowledge, along with various visiting experts who get to share various insights relating to the field. The department is equipped with state of the art facilities for research and experimentation which go on to shape the students' practical ha nds on experience in preparation of their career journey. With the Faculty's industrial ties, students get to be prepared for their various career roles within the industry which places them a step ahead in the job market.
+                 <br><br> <h2>Career Opportunities</h2><br>
+                 1. Secretary of dairy cooperative society
+                 <br>2. Milk procurement supervisor
+                 <br>3. Milk tester
+                 <br>4. Dairy plant operator/technician/supervisor
+                 <br>5. Product technician (ice cream/cheese/ butter/indigenous dairy products unit)
+                 <br>6. Dairy assistant
+                 <br>7. Chilling center supervisor
+                 <br>8. Dairy products manufacture (indigenous and western)
+                 <br>9. Quality control assistant
+                <br>10. Packing & Marketing assistance 
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BNYS.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Bachelor of Nursing.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

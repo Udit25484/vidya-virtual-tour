@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Business</title>
+    <link rel="stylesheet" href="Department of Business.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Department of Business</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="D-Business-1.jpg" alt=""></span>
+                    <span> <img src="D-Business-2.jpg" alt=""></span>
+                    <span> <img src="D-Business-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Department of Business.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Department of Business</h1><br>
+            <p>The Department of Business, also known as the Department of Business Administration, is a crucial part of any organization or educational institution. Its primary focus is on providing education and training in business management, administration, and related fields.
+
+                <br><br><h4>Key Functions:</h4>
+                
+                - Education and Research: Offers various programs, such as MBA, Executive MBA, and PhD, to develop business leaders and entrepreneurs.
+                <br>- Business Development: Provides training and consulting services to businesses, entrepreneurs, and organizations.
+                <br>- Policy Formulation: Contributes to the development of business policies and regulations.
+                
+                <br><br><h4>Departments within a Business Organization:</h4>
+                
+                - Finance Department: Oversees financial operations, including budgeting, forecasting, and financial reporting.
+                <br>- Marketing Department: Develops and implements marketing strategies to promote products or services.
+               <br> - Human Resources Department: Manages employee recruitment, training, and development.
+                
+                <br><br><h4>Academic Institutions:</h4>
+                
+                - <b>Vidya University:</b> Offers various business programs, including MBA, MBA (International Business), and PhD.
+                <br>- University College of Commerce and Business Management: Provides postgraduate programs in Business Management.
+                
+                <br>These departments and institutions play a vital role in shaping business leaders, entrepreneurs, and policies that drive economic growth and development.
+                
+
+        </div>
+        <div class="course">
+            <h2>Programs Offered :</h2> 
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="BBA (Aviation).html" "><h4>BBA (Aviation)</h4></A></li>
+                    <li><a href="BBA (Branding & Advertising).html" ><h4>BBA (Branding & Advertising)</h4></a></li>
+                    <li><A HREF="BBA (Business Analytics).html" ><h4>BBA (Business Analytics)</h4></A></li>
+                    <li><A HREF="BBA (Digitial Marketing & Innovation).html" "><h4>BBA (Digitial Marketing & Innovation) </h4></A></li>
+                    <li><A HREF="BBA (Entrepreneurship & Family Business).html" "><h4>BBA (Entrepreneurship & Family Business)</h4></A></li>
+                    <li><A HREF="BBA (Sports Management).html" "><h4>BBA (Sports Management)</h4></A></li>
+                    <li><A HREF="MBA PLUS (Aviation Management).html" "><h4>MBA PLUS (Aviation Management)</h4></A></li>
+                    <li><A HREF="MBA PLUS (Health Care Management).html" "><h4>MBA PLUS (Health Care Management)</h4></A></li>
+                    <li><A HREF="MBA (Business Analytics & AI).html" "><h4>MBA (Business Analytics & AI)</h4></A></li>
+                    <li><A HREF="MBA (Entrepreneurship).html" "><h4>MBA (Entrepreneurship)</h4></A></li>
+                    <li><A HREF="MBA (HRM).html" "><h4>MBA (HRM)</h4></A></li>
+                    <li><A HREF="MBA (Finance Management).html" "><h4>MBA (Finance Management)</h4></A></li>
+                    <li><A HREF="MBA (Marketing).html" "><h4>MBA (Marketing)</h4></A></li>
+                    <li><A HREF="Ph.D in Management.html" "><h4>Ph.D in Management</h4></A></li>
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Faculty of Commerce & Business.HTML"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Commerce.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Multimedia & Mass Communication</title>
+    <link rel="stylesheet" href="Department of Multimedia & Mass Communication.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Department of Multimedia & Mass Communication</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="D-MC-1.JPG" alt=""></span>
+                    <span> <img src="D-MC-2.JPG" alt=""></span>
+                    <span> <img src="D-MC-3.JPG" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Department of Multimedia & Mass Communication.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Department of Multimedia & Mass Communication</h1><br>
+            <p>The Department of Multimedia & Mass Communication is an academic department that focuses on the study and practice of multimedia and mass communication. The department offers various programs, including undergraduate, postgraduate, and doctoral degrees.
+
+                </div>
+        <div class="course">
+            <h2>Programs Offered :</h2> 
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="Bachelor in Multimedia & Mass Communication.html" "><h4>Bachelor in Multimedia & Mass Communication</h4></A></li>
+                    <li><a href="Master in Multimedia & Mass Communication.html" ><h4>Master in Multimedia & Mass Communication</h4></a></li>
+                    <li><a href="Ph.D in Journalism & Mass Communication.html" ><h4>Ph.D in Journalism & Mass Communication</h4></a></li>
+                    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Design.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Media & Liberal Arts.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

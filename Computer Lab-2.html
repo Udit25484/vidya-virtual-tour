@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Lab-2</title>
+    <link rel="stylesheet" href="Computer Lab-2.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Computer Lab-2</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="Computer Lab (3).webp" alt=""></span>
+                    <span> <img src="Computer Lab (5).webp" alt=""></span>
+                    <span> <img src="Computer Lab (6).webp" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Computer Lab-2.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Computer Lab-2</h1><br>
+            <p>Computer Lab 2 is a specialized facility exclusively designed for students of Artificial Intelligence & Machine Learning (AI & ML). Equipped with high-performance computing resources, advanced AI frameworks, and cloud integration, this lab provides an ideal environment for research, development, and practical applications in AI, deep learning, and data science.<br>
+                
+                <br><h4>Lab Features & Infrastructure</h4>
+                
+                ✅ High-Performance GPUs & Workstations for deep learning and AI model training.<br>
+                ✅ Cloud Computing Support with access to Google Colab, AWS, Azure, and TensorFlow Cloud.<br>
+                ✅ Pre-installed AI & ML Software & Frameworks, including:<br><br>
+                
+                <b>Machine Learning:</b> Scikit-learn, TensorFlow, PyTorch<br>
+                
+                <b>Deep Learning:</b> Keras, OpenCV, NLP Libraries (spaCy, NLTK)<br>
+                
+                <b>Big Data & Analytics:</b> Hadoop, Spark, Pandas, NumPy<br>
+                
+                <b>Data Visualization:</b> Matplotlib, Seaborn, Power BI<br>
+                
+                <b>Programming Tools:</b> Jupyter Notebook, Anaconda, VS Code<br><br>
+                
+                
+                <h4>Purpose & Usage</h4>
+                
+                <b>Hands-on AI & ML Training: </b>Supports coursework in Neural Networks, Deep Learning, NLP, and Computer Vision.
+                
+                <br><b>Research & Development:</b> Facilitates AI model development, automation, and robotics projects.
+                
+                <br><b>Big Data Processing: </b>Enables students to work on large-scale data analytics and cloud-based AI models.
+                
+                <br><b>Workshops & Certifications:</b> Hosts AI, ML, and Data Science bootcamps, hackathons, and industry collaborations.
+                
+                
+                <br><br><h4>Guidelines & Access</h4>
+                
+                Open for AI & ML students during academic hours with extended access for research projects.
+                
+                <br>Supervised by faculty and lab assistants to ensure best practices and guidance.
+                
+                <br>Strict compliance with ethical AI practices and responsible computing usage.
+                
+            
+            
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Computer Lab-1.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Computer Lab-3.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

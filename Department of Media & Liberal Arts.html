@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Media & Liberal Arts</title>
+    <link rel="stylesheet" href="Department of Media & Liberal Arts.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Department of Media & Liberal Arts</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="d-mla1.jpeg" alt=""></span>
+                    <span> <img src="d-mla2.jpeg" alt=""></span>
+                    <span> <img src="d-mla3.jpeg" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="d-ma.jpg" alt=""></span>
+                    <span> <img src="d-mla4.jpg" alt=""></span>
+                    <span> <img src="d-mla5.jpg" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Department of Media & Liberal Arts.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Department of Media & Liberal Arts</h1><br>
+            <p>The Department of Media & Liberal Arts is an interdisciplinary academic department that combines the study of media, communication, and liberal arts. The department offers various programs that foster critical thinking, creativity, and intellectual curiosity.
+
+                </div>
+        <div class="course">
+            <h2>Programs Offered :</h2> 
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="BFA (Applied Arts).html" "><h4>BFA (Applied Arts)</h4></A></li>
+                    <li><a href="BFA (Painting).html" ><h4>BFA (Painting)</h4></a></li>
+                    <li><a href="BA (English).html" ><h4>BA (English)</h4></a></li>
+                    <li><a href="BA (Event Management).html" ><h4>BA (Event Management)</h4></a></li>
+                    <li><a href="MFA (Applied Arts).html" ><h4>MFA (Applied Arts)</h4></a></li>
+                    <li><a href="MFA (Painting).html" ><h4>MFA (Painting)</h4></a></li>
+                    <li><a href="MA (English).html" ><h4>MA (English)</h4></a></li>
+                    <li><a href="MA (Event Management).html" ><h4>MA (Event Management)</h4></a></li>
+                    <li><a href="Ph.D (English).html" ><h4>Ph.D (English)</h4></a></li>
+                    <li><a href="Ph.D (Fine Arts).html" ><h4>Ph.D (Fine Arts)</h4></a></li>
+                    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Multimedia & Mass Communication.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Faculty of Design Media & Fine Arts.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

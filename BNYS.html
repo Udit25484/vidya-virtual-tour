@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNYS</title>
+    <link rel="stylesheet" href=" BNYS.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BNYS</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BNYS-1.jpg" alt=""></span>
+                    <span> <img src="BNYS-2.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BNYS.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1> BNYS</h1><br>
+            <p>The BNYS program integrates traditional naturopathy with modern medical sciences. Students study therapeutic yoga, herbal medicine, nutrition, and holistic healing. The curriculum includes anatomy, physiology, and clinical naturopathy. Practical training in wellness centers enhances hands-on expertise. The program promotes preventive healthcare and alternative medicine. Students participate in yoga therapy sessions and meditation workshops. Research opportunities allow exploration of ancient healing practices. Graduates can work in wellness clinics, hospitals, or as independent practitioners. The course emphasizes lifestyle management and mind-body wellness. It prepares students for careers in integrative and complementary healthcare.
+                 <br><br> <h2>Career Opportunities</h2><br>
+                 Graduates of BNYS can explore various career paths in the fields of:
+
+                 <br>1. <b>Naturopathy Practitioner:</b> Offering treatments using natural therapies.
+                 <br>2. <b>Yoga Therapist:</b> Using yoga to treat physical and mental ailments.
+                 <br>3. <b>Herbal Medicine Practitioner:</b> Specializing in the use of plant-based medicines.
+                 <br>4. <b>Wellness Consultant:</b> Providing health and wellness advice based on natural healing methods.
+                 <br>5. <b>Health Coach:</b> Helping individuals adopt healthier lifestyles through natural therapies and wellness practices.
+                 <br>6. <b>Research and Development:</b> Contributing to the growth of naturopathy and yoga through research.
+                 <br>7. <b>Teaching and Academics:</b> Becoming a faculty member or instructor at institutions offering similar courses.
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Sc. in Medical Laboratory Technology.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Diploma in Dairy Technology.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

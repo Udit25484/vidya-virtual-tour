@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma in Elementary Education D.El.Ed</title>
+    <link rel="stylesheet" href=" Diploma in Elementary Education D.El.Ed.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Diploma in Elementary Education D.El.Ed</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="DIPLOMA-D.B.ED-1.jpg" alt=""></span>
+                    <span> <img src="DIPLOMA-D.B.ED-2.jpg" alt=""></span>
+                    <span> <img src="DIPLOMA-D.B.ED-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Diploma in Elementary Education D.El.Ed.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>  Diploma in Elementary Education D.El.Ed</h1><br>
+            <p>The D.El.Ed. (Diploma in Elementary Education) is a teacher training program designed to prepare candidates for teaching in elementary schools. It focuses on child development, pedagogical techniques, and classroom management strategies, along with hands-on experience in teaching. The curriculum includes subjects like education psychology, curriculum planning, and assessment, while also fostering skills in effective communication and classroom discipline. Graduates of the program are well-prepared to work as primary school teachers, with a strong emphasis on building a solid foundation for young learners and contributing to their academic and personal growth.
+                <br><br> <h2>Career Opportunities</h2><br>
+                1. Due to a significant need for qualified primary teachers, D.El.Ed graduates have a high chance of finding employment in both government and private schools.
+                <br>2. Teaching positions, especially in government schools, often provide good job security and stability with regular salaries and benefits.
+                <br>3. The role of an elementary teacher is crucial in shaping young minds, allowing D.El.Ed graduates to make a positive impact on society.
+                <br>4. Completing a D.El.Ed can serve as a stepping stone to pursue a Master of Education (M.Ed.) degree, enabling you to teach at higher grades and potentially take on leadership roles in schools.
+                <br>5. The Diploma in Elementary Education (D.El.Ed.) is a crucial stepping stone for individuals aspiring to build a career in primary education. This course opens doors to various teaching roles and offers numerous opportunities in administration, curriculum development, and special education.
+                 </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Ed.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Education.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

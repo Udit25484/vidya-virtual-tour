@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Lab-1</title>
+    <link rel="stylesheet" href="Computer Lab-1.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Computer Lab-1</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="Computer Lab (1).webp" alt=""></span>
+                    <span> <img src="Computer Lab (2).webp" alt=""></span>
+                    <span> <img src="Computer Lab (4).webp" alt=""></span>
+                   
+        
+                </div>
+               
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Computer Lab-1.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Computer Lab-1</h1><br>
+            <p>Computer Lab 1 is a state-of-the-art facility exclusively dedicated to the students of the Computer Science & Engineering (CSE) department. The lab is designed to provide a hands-on learning environment with modern computing resources, high-speed internet, and the latest software tools to support programming, data analysis, AI/ML, and software development.<br>
+
+<br><H4>Lab Features & Infrastructure</H4>
+
+✅ High-Performance Computers with the latest processors and ample RAM for seamless computing.<br>
+✅ High-Speed Internet & LAN Connectivity to facilitate research and cloud-based applications.<br>
+✅ Pre-installed Software & Tools, including:<br><br>
+
+<b>Programming Languages:</b> Python, Java, C, C++<br>
+
+<b>Database Management:</b> MySQL, PostgreSQL, MongoDB<br>
+
+<b>Development Tools:</b> Eclipse, Visual Studio Code, IntelliJ IDEA<br>
+
+<b>AI & ML Frameworks:</b> TensorFlow, PyTorch, OpenCV<br>
+
+<b>Web Development: </b>Node.js, React, Angular, Django<br>
+
+<b>Cybersecurity Tools:</b> Wireshark, Kali Linux, Metasploit<br><br>
+
+
+<h4>Purpose & Usage</h4>
+
+<b>Regular Lab Sessions: </b>Supports core subjects like Data Structures, Algorithms, Operating Systems, DBMS, AI & ML, and Web Development.
+
+<br><b>Project Work & Research:</b> Enables students to work on academic and industry-oriented projects.
+
+<br><b>Coding & Hackathons:</b> Used for competitive programming, coding contests, and hackathons.
+
+<br><b>Workshops & Certifications:</b> Conducts hands-on workshops on Cloud Computing, DevOps, and Cybersecurity.
+
+
+Guidelines & Access
+
+Open for CSE students during academic hours and extended timings for project work.
+
+Supervised by faculty members and lab assistants for guidance.
+
+Strict adherence to lab rules, including proper usage of equipment and ethical computing practices. <br>
+            <br>
+           
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Apple Lab.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Computer Lab-2.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

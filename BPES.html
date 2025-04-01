@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPES</title>
+    <link rel="stylesheet" href=" BPES.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BPES</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BPES-1.JPG" alt=""></span>
+                    <span> <img src="BPES-2.JPG" alt=""></span>
+                    <span> <img src="BPES-3.JPG" alt=""></span>
+                   
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BPES.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>  BPES</h1><br>
+            <p>Bachelor of Physical Education and Sports is a 3 years degree program which is recognized by University Grants Commission (UGC)
+
+                <br>After completing Bachelor of Physical Education and Sport Science (BPES) course, candidates can find employment opportunities as physical education instructor, professional player, sports administration, sports journalist, sports photojournalist, umpire/referee, trainer/ instructor/ coach/ therapists and sports industry
+                
+                <br>Bachelor of Physical Education & Sports (B.P.E.S) the course empowers student to acquire essential skill which will define him as a professional technical expert at the grass root level.
+                
+                
+                
+                 <br><br> <h2>Career Opportunities</h2><br>
+                 A strong career choice in the field of sports training and coaching, as well as auxiliary disciplines such as commentator, Sports Journalist, and sports administration, can be obtained through the B.P.E.S. program
+
+                 <br>Career scope for graduates of Bachelor of Physical Education & Sports (BPES) includes roles such as physical education teacher, sports coach, fitness instructor, sports manager, sports administrator, and various other positions in the sports and fitness industry
+                 
+                <br> Prepares students for the emerging field of sports science and physical education, and equips the students to start careers as health, yoga and fitness instructors, fitness counselors, sports facility planners.
+                 
+                 <br>Gives an opportunities in participation in national and state level sports workshops, competitions and events.
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Sports.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Sports.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

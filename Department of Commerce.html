@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Commerce</title>
+    <link rel="stylesheet" href="Department of Commerce.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Department of Commerce</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="D-Commerce-1.jpg" alt=""></span>
+                    <span> <img src="D-Commerce-2.jpg" alt=""></span>
+                    <span> <img src="D-Commerce-3.jpg" alt=""></span>
+                </div>
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Department of Commerce.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Department of Commerce</h1><br>
+            <p>The Department of Commerce is a vital government entity responsible for promoting and regulating trade, commerce, and industry. In India, the Department of Commerce is part of the Ministry of Commerce and Industry, Government of India.¹
+
+                <br><br><h4>Key Functions:</h4>
+                
+                - Trade Policy: The department formulates and implements trade policies to promote India's trade interests.
+                <br>- Export Promotion: It provides support to Indian exporters to enhance their competitiveness in the global market.
+                <br>- Regulation: The department regulates various aspects of trade, including tariffs, quotas, and trade agreements.
+                
+               <br> <br><h4>Organization Structure:</h4>
+                
+                The Department of Commerce is headed by the Secretary of Commerce, who is assisted by several Joint Secretaries and Directors. The department has various divisions, including the Trade Policy Division, Export Promotion Division, and Regulatory Division.
+                
+                <br><br><h4>Initiatives:</h4>
+                
+                The Department of Commerce has launched several initiatives to promote trade and commerce, including the "Ek Ped Maa Ke Naam" campaign, which aims to promote environmental sustainability.
+                
+                <br><br><h4>Academic Institutions:</h4>
+                
+                There are also academic institutions, such as the Department of Commerce, Faculty of Commerce and Business, which offer courses and research programs in commerce and related fields.
+
+                
+                 </div>
+        <div class="course">
+            <h2>Programs Offered :</h2> We offer a range of programs that blend sports science, physical education, and sports management:
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="B.Com. in Banking & Insurance.html" "><h4>B.Com. in Banking & Insurance</h4></A></li>
+                    <li><A HREF="Ph.D in Commerce.html" "><h4>Ph.D in Commerce</h4></A></li>
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Business.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Faculty of Commerce & Business.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

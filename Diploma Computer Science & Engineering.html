@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma Computer Science & Engineering</title>
+    <link rel="stylesheet" href="Diploma Computer Science & Engineering.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Diploma Computer Science & Engineering</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="DIPLOMA-CSE-1.jpg" alt=""></span>
+                    <span> <img src="DIPLOMA-CSE-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Diploma Computer Science & Engineering.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Diploma Computer Science & Engineering</h1><br>
+            <p>The Diploma in Computer Science and Engineering at Vidya University is a comprehensive three-year program designed to provide students with a solid foundation in computer science principles and practical skills. The curriculum covers a wide range of topics, including programming languages, data structures, algorithms, and computer networks, ensuring that students are well-prepared for the dynamic IT industry. The program emphasizes hands-on learning through projects, labs, and workshops, fostering practical skills and real-world applications. Experienced faculty members, who are industry experts with years of experience, guide students throughout their academic journey. State-of-the-art infrastructure, including modern labs and facilities, enhances the learning experience, providing students with the tools and resources needed to excel in the field.
+                <br>
+                <br> <h2>Career Opportunities</h2><br>
+                A Diploma in Computer Science and Engineering opens up various career opportunities in the rapidly growing field of technology. Graduates are equipped with foundational skills in programming, networking, and system design, making them valuable assets in multiple sectors. Some of the key career opportunities include:<br>
+                1. Software Developer<br>
+                2. Web Developer<br>
+                3. Network Engineer<br>
+                4. IT Support Specialist<br>
+                5. System Administrator<br>
+                6. Database Administrator<br>
+                7. Mobile App Developer<br>
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="M.Tech CSE - Artificial Intelligence & Data Science.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Ph.D. Computer Science & Engineering.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

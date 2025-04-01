@@ -1,0 +1,161 @@
+.main{
+    width: 100%;
+    max-width: 1350px;
+    height: auto;
+    min-height: 1070px;
+    background-image:url('texture.jpg');  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.header{
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 50px;
+    height: auto;
+    color: rgb(161, 39, 39);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.gallery{
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    white-space: nowrap;
+}
+
+.gallery div{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.gallery div img{
+    width: 500px;
+    height: auto;
+    transition: transform 0.5s;
+    object-fit: contain;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.audio{
+    text-align: center;
+}
+
+.content, .course, .labs{
+    margin: 20px auto;
+    text-align: justify;
+    max-width: 90%;
+    word-spacing: 5px;
+    line-height: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 200px;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+
+.row3{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+}
+footer {
+    color: black;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    bottom: -20;
+    left: 0;
+
+}
+
+@media screen and (max-width: 768px){
+    .content, .course, .labs{
+        text-align: center;
+    }
+
+    .footer1{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .footer button{
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .gallery{
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .gallery div{
+        display: flex;
+    }
+
+    .gallery div img{
+        width: 280px;
+    }
+
+    #backBtn, #nextBtn{
+        width: 40px;
+    }
+
+}

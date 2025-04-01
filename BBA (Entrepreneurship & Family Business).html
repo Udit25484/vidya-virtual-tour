@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBA (Entrepreneurship & Family Business)</title>
+    <link rel="stylesheet" href="BBA (Entrepreneurship & Family Business).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BBA (Entrepreneurship & Family Business)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BBA Enterpreneur-1.jpg" alt=""></span>
+                    <span> <img src="BBA Enterpreneur-2.jpg" alt=""></span>
+                    
+        
+                </div>
+                
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BBA (Entrepreneurship & Family Business).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>BBA (Entrepreneurship & Family Business)</h1><br>
+            <p>The BBA in Entrepreneurship & Family Business equips students with business acumen and leadership skills. The curriculum covers business strategy, finance, marketing, and innovation management. Practical case studies and simulations enhance decision-making abilities. Students engage in startup incubation programs and mentorship sessions. Networking events provide exposure to successful entrepreneurs and business leaders. The program focuses on sustainability, digital transformation, and global markets. Internships help students gain hands-on experience in managing enterprises. Faculty members bring real-world expertise to classroom learning. Graduates can launch startups or manage family businesses successfully. The course fosters entrepreneurial thinking and problem-solving abilities.
+                  <br><br> <h2>Career Opportunities</h2><br>
+                 1. Business Owner/Entrepreneur
+                <br> 2. Family Business Manager
+                 <br>3. Business Development Executive
+                 <br>4. Startup Consultant
+                 <br>5. Innovation Manager
+                 <br>6. Venture Capital Analyst
+                 <br>7. Social Entrepreneur
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BBA (Digitial Marketing & Innovation).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="BBA (Sports Management).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>A PROJECT BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

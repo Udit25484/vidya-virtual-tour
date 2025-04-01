@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma in Industrial Fermentation & Alcohol Technology</title>
+    <link rel="stylesheet" href="Diploma in Industrial Fermentation &Alcohol Technology.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Diploma in Industrial Fermentation & Alcohol Technology</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="DIPLOMA-IF-1.jpg" alt=""></span>
+                    <span> <img src="DIPLOMA-IF-2.jpg" alt=""></span>
+                    <span> <img src="DIPLOMA-IF-3.jpg" alt=""></span>
+                   
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Diploma in Industrial Fermentation &Alcohol Technology.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Diploma in Industrial Fermentation &Alcohol Technology</h1><br>
+            <p>The Diploma in Industrial Fermentation & Alcohol Technology is a specialized program designed to provide in-depth knowledge and hands-on training in the production and processing of alcohol, with a focus on fermentation and related technologies. This program caters to individuals aspiring to build a career in the distillery and alcohol-based industries.
+
+                <br>It is designed to equip professionals with the knowledge and skills needed to support the distillery industry's pursuit of economic development. This program emphasizes industry challenges effectively, contribute to sustainable practices, and drive the adoption of innovative solutions for enhanced operational efficiency. It aligns with the distillery industry's goals of achieving economic growth while adhering to environmental and energy conservation standards.
+                
+               <br> Key aspects of the program include: Core Focus Areas, Skill Development, Sustainability and Innovation.
+        </div>
+       
+       
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Ph.D in Pharmacy.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Faculty of Pharmacy.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div>    
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>    
+</body>
+</html>

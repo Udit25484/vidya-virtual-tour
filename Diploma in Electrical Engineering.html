@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma in Electrical Engineering</title>
+    <link rel="stylesheet" href="Diploma in Electrical Engineering.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Diploma in Electrical Engineering</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="DIPLOMA-EE-1.jpg" alt=""></span>
+                    <span> <img src="DIPLOMA-EE-2.jpg" alt=""></span>
+                    <span> <img src="DIPLOMA-EE-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Diploma in Electrical Engineering.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Diploma in Electrical Engineering</h1><br>
+            <p>The Diploma in Electrical Engineering is a technical program designed to provide foundational knowledge and practical skills in electrical systems, circuits, electronics, and power engineering. Students learn how to design, analyze, and maintain electrical systems, with an emphasis on hands-on training and industry-relevant skills. The program covers essential topics such as electrical machines, control systems, and power distribution, and includes practical workshops to develop problem-solving abilities. Graduates are equipped to work in various sectors like power generation, manufacturing, automation, and electrical design, making them ready for entry-level engineering roles.
+                <br>
+            <br>
+            <h2>Career Opportunities</h2><br>
+            Graduating with a B.Tech. in Mechanical Engineering from Vidya University opens a wide range of exciting and rewarding career opportunities in the growing field of:<br>
+            <h3>1. Electrical Technician :</h3> Install, test, and maintain electrical systems and equipment in residential, commercial, and industrial sectors.
+            <br><h3>2. Power Distribution Operator :</h3> Work with electrical grids, managing power distribution, monitoring systems, and ensuring uninterrupted supply.
+            <br><h3>3. Automation and Control Systems Engineer :</h3> Design and maintain automated systems for manufacturing and industrial processes.
+            <br><h3>4. Renewable Energy Technician :</h3> Specialize in the installation, maintenance, and optimization of renewable energy systems like solar panels and wind turbines.
+            <br><h3>5. Electrical Project Supervisor :</h3> Oversee electrical installation and maintenance projects in construction, infrastructure, and energy industries.
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Electrical Engineering.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Electrical Engineering.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

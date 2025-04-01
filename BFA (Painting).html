@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFA (Painting)</title>
+    <link rel="stylesheet" href="BFA (Painting).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BFA (Painting)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BFA (Painting).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>BFA (Painting)</h1><br>
+            <p>The Bachelor of Fine Arts (BFA) in Painting program nurtures creativity and artistic expression. Students explore various painting techniques, including oil, acrylic, watercolor, and mixed media. The curriculum covers art history, contemporary trends, and digital art forms. Hands-on studio practice enhances technical and conceptual skills. Experienced faculty and visiting artists provide mentorship and industry insights. Students get opportunities to participate in exhibitions and art residencies. Collaboration with galleries and museums enhances career prospects. Workshops and field trips encourage experimentation and innovation. Graduates can pursue careers as professional artists, illustrators, or educators. The program fosters an appreciation for visual storytelling and creative exploration.
+                <br><br> <h2>Career Opportunities</h2><br>
+                A BFA in Painting offers diverse career opportunities, including roles as a
+
+                <br>1. Fine artist
+                <br>2. Art educator
+                <br>3. Illustrator
+                <br>4. Art director
+                <br>5. Muralist
+                <br>6. Gallery curator
+                <br>7. Set designer
+                <br>8. Art therapist
+                <br>9. Art critic
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BFA (Applied Arts).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="BA (English).html.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
