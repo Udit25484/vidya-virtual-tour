@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA in Computer Application</title>
+    <link rel="stylesheet" href="MCA in Computer Application.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>MCA in Computer Application</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MCA-CA-1.jpg" alt=""></span>
+                    <span> <img src="MCA-CA-2.jpg" alt=""></span>
+                    <span> <img src="MCA-CA-3.jpg" alt=""></span>
+                   
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="MCA in Computer Application.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>MCA in Computer Application</h1><br>
+            <p>The MCA program in Computer Applications provides students with comprehensive knowledge and practical skills in software development, programming, and computer science fundamentals. The curriculum covers topics like data structures, algorithms, database management, web development, and mobile application development. Students also gain expertise in areas such as software engineering, computer networks, and cybersecurity. Through hands-on projects and internships, they develop real-world problem-solving skills and experience with industry-standard tools and technologies. The program focuses on both technical and analytical thinking, preparing students for a wide range of roles in software development, IT management, and systems analysis. Graduates are equipped to work in diverse sectors, including technology, finance, and healthcare. The MCA in Computer Applications ensures strong career prospects in the ever-evolving IT industry.<br>
+                <br> <h2>Career Opportunities</h2><br>
+                MCA (Master of Computer Applications) graduates have a wide range of career opportunities across various sectors due to their in-depth knowledge of computer science, programming, software development, and IT management. Some of the prominent career opportunities include:<br>
+                1. Software Developer/Engineer<br>
+                2. Web Developer<br>
+                3. Mobile App Developer<br>
+                4. Data Scientist/Analyst<br>
+                5. Systems Analyst<br>
+                6. Network Administrator<br>
+                7. Database Administrator (DBA)<br>
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="MCA in Cloud Computing.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MCA in Cyber Security Forensics.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

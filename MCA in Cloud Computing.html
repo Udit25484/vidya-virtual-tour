@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA in Cloud Computing</title>
+    <link rel="stylesheet" href="MCA in Cloud Computing.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>MCA in Cloud Computing</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MCA-CC-1.jpg" alt=""></span>
+                    <span> <img src="MCA-CC-2.jpg" alt=""></span>
+                    <span> <img src="MCA-CC-3.jpg" alt=""></span>
+                   
+        
+                </div>
+               
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="MCA in Cloud Computing.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>MCA in Cloud Computing</h1><br>
+            <p>The MCA program in Cloud Computing focuses on equipping students with the skills needed to design, develop, and manage cloud-based systems and services. Students gain expertise in cloud infrastructure, virtualization, data storage, and cloud security. The curriculum covers popular cloud platforms like AWS, Microsoft Azure, and Google Cloud, along with key technologies such as containerization and DevOps. Hands-on projects and internships provide practical experience in building and deploying cloud applications. Students also learn about the challenges and solutions in scaling cloud systems and managing cloud resources efficiently. The program prepares graduates for roles in cloud architecture, cloud security, and cloud service management. With the growing adoption of cloud technologies, this specialization offers strong career opportunities in the tech industry.<br>
+
+                <br> <h2>Career Opportunities</h2><br>
+                At Vidya University, students post graduating from the Cloud Computing program have access to a wide range of career opportunities. The university’s strong academic framework prepares graduates to step into roles that are at the forefront of technological innovation. Here are some career opportunities that students can pursue:<br>
+                1. Cloud Architect<br>
+                2. Cloud Engineer<br>
+                3. DevOps Engineer<br>
+                4. Cloud Security Engineer<br>
+                5. Big Data Engineer<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="MCA in Artificial Intelligence.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MCA in Computer Application.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph.D in Journalism & Mass Communication</title>
+    <link rel="stylesheet" href="Ph.D in Journalism & Mass Communication.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Ph.D in Journalism & Mass Communication</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="P.HD-J-1.jpg" alt=""></span>
+                    <span> <img src="P.HD-J-2.jpg" alt=""></span>
+                   
+                   
+        
+                </div>
+                
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Ph.D in Journalism & Mass Communication.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Ph.D in Journalism & Mass Communication</h1><br>
+            <p>The Bachelor of Multimedia and Mass Communication program at Vidya University offers a dynamic and industry-focused curriculum that prepares students to excel in the ever-evolving media landscape. The program blends theoretical knowledge with hands-on training in areas such as Journalism, Digital Media, Public Relations and Filmmaking. Students gain expertise in storytelling, content creation, media ethics and communication strategies. Graduates emerge as skilled media professionals capable of adapting to global trends. This program empowers students to influence, inform and inspire audiences across diverse platforms.
+
+                The curriculum blends graphic design fundamentals with the principles of user experience (UX) and user interface (UI) design, ensuring that students graduate with a well-rounded understanding of how to craft seamless, aesthetically pleasing, and functional designs.
+                 </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Master in Multimedia & Mass Communication.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Multimedia & Mass Communication.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ph.D in Law</title>
+    <link rel="stylesheet" href="Ph.D in Law.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center> Ph.d in Law</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="P.H.D Law-1.jpg" alt=""></span>
+                    <span> <img src="P.H.D Law-2.jpg" alt=""></span>
+                    <span> <img src="P.H.D Law-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Ph.D in Law.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1> Ph.D in Law</h1><br>
+            <p>The Ph.D. in Law is an advanced research program that allows students to engage in in-depth study and original research in various fields of law, such as constitutional law, criminal law, human rights, and international law. The program requires candidates to contribute new knowledge to the field through dissertation work and scholarly research. Students work under the guidance of faculty members with expertise in their chosen area of law, and the research is expected to address contemporary legal issues and provide solutions. Graduates of the program often pursue careers in academia, policy-making, legal consulting, or research institutions, becoming experts in their chosen legal domains.
+                <br><br> <h2>Career Opportunities</h2><br>
+                Graduates of the BBA LLB course can explore a wide range of career opportunities in various fields:<br>
+                1. Legal Practice<br>
+                2. Corporate Sector<br>
+                3. Academia<br>
+                4. Government & Public Sector<br>
+                5. Private Sector & Consultancy<br>
+                6. Alternative Careers<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="LLM.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.css"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Faculty of Legal Studies & Research.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

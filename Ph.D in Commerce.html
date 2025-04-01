@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph.D in Commerce</title>
+    <link rel="stylesheet" href=" Ph.D in Commerce.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Ph.D in Commerce</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="PHD Commerce-1.jpg" alt="PHD COMMERCE"></span>
+                    <span> <img src="PHD Commerce-2.jpg" alt="PHD COMMERCE"></span>
+                   
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Ph.D in Commerce.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Ph.D in Commerce</h1><br>
+            <p>The PhD in Commerce at Vidya University is a prestigious and research-focused program designed for individuals who aspire to contribute to the advancement of knowledge in the field of commerce. This program provides an opportunity to explore critical aspects of commerce, including accounting, finance, taxation, business law, marketing, venture Capital, Insurance, Banking and more. Research Scholars will engage in comprehensive research that combines theoretical frameworks with practical insights, preparing them for academic positions, high-level consultancy roles, and leadership positions in the commercial sector. The PhD in Commerce fosters an environment conducive to the development of new theories and solutions to contemporary business and economic challenges.
+                
+                
+                 
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Com. in Banking & Insurance.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Commerce.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFA (Painting)</title>
+    <link rel="stylesheet" href="MFA (Painting).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>MFA (Painting)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="MFA (Painting).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>MFA (Painting)</h1><br>
+            <p>The Master of Fine Arts (MFA) in Painting is an advanced graduate program that provides in-depth training and development in the practice of painting as an art form. Students refine their technical skills, conceptual understanding, and artistic expression while exploring various painting techniques, styles, and mediums. The curriculum typically includes studio practice, art theory, art history, and contemporary issues in painting. Additionally, students engage in critical thinking, self-directed projects, and research to develop a unique artistic voice. The program culminates in a final thesis or exhibition that showcases the student's artistic journey. The MFA in Painting prepares graduates for careers as professional artists, educators, curators, or art critics.
+                <br><br> <h2>Career Opportunities</h2><br>
+                A MFA in Painting offers diverse career opportunities, including roles as a
+
+<br>1. Fine artist
+<br>2. Art educator
+<br>3. Illustrator
+<br>4. Art director
+<br>5. Muralist
+<br>6. Gallery curator
+<br>7. Set designer
+<br>8. Art therapist
+<br>9. Art critic
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="MFA (Applied Arts).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MA (English).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

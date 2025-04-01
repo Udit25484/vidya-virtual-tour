@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ph.D in Pharmacy</title>
+    <link rel="stylesheet" href="Ph.D in Pharmacy.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center> Ph.D in Pharmacy</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="P.HD-P-1.jpg" alt=""></span>
+                    <span> <img src="P.HD-P-2.jpg" alt=""></span>
+                  
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src=" Ph.D in Pharmacy.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>  Ph.D in Pharmacy</h1><br>
+            <p> Vidya University was established with a mission to achieve excellence across all facets of education while upholding the highest standards of academic rigor. The university is rapidly emerging as a leader in North India, reflecting its unwavering commitment to quality, its exceptional faculty, and its vibrant learning environment. Vidya University’s Ph.D. program is designed to impart knowledge through a comprehensive blend of courses, seminars, projects, and thesis work. The program aims to help scholars deepen their understanding of concepts, enhance their intellectual skills, and explore the potential for analyzing knowledge in their respective research areas. By fostering a free and objective approach to inquiry, the program equips scholars to address societal needs effectively.
+                <br><br> <h2>Career Opportunities</h2><br>
+                1. R & D: Research and Development<br>
+                2. F & D: Formulation Development<br>
+                3. Career in Academic<br>
+                4. Research Scientist<br>
+                5. Quality Assurance Head<br>
+                6. Quality Control Head<br>
+                7. Production Head<br>
+                8. Plant Head<br>
+                9. Pharmacovigilance<br>
+               10. Market research Analyst<br>
+               11. Drug Regulatory affairs<br>
+               12. Entrepreneur<br>
+               13. Clinical Research<br>
+               14. Intellectual Property Analyst<br>
+               15. Medical Writing<br>
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Diploma in Pharmacy.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Diploma in Industrial Fermentation &Alcohol Technology.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

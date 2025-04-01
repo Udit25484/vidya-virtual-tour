@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph.D in Design</title>
+    <link rel="stylesheet" href=" Ph.D in Design.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Ph.D in Design</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="P.HD-D-1.jpg" alt=""></span>
+                    <span> <img src="P.HD-D-2.jpg" alt=""></span>
+                    <span> <img src="P.HD-D-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Ph.D in Design.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1> Ph.D in Design</h1><br>
+            <p>A PhD in Design is an advanced academic program aimed at individuals seeking to contribute original knowledge to the field of design. It prepares scholars for research, teaching, and leadership roles in academia, industry, and creative practice.
+
+                By pursuing a PhD in Design at Vidya University, you'll embark on a transformative journey that will equip you with a comprehensive skill set. You'll not only delve deep into the theoretical of design, but also gain practical experience in applying design principles to real-world challenges. This rigorous program will hone your critical thinking skills, enabling you to analyze complex problems and develop innovative solutions. You'll also cultivate strong problem-solving abilities, allowing you to navigate challenges with creativity and efficiency.
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="MFM.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Design.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

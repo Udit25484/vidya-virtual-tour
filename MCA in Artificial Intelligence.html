@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA in Artificial Intelligence</title>
+    <link rel="stylesheet" href="MCA in Artificial Intelligence.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>MCA in Artificial Intelligence</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MCA-AI-1.jpg" alt=""></span>
+                    <span> <img src="MCA-AI-2.jpg" alt=""></span>
+                    <span> <img src="MCA-AI-3.jpg" alt=""></span>
+                   
+        
+                </div>
+               
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="MCA in Artificial Intelligence.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>MCA in Artificial Intelligence</h1><br>
+            <p>The MCA in Artificial Intelligence is a specialized program that emphasizes AI techniques and their application in the software and technology sectors. It equips students with a solid foundation in programming, data structures, and AI algorithms, alongside practical experience in developing intelligent systems and applications. The program focuses on developing critical thinking and problem-solving skills, allowing graduates to create innovative AI solutions for real-world challenges. Both programs aim to foster expertise in AI, enabling students to pursue careers in a rapidly evolving and highly competitive field.<br>
+                <br> <h2>Career Opportunities</h2><br>
+                At Vidya University, students post graduating from the Artificial Intelligence program have access to a wide range of career opportunities. The university’s strong academic framework prepares graduates to step into roles that are at the forefront of technological innovation. Here are some career opportunities that students can pursue:<br>
+                1. Data Analyst<br>
+                2. Data Scientist<br>
+                3. Natural Language Processing Specialist<br>
+                4. AI Consultant<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BCA in Cyber Security Forensics.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MCA in Cloud Computing.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

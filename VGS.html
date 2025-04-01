@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidya Global School</title>
+    <link rel="stylesheet" href="VGS.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Vidya Global School</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A4461.JPG" alt=""></span>
+                    <span> <img src="166A4474.JPG" alt=""></span>
+                    <span> <img src="166A4519.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="IMG_5431.JPG" alt=""></span>
+                    <span> <img src="IMG_5480.JPG" alt=""></span>
+                    <span> <img src="IMG_6653.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload  >
+                <source src="Vidya Global School.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Vidya Global School</h1><br>
+            <p>Vidya Global School Meerut, is a Senior Secondary School (XI-XII), affiliated to Central Board of Secondary Education (CBSE), International Baccalaureate (IB), Cambridge Assessment International Education. The School is a Coed Day Cum Boarding School, with classes from Nursery to XII. It is an English Medium school. The school is located in Panchli Khurd area of Meerut, Uttar Pradesh. Vidya Global School was established in . It is a Private School .
+                Vidya Global School Panchli Khurd is a Coed Day Cum Boarding School, which serves the educational needs of hundreds of students from Nursery through XII. The classes in Vidya Global School for every academic year begins in April.
+
+Vidya Global School, Meerut is one of the best Central Board of Secondary Education (CBSE), International Baccalaureate (IB), Cambridge Assessment International Education schools in Panchli Khurd area of Meerut and ranks among the top schools in Meerut. Here, the dedicated and professional teachers ensure that the children get the maximum out of their education in this Central Board of Secondary Education (CBSE), International Baccalaureate (IB), Cambridge Assessment International Education school in Meerut. The school has given exceptional results in the academic sphere and its students have excelled in extra co-curricular activities too.
+
+            </p>
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Faculty of Education & Sports.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="C.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>     
+</body>

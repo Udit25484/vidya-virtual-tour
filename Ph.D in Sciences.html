@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph.D in Sciences</title>
+    <link rel="stylesheet" href="Ph.D in Sciences.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Ph.D in Sciences</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="PHD Science-1.jpg" alt=""></span>
+                    <span> <img src="PHD Science-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Ph.D in Sciences.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Ph.D in Sciences</h1><br>
+            <p>The vast knowledge which has been created as a result of the emerging streams of technology and science has placed research on a position of great significance. VIDYA University offer Doctoral programme of minimum duration of 3 years for Full time and 4 years for Part time as well as Post-Doctoral programme of minimum duration of 1 year. The programs have been uniquely designed in such a manner which provides an exposure to research problems across natural science, social science, mathematical, political science and economic paradigms. Through such an exposure, our Ph.D. scholars are nurtured and groomed under th e supervision of expert guides, who get to assist and engage the candidates throughout the research process. Our research based Doctoral and Post-Doctoral Studies allows scholars to venture into new domains of education to discover the endless streams of knowledge. This program encourages scholars to make effective contributions in the various disciplines which will further enhance their knowledge pool in such fields of academia.
+                
+               
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="M.Sc. in Pharmaceutical Science.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Basic Science.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5>  </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

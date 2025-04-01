@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph.D in Management</title>
+    <link rel="stylesheet" href="Ph.D in Management.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Ph.D in Management</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="PHD Management-1.jpg" alt=""></span>
+                    <span> <img src="PHD Management-2.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Ph.D in Management.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Ph.D in Management</h1><br>
+            <p>The PhD in Management at Vidya University is an intensive, research-oriented program tailored for individuals aiming to advance management knowledge and practices. This program enables scholars to delve into key areas such as organizational behaviour, strategic management, human resources, marketing, operations, and entrepreneurship, etc. Scholars undertake in-depth research that integrates theoretical frameworks with practical applications, equipping them for careers in academia, consulting, and leadership across industries. The program fosters a dynamic environment for developing innovative solutions to modern business challenges.
+                  <br><br> <h2>Career Opportunities</h2><br>
+                  
+                  The minimum eligibility criteria for PhD in Management are as follows:
+
+                  <br>1. A Master's degree in Management (MBA or equivalent) with a minimum of 55% marks from a recognized university.
+                  <br>2. Applicant should have strong academic credentials, analytical thinking abilities, and a keen interest in research.
+                  <br>3. Applicant must have appeared for an entrance examination for Doctoral program.
+                  <br>4. Work experience in management-related fields (optional but preferred).
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="MBA (Marketing).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Business.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5></a> 
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

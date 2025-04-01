@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph.D. Computer Science & Engineering</title>
+    <link rel="stylesheet" href="Ph.D. Computer Science & Engineering.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Ph.D. Computer Science & Engineering</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="PH.D-CSE-1.jpg" alt=""></span>
+                    <span> <img src="PH.D-CSE-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Ph.D. Computer Science & Engineering.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Ph.D. Computer Science & Engineering</h1><br>
+            <p>Vidya University's Ph.D. in Computer Science and Engineering is a rigorous three year program designed to cultivate exceptional researchers and innovators. Students engage in advanced coursework, including research methodology, and undertake intensive research under experienced faculty guidance. The program emphasizes original research contributions, encouraging scholars to publish findings in renowned journals and collaborate with industry experts. State-of-the-art facilities and a supportive academic environment provide the ideal setting for scholarly pursuits. Graduates are well-prepared for diverse career opportunities in academia, industry, and government sectors.
+
+                <br><br> <h2>Career Opportunities</h2><br>
+                A Ph.D. in Computer Science and Engineering opens the door to advanced and prestigious roles in academia, industry, and research. Graduates are equipped with the expertise to contribute to technological innovation and address complex challenges in computing.  
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Diploma Computer Science & Engineering.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Computer Science & Engineering.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
