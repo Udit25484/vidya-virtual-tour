@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Sc. in Chemistry</title>
+    <link rel="stylesheet" href="B.Sc. in Chemistry.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Sc. in Chemistry</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BSC Chemistry-1.jpg" alt=""></span>
+                    <span> <img src="BSC Chemistry-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Sc. in Chemistry.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>B.Sc. in Chemistry</h1><br>
+            <p>The B.Sc. Microbiology program at the Faculty of Applied Science is a four-year undergraduate course designed to provide students with a comprehensive understanding of microorganisms and their vital roles in biological systems. The program focuses on key areas such as bacteria, fungi, viruses, algae, immunology, and more. Students explore related subjects like biochemistry, physiology, cell biology, and ecology to gain a broader perspective on microbial interactions and their effects on living organisms.
+
+                <br>State-of-the-art laboratories and research facilities are available to students for hands-on experience, enabling them to apply theoretical knowledge in practical settings. The program aims to develop students' research skills, enabling them to explore current discoveries and contribute to future innovations in the field of microbiology. Additionally, students are prepared to enter the workforce with the necessary industrial and professional competencies to excel in various career paths.
+                <br><br> <h2>Career Opportunities</h2><br>
+                1. Quality Control Chemist–Ensure product quality in pharmaceuticals and chemical industries.
+                <br>2. Forensic Expert–Analyze evidence in forensic labs to solve criminal cases.
+                <br>3. Environmental Policy Maker–Develop sustainable policies and regulations.
+                <br>4. Lab Technician–Assist in research labs or industries with experiments and data collection.
+                <br>5. Chemistry Researcher–Conduct scientific research in fields like healthcare and biotechnology.
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Sc. in Physics.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Department of Basic Science.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="B.Sc. in Mathematics.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>A PROJECT BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

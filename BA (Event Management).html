@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BA (Event Management)</title>
+    <link rel="stylesheet" href="BA (Event Management).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BA (Event Management)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BA (Event Management).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>BA (Event Management)</h1><br>
+            <p>The Bachelor of Arts (BA) in Event Management is a comprehensive undergraduate program designed to prepare students for a successful career in the dynamic and fast-paced world of event planning and execution. This program combines creativity, management, and organizational skills to equip students with the knowledge and expertise required to plan, coordinate, and manage a wide range of events across various sectors, including corporate, entertainment, weddings, conferences, festivals, and more. The BA in Event Management offers a blend of theoretical knowledge, hands-on experience, and practical industry exposure to ensure students are well-prepared to thrive in the event industry. Students will learn how to manage all aspects of event planning, including budgeting, marketing, logistics, client relations, vendor management, and post-event evaluation.
+                <br><br> <h2>Career Opportunities</h2><br>
+                BA in Event Management opens up various career paths in the growing field of event planning and management. Graduates can work as event coordinators, event planners, or event managers for corporate events, weddings, conferences, exhibitions, or large-scale festivals. They can also pursue careers in public relations, working with clients to promote and manage events, or in hospitality management, coordinating events in hotels or resorts. Other roles include working in marketing and communications, venues and facilities management, or as freelancers organizing bespoke events for individuals or organizations. With experience, professionals in this field can also move into managerial or entrepreneurial roles, launching their own event management businesses.
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BFA (English).html.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MFA (Applied Arts).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

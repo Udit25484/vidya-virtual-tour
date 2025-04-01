@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Ed</title>
+    <link rel="stylesheet" href=" B.Ed.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Ed</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="B.ED-1.jpg" alt=""></span>
+                    <span> <img src="B.ED-2.jpg" alt=""></span>
+                    <span> <img src="B.ED-3.jpg" alt=""></span>
+                   
+        
+                </div>
+               
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Ed.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>  B.Ed</h1><br>
+            <p>B.Ed. The Bachelor of Education Program known as B.Ed. is a professional course that is recognized by National Council of Technical Education (NCTE) prepares teachers for upper primary or middle level – (VI-VIII) & secondary level - (IX-X) and senior classes XI-XIII.
+
+                <br>By Comprehensive curricular coverage with skill based inclusive teaching.
+                
+                <br>It aims to create a supportive environment enhancing mentorship experiences and contributing to individual and collective growth.
+                
+                <br>Education is an area of interdisciplinary knowledge is not merely an application of few core subjects but a practice and a context where theories and practical wisdom of skills are generated continuously.
+                <br><br> <h2>Career Opportunities</h2><br>
+                B.Ed. (Bachelor of Education) graduates have a wide range of career opportunities in the education sector. Most commonly, they become school teachers, teaching at the primary, secondary, or higher secondary levels in both government and private schools. With the increasing demand for quality education, B.Ed. graduates can also work as educational counselors, curriculum developers, or administrators in educational institutions. Some may choose to work in tutoring centers, NGOs, or education-focused companies that design teaching aids, digital learning tools, or educational content. Additionally, a B.Ed. can serve as a stepping stone for those who wish to pursue higher education and research in education or specialize in fields like special education or educational leadership.
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Education.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Department of Education.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Diploma in Elementary Education D.El.Ed.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>A PROJECT BY PANCHTATVA </h5></div</a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

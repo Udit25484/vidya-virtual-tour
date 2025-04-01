@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Sc. in Physics</title>
+    <link rel="stylesheet" href="B.Sc. in Physics.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Sc. in Physics</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BSC Physics-1.jpg" alt=""></span>
+                    <span> <img src="BSC Physics-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Sc. in Physics.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>B.Sc. in Physics</h1><br>
+            <p>The B.Sc. in Physics program explores fundamental and advanced physical concepts. Students study classical mechanics, electromagnetism, quantum physics, and thermodynamics. The curriculum includes laboratory experiments and computational simulations. Research projects help develop analytical and problem-solving skills. The program integrates modern physics applications like nanotechnology and astrophysics. Industry collaborations provide opportunities for internships and hands-on experience. Advanced lab facilities equip students for experimental research. Graduates can pursue careers in research, engineering, or academia. The course lays a strong foundation for higher studies in physics and applied sciences. Students engage in scientific problem-solving and critical thinking exercises.
+                <br><br> <h2>Career Opportunities</h2><br>
+                Graduates of the B.Sc. Microbiology program have a wide range of career options in diverse sectors, including:
+
+                <br>1. Physicist–Research and development in academic institutions or government labs.
+                <br>2. X-Ray Technician–Work in medical imaging within healthcare.
+                <br>3. Lab Supervisor–Manage labs in research or industrial settings.
+                <br>4. Data Analyst–Analyze data in sectors like tech, finance, or environmental science.
+                <br>5. Project Assistant–Support research teams and manage projects.
+                <br>6. Engineering Physicist–Develop technologies in engineering firms.
+                <br>7. Teaching–Educate in schools, colleges, or coaching centers.
+                <br>Graduates are well-prepared for careers in research, data analysis, healthcare, and engineering.
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Sc. in Biotechnolog.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="B.Sc. in Chemistry.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>A PROJECT BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

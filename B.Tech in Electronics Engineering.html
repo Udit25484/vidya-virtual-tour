@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech in Electronics Engineering</title>
+    <link rel="stylesheet" href="B.Tech in Electronics Engineering.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Tech in Electronics Engineering</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="B-ELECTRONICS.E-1.jpg" alt=""></span>
+                    <span> <img src="B-ELECTRONICS.E-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Tech in Electronics Engineering.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>B.Tech in Electronics Engineering</h1><br>
+            <p>
+                The B.Tech in ECE program focuses on communication systems and embedded technology. Students study digital electronics, microprocessors, and signal processing. The curriculum includes IoT, VLSI design, and wireless communication. Industry collaborations provide exposure to real-world electronic applications. Practical labs enhance hands-on expertise in circuit design. The program prepares students for careers in telecommunications and automation. Research opportunities in AI and robotics expand career possibilities. Graduates can work in semiconductor industries, aerospace, or IT sectors. Advanced lab facilities provide practical experience in electronic system design. The course integrates modern engineering concepts with practical applications.
+            <br>
+            <br>
+            <h2>Career Opportunities</h2><br>
+            Graduating with a B.Tech. in Electronics and Communication Engineering from Vidya University opens a wide range of exciting and rewarding career opportunities in the growing field of:<br>
+            1. Telecommunications Engineer<br>
+            2. Embedded Systems Developer<br>
+            3. IoT and Automation Specialist<br>
+            4. VLSI Design Engineer<br>
+            5. Robotics and AI Engineer<br>
+            6. Electronics Product Designer<br>
+            7. Research and Development (R&D) Specialist<br>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Electronics Engineering.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="M.Tech in Electronics & Communication.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech in Mechanical Engineering</title>
+    <link rel="stylesheet" href="B.Tech in Mechanical Engineering.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Tech in Mechanical Engineering</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="B-ME-1.jpg" alt=""></span>
+                    <span> <img src="B-ME.2.jpg" alt=""></span>
+                    <span> <img src="B-ME-3.jpg" alt=""></span>
+                   
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Tech in Mechanical Engineering.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>B.Tech in Mechanical Engineering</h1><br>
+            <p>Mechanical Engineering program at Vidya University equips students with the skills and knowledge to design, analyse, and innovate across a broad spectrum of industries, including automotive, aerospace, energy, manufacturing, and robotics. With a strong foundation in core principles such as mechanics, thermodynamics, and materials science, the program emphasizes hands-on learning through state-of-the-art labs, real-world projects, and internships. Students explore cutting-edge technologies, including sustainable engineering and automation, preparing them for dynamic career opportunities or advanced studies. Our curriculum fosters problem-solving, creativity, and collaboration, empowering graduates to address global engineering challenges and drive technological advancements in an ever-evolving world.
+                <br>
+            <br>
+            <h2>Career Opportunities</h2><br>
+            Graduating with a B.Tech. in Mechanical Engineering from Vidya University opens a wide range of exciting and rewarding career opportunities in the growing field of:<br>
+            1. Design and Product Development<br>
+            2. Manufacturing and Production<br>
+            3. Energy and Power Sector<br>
+            4. Automotive and Aerospace Industries<br>
+            5. Robotics and Automation<br>
+            6. Research and Development (R&D)<br>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Mechanical Engineering.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Mechanical Engineering.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+         </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

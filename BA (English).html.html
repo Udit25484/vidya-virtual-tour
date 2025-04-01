@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BA (English)</title>
+    <link rel="stylesheet" href="BA (English).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BA (English)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="1.JPG" alt=""></span>
+                    <span> <img src="2.JPG" alt=""></span>
+                    <span> <img src="DSC04876.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="DSC04916.JPG" alt=""></span>
+                    <span> <img src="3.JPG" alt=""></span>
+                    <span> <img src="DSC04933.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BA (English).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>BA (English)</h1><br>
+            <p>The Bachelor of Arts in English is a dynamic and interdisciplinary undergraduate programme designed to ignite a deep understanding of language, literature, and communication. This course explores the rich tapestry of English studies, from classic and contemporary literature to linguistics, cultural studies, and creative writing.
+
+                <br>Students will immerse themselves in the analysis of diverse texts, examining their historical, cultural, and social contexts. The programme hones critical thinking, analytical skills, and creativity, empowering students to express themselves effectively across various forms of media and genres.
+                <br><br> <h2>Career Opportunities</h2><br>
+                1. Content Creation and Media
+                <br>2. Education and Academia
+                <br>3. Publishing and Editing
+                <br>4. Creative Writing and Storytelling
+                <br>5. Public Relations and Corporate Communication
+                <br>6. Advertising and Marketing
+                <br>7. Civil Services and Public Administration
+                <br>8. Translation and Interpretation
+                <br>9. Cultural and Arts Management
+               <br>10. Freelancing and Entrepreneurship
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BFA (Painting).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="BA (Event Management).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Com. in Banking & Insurance</title>
+    <link rel="stylesheet" href=" B.Com. in Banking & Insurance.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Com. in Banking & Insurance</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BCOM Banking-1.jpg" alt=""></span>
+                    <span> <img src="BCOM Banking-2.jpg" alt=""></span>
+                    >
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Com. in Banking & Insurance.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1> B.Com. in Banking & Insurance</h1><br>
+            <p>Our B. Com in Banking and Insurance, a three-year undergraduate degree, is designed to prepare you for a thriving career in these dynamic industries. This program provides the knowledge and skills needed to excel in the ever-evolving fields of Banking and Insurance.
+
+                <br>In collaboration with the Insurance Institute of India, the program includes specialized subjects from the institute in each semester, adding valuable industry-relevant credentials to your academic journey.
+                
+                <br>Throughout the program, you will build a strong foundation in core commerce disciplines, such as accounting, finance, and economics. Additionally, the curriculum offers specialized knowledge in key areas, including:
+                
+                <br>1. Banking Operations and Management
+                <br>2. Risk Management and Financial Analysis
+                <br>3. Insurance Principles and Practices
+                <br>4. Investment Banking and Wealth Management
+                <br>5. Financial Technology (FinTech)
+                
+                
+                 <br><br> <h2>Career Opportunities</h2><br>
+                 Banking Officer
+                 <br>1. Insurance Advisor/Agent
+                 <br>2. Financial Analyst
+                 <br>3. Risk Management Specialist
+                 <br>4. Loan Officer
+                 <br>5. Investment Banker
+                 <br>6. Actuarial Analyst
+                 <br>7. Relationship Manager
+                 <br>8. Claims Manager
+                 <br>9. Wealth Management Advisor 
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Commerce.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Department of Commerce.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Ph.D in Commerce.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>A PROJECT BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

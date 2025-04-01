@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> B.Pharmacy</title>
+    <link rel="stylesheet" href=" B.Pharmacy.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center> B.Pharmacy</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="B.PHARMACY-1.jpg" alt=""></span>
+                    <span> <img src="B.PHARMACY-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src=" B.Pharmacy.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>  B.Pharmacy</h1><br>
+            <p>The Bachelor of Pharmacy (B. Pharm) is a comprehensive four-year undergraduate program designed to provide students with extensive knowledge and practical skills in pharmaceutical sciences. The program focuses on the formulation, manufacturing, dispensing, and safe use of drugs, while also placing significant emphasis on the clinical and therapeutic aspects of pharmacy practice. Through a well-structured curriculum, students gain in-depth understanding of the properties of drugs, how they interact with the human body, and their therapeutic roles in treating various medical conditions.
+
+                <br>The B. Pharm program equips students with the expertise needed to work effectively in diverse healthcare settings, including hospitals, pharmacies, pharmaceutical companies, and regulatory bodies. Graduates are well-prepared to contribute to the healthcare industry by ensuring the safe and effective use of medications, thus playing a crucial role in enhancing patient care and overall public health.
+                <br><br> <h2>Career Opportunities</h2><br>
+                Graduates of the B. Pharm program can explore a wide range of career opportunities in various sectors, including:<br>
+
+                1. Pharmaceutical Industry<br>
+                2. Retail Pharmacy<br>
+                3. Hospital Pharmacy<br>
+                4. Pharmacovigilance<br>
+                5. Clinical Research<br>
+                6. Academics: After gaining experience or pursuing higher studies, work as a faculty member in pharmacy colleges.<br>
+                7. Entrepreneurship<br>
+                8. Government Pharmacist<br>
+                9. Drug inspector in Drug Control Department, FDA (Food and Drug Administration), and Central Drugs Standard Control Organization (CDSCO)<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Faculty of Pharmacy.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Faculty of Pharmacy.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Diploma in Pharmacy.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>A PROJECT BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

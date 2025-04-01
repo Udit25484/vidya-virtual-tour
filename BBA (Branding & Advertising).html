@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBA (Branding & Advertising)</title>
+    <link rel="stylesheet" href="BBA (Branding & Advertising).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BBA (Branding & Advertising)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BBA Branding-1.jpg" alt=""></span>
+                    <span> <img src="BBA Branding-2.jpg.png" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BBA (Branding & Advertising).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>BBA (Branding & Advertising)</h1><br>
+            <p>The Bachelor of Business Administration (BBA) in Branding and Advertising at Vidya University is a specialized undergraduate program designed to equip students with the knowledge and skills needed to excel in the dynamic world of branding, advertising, and marketing communications. This three-year program integrates core business management principles with specialized knowledge of brand strategy, advertising techniques, and digital marketing. The program combines theoretical learning with hands-on experience to prepare students for leadership roles in the advertising and branding sectors, where they can create impactful, innovative campaigns that resonate with audiences and drive business success.
+                  <br><br> <h2>Career Opportunities</h2><br>
+                  1. Brand Manager
+                  <br>2. Advertising Executive
+                  <br>3. Digital Marketing Specialist
+                  <br>4. Media Planner
+                  <br>5. Content Strategist
+                  <br>6. Creative Director
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BBA (Aviation).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="BBA (Business Analytics).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

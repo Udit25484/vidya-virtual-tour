@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Des (Fashion Design & Styling)</title>
+    <link rel="stylesheet" href=" B.Des (Fashion Design & Styling).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Des (Fashion Design & Styling)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="B-D-1.jpg" alt=""></span>
+                    <span> <img src="B-D-2.jpg" alt=""></span>
+                    <span> <img src="B-D-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Des (Fashion Design & Styling).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1> B.Des (Fashion Design & Styling)</h1><br>
+            <p>Vidya University's B.Des program is a four-year journey designed to ignite your creative spark and transform you into a skilled and innovative designer. Immerse yourself in a dynamic learning environment where you'll explore the limitless possibilities of design.
+
+                <br>Our program offers a diverse range of specializations, empowering you to tailor your education to your unique passions and career goals. Whether you're drawn to the world of fashion, the digital realm, or the art of interior spaces, you'll find a specialization that resonates with your creative spirit.
+                <br><br> <h2>Career Opportunities</h2><br>
+                B.Des. in Fashion Design and Styling prepares students for a range of creative careers in the fashion industry. Graduates can work as fashion designers, stylists, or fashion consultants, creating collections or styling for photo shoots and fashion shows. They may also pursue careers in fashion merchandising, textile design, or fashion marketing, working for top brands, design houses, or retail companies. Fashion entrepreneurs can launch their own design labels or boutiques, while others may find roles as fashion buyers, visual merchandisers, or costume designers in theatre and film. Fashion-related careers also extend into fashion journalism and branding.    
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Design.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Department of Design.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="B.Des (Graphics & UI-UX).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>A PROJECT BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

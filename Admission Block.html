@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Block</title>
+    <link rel="stylesheet" href="Admission block.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Admission Block</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="Admission Block-1.jpg" alt=""></span>
+                    <span> <img src="Admission Block-2.jpg" alt=""></span>
+                    <span> <img src="Admission Block-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="Admission Block-4.jpg" alt=""></span>
+                    <span> <img src="Admission Block-5.jpg" alt=""></span>
+                    <span> <img src="Admission Block-6.jpg" alt=""></span>
+        
+                </div>
+                
+        
+            </div>
+            
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        
+        <div class="audio">
+            <audio controls preload="" >
+                <source src="addmission.mp3.mp3" >
+            </audio>
+    
+        </div>
+        
+        <div class="content">
+            <h1>Admission Block</h1><br>
+            <p>At Vidya University, we are dedicated to fostering knowledge, innovation, and personal growth. With a diverse range of programs, expert faculty, and cutting-edge facilities, we provide an intellectually stimulating environment where students can explore their passions, engage in research, and acquire real-world skills. Our campus is a hub of creativity, collaboration, and lifelong learning, designed to shape well-rounded individuals who excel not only in academics but also in leadership, entrepreneurship, and critical thinking.
+
+                Beyond academics, Vidya University offers a dynamic and inclusive campus life, where students have the opportunity to participate in extracurricular activities, industry collaborations, and global exchange programs. Our commitment to holistic education ensures that students are not only prepared for successful careers but also equipped to contribute meaningfully to society. With a strong emphasis on innovation, ethics, and experiential learning, we nurture future leaders who are ready to make a difference.
+                
+                As you begin this journey, welcome new experiences, cultivate meaningful connections, and embrace every opportunity that comes your way. Whether it’s through academics, extracurricular activities, or industry exposure, Vidya University empowers you to grow, innovate, and transform aspirations into achievements. This is more than just a place to study—it is a space to explore your potential, inspire others, and turn your dreams into reality.
+                
+                Welcome to a world of endless possibilities!</p>
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="English.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Faculty of Computer Science & Engineering.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <h5>A PROJECT BY <a href="members.html">PANCHTATVA </h5></a>
+        </div>
+           
+
+
+    </div>  
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>  
+    
+        
+</body>
+</html>

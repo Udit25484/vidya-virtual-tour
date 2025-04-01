@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Sc. in Mathematics</title>
+    <link rel="stylesheet" href="B.Sc. in Mathematics.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Sc. in Mathematics</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BSC Maths-1.jpg" alt=""></span>
+                    <span> <img src="BSC Maths-2.jpg" alt=""></span>
+                   
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Sc. in Mathematics.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>B.Sc. in Mathematics</h1><br>
+            <p>The B.Sc. in Mathematics program at VIDYA University offers a 3-year undergraduate course designed to develop students' logical, analytical, and problem-solving skills. The curriculum covers essential areas such as calculus, algebra, geometry, trigonometry, and statistics, while also exploring logical theories and deductive reasoning. The program is taught by experienced faculty from prestigious institutions like IIMs and IITs, ensuring a highly personalized academic experience.
+
+                <br>The course uses a practical approach to teaching, helping students apply mathematical concepts to real-world problems. Additionally, it has an interdisciplinary focus, allowing students to integrate their mathematical knowledge with fields like science and engineering. Beyond academics, the program also emphasizes the development of aptitude, interpersonal skills, and career competencies. Graduates are prepared for careers in sectors like finance, corporate industries, military, computer programming, and education.
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Sc. in Chemistry.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="B.Sc. in Forensics Science.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+          <a href="members.html">  <h5>A PROJECT BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

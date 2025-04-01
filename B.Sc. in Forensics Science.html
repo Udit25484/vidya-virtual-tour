@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Sc. in Forensics Science</title>
+    <link rel="stylesheet" href="B.Sc. in Forensics Science.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Sc. in Forensics Science</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BSC Forensic-1.jpg" alt=""></span>
+                    <span> <img src="BSC Forensic-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+               
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Sc. in Forensics Science.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>B.Sc. in Forensics Science</h1><br>
+            <p>The growing advancements in technology and innovation have significantly influenced the nature of crime and its investigation, leading to a rising demand for skilled forensic science professionals. The Faculty of Applied Sciences offers a specialized B.Sc. in Forensic Science program that integrates key scientific fields such as chemistry, biology, physics, and genetics. The curriculum is designed to focus on scientific methods used in investigating crime scenes and analysing various types of evidence.
+
+                <br>The program is led by experienced faculty and industry experts who guide students through research techniques and practical experimentation. The department promotes an interdisciplinary approach, collaborating with the Faculty of Law to provide students with a well-rounded understanding of forensic science. The program equips students with advanced knowledge in collecting, preserving, and analysing evidence, while also offering exposure to both academic and real-world environments. This dual approach helps enhance students' career skills, making them highly employable in multiple sectors of the forensic science industry.
+                <br><br> <h2>Career Opportunities</h2><br>
+                Graduates of the Forensic Science program can pursue a variety of career paths, such as:
+
+                <br>1. Laboratory Technician
+                <br>2. Laboratory Assistant
+                <br>3. Forensic Freelancer
+                <br>4. Scientific Assistant
+                <br>5. Forensic Consultant
+                <br>6. Technical Writer
+                <br>7. Content Creator
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Sc. in Mathematics.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="B.Sc. in Microbiology.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"> <h5>A PROJECT BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

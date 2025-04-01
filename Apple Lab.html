@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Lab</title>
+    <link rel="stylesheet" href="Apple Lab.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Apple Lab</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A3563.JPG" alt=""></span>
+                    <span> <img src="166A3561.JPG" alt=""></span>
+                    <span> <img src="166A3553.JPG" alt=""></span>
+                    
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Apple Lab.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Apple Lab</h1><br>
+            <p>The Apple Lab at vidya university is a state-of-the-art facility designed to provide students with hands-on experience in Apple’s cutting-edge ecosystem. Equipped with the latest MacBooks, iPads, and development tools, the lab serves as a hub for innovation, creativity, and technical excellence.<br>
+
+                <b>Key Features:</b><br>
+                
+                
+                <b>Mac Ecosystem –</b> The lab features high-performance iMacs and MacBooks with powerful M-series processors, enabling seamless software development and design work.
+                
+               <br> <b>iOS App Development –</b> Students can build, test, and deploy applications using Xcode, Swift, and Objective-C, fostering expertise in iOS development.
+                
+                <br><b>Design & Creativity – </b>With industry-leading tools like Final Cut Pro, Logic Pro, and Adobe Creative Cloud, students can explore UI/UX design, video editing, and music production.
+                
+               <br><b> Cloud & AI Integration –</b> Access to Apple’s CloudKit, Core ML, and ARKit enables students to develop intelligent applications with cloud storage, machine learning, and augmented reality capabilities.
+                
+                <br><b>Hands-on Learning & Certifications – </b>The lab offers training sessions, workshops, and certification programs such as Swift Developer Certification to help students gain industry-recognized credentials.
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Faculty of Computer Science & Engineering.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="Faculty of Computer Science & Engineering.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Computer Lab-1.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

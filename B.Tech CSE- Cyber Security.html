@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech CSE - Cyber Security</title>
+    <link rel="stylesheet" href="B.Tech CSE- Cyber Security.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Tech CSE - Cyber Security</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="B-CS-1.jpg" alt=""></span>
+                    <span> <img src="B-CS-2.jpg" alt=""></span>
+                    <span> <img src="B-CS-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Tech CSE - Cyber Security.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>B.Tech CSE - Cyber Security</h1><br>
+            <p>The CSE Cybersecurity program focuses on equipping students with the skills and knowledge necessary to protect digital systems, networks, and data from cyber threats. Students study a range of topics including network security, cryptography, ethical hacking, digital forensics, and security protocols. The program delves into risk management, security architecture, and incident response, ensuring students can prevent, detect, and respond to security breaches effectively. Practical, hands-on experience is gained through labs, simulations, and real-world case studies. Students also learn to navigate the legal and ethical aspects of cybersecurity, preparing them for roles in safeguarding sensitive information. Elective courses cover advanced topics like blockchain security, cloud security, and malware analysis. The program emphasizes a multidisciplinary approach, integrating knowledge of computer science, engineering, and security practices. Graduates are prepared for careers in cybersecurity, working as security analysts, penetration testers, or systems architects.
+                <br><br> <h2>Career Opportunities</h2><br>
+                Graduating with a B.Tech. in Computer Science & Engineering – Cyber Security from Vidya University opens up a wide range of exciting and rewarding career opportunities in the growing field of:<br>
+                1. Cyber Security Analyst<br>
+                2. Ethical Hacker<br>
+                3. Network Security Engineer<br>
+                4. Chief Information Security Officer (CISO)<br>
+                5. Security Consultant<br>
+               </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Tech CSE - Artificial Intelligence & DAta Science.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="M.Tech Computer Science & Engineering.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

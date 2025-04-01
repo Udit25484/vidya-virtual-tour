@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananda Boys Hostel</title>
+    <link rel="stylesheet" href="Ananda Boys Hostel.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Ananda Boys Hostel</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="image-1.png" alt=""></span>
+                    <span> <img src="image-2.png" alt=""></span>
+                    <span> <img src="image-3.png" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="image-4.png" alt=""></span>
+                    <span> <img src="image-5.png" alt=""></span>
+                    <span> <img src="image-6.png" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload  >
+                <source src="Ananda boys hostel.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Ananda Boys Hostel</h1><br>
+            <p>The boy’s hostel is another state of the art architecture facility that provides accommodation to 500 students in 250 rooms on a twin sharing basis. With a peaceful and serene environment far distant from the noise and other pollutions the hostel is looked after by Dean Student Affairs, Chief Warden, and Wardens. The Hostel has its own mess, an area where good nutritious food is served.
+                The VKP campus hosts a separate accommodation for boys and girls in twin sharing formats. The rooms are spacious, hygienic, well ventilated and fully furnished for residents. The hostels are well equipped with 24 hours electricity, water supply, water coolers, recreational facilities including T.V. and indoor games such as table tennis, gymnasium, chess, carom and lot more. Wi-Fi Enabled hostel premises are fully secured with CCTV cameras and round the clock security.  The campus also has medical assistance with a 24×7-ambulance facility.
+
+The Food is an essential part of the hostel stay and we have a dedicated Hostel Mess in each of the hostels, which are equipped with modern appliances and serves pure vegetarian, nutritious and hygienic food.  Each Hostel is managed by a loving, caring and protective warden who resides in the hostel campus and look after the day to day needs of the students. Our deep concern along with the regular mentoring ensure a safe and happy living away from home.
+            </p>
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Suvarna Girls Hostel.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="English.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"><h5>A DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>       
+</body>
+</html>

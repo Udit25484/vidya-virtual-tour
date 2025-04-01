@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech CSE - Artificial Intelligence & Data Science</title>
+    <link rel="stylesheet" href="B.Tech CSE - Artificial Intelligence & Data Science.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Tech CSE - Artificial Intelligence & Data Science</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="B-AI-1.jpg" alt=""></span>
+                    <span> <img src="B-AI-2.jpg" alt=""></span>
+                    <span> <img src="B-AI-3.jpg" alt=""></span>
+                   
+        
+                </div>
+               
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Tech CSE - Artificial Intelligence & Data Science.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>B.Tech CSE - Artificial Intelligence & Data Science</h1><br>
+            <p>The CSE program specializing in Artificial Intelligence (AI) and Data Science provides students with a strong foundation in both AI techniques and data-driven problem-solving. Students learn key areas such as machine learning, deep learning, natural language processing, and data mining, which are essential for creating intelligent systems. The program emphasizes the use of statistical methods, data analysis, and data visualization tools to interpret large datasets. It also covers algorithm design, neural networks, and AI ethics. Students gain hands-on experience through practical projects, working with real-world datasets and AI frameworks. Elective courses allow for deeper exploration of specific topics like computer vision, robotics, and big data technologies. The curriculum integrates programming languages such as Python, R, and SQL for efficient data manipulation and model development. Graduates are equipped to work as data scientists, AI researchers, or machine learning engineers, solving complex problems across industries.<br>
+               <br> <h2>Career Opportunities</h2><br>
+               At Vidya University, students graduating from the Artificial Intelligence & Machine Learning program have access to a wide range of career opportunities. The university’s strong academic framework prepares graduates to step into roles that are at the forefront of technological innovation. Here are some career opportunities that students can pursue:<br>
+               1. AI Engineer<br>
+               2. Data Scientist<br>
+               3. Natural Language Processing (NLP) Specialist<br>
+               4. AI Consultant<br> 
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Tech Computer Science & Engineering.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="B.Tech CSE- Cyber Security.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

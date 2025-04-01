@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBA (Digitial Marketing & Innovation)</title>
+    <link rel="stylesheet" href="BBA (Digitial Marketing & Innovation).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BBA (Digitial Marketing & Innovation)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BBA Digital-1.jpg" alt=""></span>
+                    <span> <img src="BBA Digital-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+               
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BBA (Digitial Marketing & Innovation).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>BBA (Digitial Marketing & Innovation)</h1><br>
+            <p>The Bachelor of Business Administration (BBA) in Digital Marketing and Innovation at Vidya University is a specialized undergraduate program designed to equip students with the skills and knowledge needed to thrive in the ever-evolving world of digital marketing and technological innovation. This three-year program integrates core business management principles with a strong emphasis on digital marketing strategies, emerging technologies, and innovative business solutions. The program combines theoretical learning with hands-on experience, preparing students for leadership roles where they can drive digital transformation, create innovative marketing campaigns, and harness the power of data and technology to enhance business success.
+                  <br><br> <h2>Career Opportunities</h2><br>
+                 1. Digital Marketing Manager
+                <br> 2. Content Strategist
+                 <br>3. Social Media Manager
+                 <br>4. SEO Specialist
+                 <br>5. Innovation Consultant
+                 <br>6. Data Analyst
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BBA (Business Analytics).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="BBA (Entrepreneurship & Family Business).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

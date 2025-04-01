@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor of Nursing</title>
+    <link rel="stylesheet" href="Bachelor of Nursing.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Bachelor of Nursing</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="Bachelor Nursing-1.jpg" alt=""></span>
+                    <span> <img src="Bachelor Nursing-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Bachelor of Nursing.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Bachelor of Nursing</h1><br>
+            <p>Nurses play a crucial role in maintaining the health and well-being of society by offering compassionate and individualized care that significantly contributes to medical wellness within communities. The Faculty of Nursing offers a comprehensive four-year Bachelor of Science in Nursing (B.Sc. Nursing) program, specifically designed to cultivate skilled nursing professionals who are proficient in providing top-notch patient care. Nursing is a revered profession that addresses not only the physical health but also the emotional and mental well-being of individuals.
+
+                <br>The curriculum at the Faculty of Nursing is carefully crafted to balance both theoretical knowledge and practical expertise in healthcare, preparing students for success in the global healthcare landscape. The program emphasizes developing core nursng skills while also fostering essential interpersonal communication skills, ensuring students can build meaningful relationships with patients and their families. This holistic approach empowers students to become effective healthcare providers and compassionate caregivers.
+                <br><br> <h2>Career Opportunities</h2><br>
+                Graduates of the Bachelor of Science in Nursing program have a wide range of career opportunities, including:
+
+                <br>1. Nurse Administrator
+                <br>2. Certified Registered Nurse Anaesthetist
+                <br>3. Certified Nurse-Midwife
+                <br>4. Family Nurse Practitioner
+                <br>5. Women’s Health Nurse Practitioner
+                <br>6. Chief Nursing Officer
+                <br>7. Nurse Administrator
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Diploma in Dairy Technology.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="B.Sc. in Physiotherapy.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

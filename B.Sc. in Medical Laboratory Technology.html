@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Sc. in Medical Laboratory Technology</title>
+    <link rel="stylesheet" href=" B.Sc. in Medical Laboratory Technology.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Sc. in Medical Laboratory Technology</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BSC MLT-1.jpg" alt=""></span>
+                    <span> <img src="BSC MLT-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Sc. in Medical Laboratory Technology.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1> B.Sc. in Medical Laboratory Technology</h1><br>
+            <p>The rapid advancements in technology and digitalization have greatly enhanced the capabilities of laboratory instruments and techniques. The Department of Paramedical and Health Sciences offers a three-year Bachelor’s program in Medical Laboratory Technology, focusing on the scientific approaches used for diagnosing, treating, and preventing diseases through laboratory tests.
+
+                <br>Medical Laboratory Technologists are integral to healthcare teams, using advanced laboratory equipment to conduct tests that inform medical treatment and scientific research. The program provides students with hands-on training in modern laboratories and research facilities, allowing them to gain practical experience. Students acquire a deep understanding of biological materials such as blood, tissue, and body fluids, which serves as the foundation for preparing solutions, collecting samples, analyzing cells, interpreting results, and drawing conclusions. Faculty members play a key role in honing students' skills, preparing them to apply both basic and advanced knowledge in clinical diagnostics and laboratory practices for their future careers.
+                
+                 <br><br> <h2>Career Opportunities</h2><br>
+                 Graduates from the B.Sc. in Medical Laboratory Technology program can pursue various career paths, including:
+
+                 <br>1. Medical Laboratory Technologist
+                 <br>2. Laboratory Supervisor
+                 <br>3. Research Assistant in Medical Laboratories
+                 <br>4. Scientific Assistant
+                 <br>5. Quality Control Officer in Healthcare Facilities
+                 <br>6. Clinical Laboratory Scientist
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Allied Health Sciences.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="BNYS.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"><h5>A PROJECT BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

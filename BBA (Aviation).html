@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBA (Aviation)</title>
+    <link rel="stylesheet" href="BBA (Aviation).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>BBA (Aviation)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BBA Aviation-1.jpg" alt=""></span>
+                    <span> <img src="BBA Aviation-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="BBA (Aviation).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>BBA (Aviation)</h1><br>
+            <p>The Bachelor of Business Administration (BBA) in Aviation at Vidya University is a specialized undergraduate program designed to prepare students for leadership roles in the rapidly growing aviation industry. This three-year program combines core business management principles with a comprehensive understanding of aviation operations, aviation safety, and airport management. Students will acquire both theoretical knowledge and practical experience, equipping them to navigate the complexities of the aviation sector and contribute to the growth and efficiency of airlines, airports, and aviation-related organizations.
+                 <br><br> <h2>Career Opportunities</h2><br>
+                 This course opens up diverse career opportunities in airport operations, airline management, safety compliance, logistics, and marketing. Graduates can find roles in airports, airlines, cargo firms, ground handling companies, and aviation regulatory bodies. Some of the key career paths are:
+
+                 <br>1. Airport Manager
+                 <br>2. Aviation Operations Manager
+                 <br>3. Airline Customer Service Manager
+                 <br>4. Aviation Safety Officer
+                 <br>5. Ground Operations Executive
+                 <br>6. Aviation Marketing Specialist
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Business.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="BBA (Branding & Advertising).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

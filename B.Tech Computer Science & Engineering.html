@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech Computer Science & Engineering</title>
+    <link rel="stylesheet" href="B.Tech Computer Science & Engineering.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Tech Computer Science & Engineering</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="B-CSE-1.jpg" alt=""></span>
+                    <span> <img src="B-CSE-2.jpg" alt=""></span>
+                    <span> <img src="B-CSE-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Tech Computer Science & Engineering.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>B.Tech Computer Science & Engineering</h1><br>
+            <p>The Computer Science and Engineering (CSE) program provides a comprehensive foundation in both computer science and engineering principles. It covers key areas such as programming, data structures, algorithms, operating systems, and computer architecture. Students learn to design and optimize software and hardware systems, with a focus on real-world applications. The program includes courses on databases, networks, artificial intelligence, machine learning, and cybersecurity. Additionally, students are introduced to mathematics, physics, and statistics, which are essential for problem-solving in computing. Practical experience is emphasized through lab work, projects, and internships, offering hands-on exposure to industry tools and technologies. Specialized electives in areas like cloud computing, data science, and embedded systems allow students to tailor their learning. The program fosters critical thinking, teamwork, and communication skills, preparing graduates for a wide range of careers in technology.<br>
+               <br> <h2>Career Opportunities</h2><br>
+B.Tech in Computer Science Engineering (CSE) graduates have a wide range of career opportunities in the rapidly evolving tech industry. They can work as software developers, system engineers, or web developers, designing and building software solutions for various sectors. Graduates can also specialize in fields like networking, cybersecurity, data science, and cloud computing. There are roles in artificial intelligence (AI), machine learning, and blockchain development for those interested in cutting-edge technologies. Other career options include working as database administrators, IT consultants, quality analysts, or researchers in both startups and established tech firms. The skills acquired in CSE also allow graduates to pursue roles in project management, business analysis, and teaching.
+
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Computer Science & Engineering.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="B.Tech CSE - Artificial Intelligence & Data Science.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+            <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

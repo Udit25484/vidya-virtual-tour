@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Sc. in Biotechnolog</title>
+    <link rel="stylesheet" href="B.Sc. in Biotechnolog.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>B.Sc. in Biotechnology</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="BSC Biotech-1.jpg" alt=""></span>
+                    <span> <img src="BSC Biotech-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="B.Sc. in Biotechnolog.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>B.Sc. in Biotechnology</h1><br>
+            <p>Biotechnology is a dynamic field that combines biology and technology to create innovative solutions for sectors like healthcare, agriculture, and environmental sustainability. By studying the molecular and cellular processes of living organisms, biotechnology enables the development of technologies that improve human health and the environment. Over 250 biotechnological products, including life-saving medicines, vaccines, and medical treatments, have been introduced globally, revolutionizing the way untreatable diseases are managed.
+
+                <br>The B.Sc. Biotechnology program at VIDYA University spans 4 years and provides students with the knowledge to apply biological processes in industrial settings, focusing on areas such as microbiology, genetic engineering, and bioprocessing. The curriculum is designed to bridge biology and technology, and students are also encouraged to participate in seminars, workshops, and guest lectures that enhance their learning. With a wide range of career opportunities available across various industries, this program ensures graduates are well-equipped for roles in biotechnology, healthcare, research, and beyond.
+                <br><br> <h2>Career Opportunities</h2><br>
+                Graduates of the B.Sc. Biotechnology program can explore a wide range of career opportunities in fields such as:
+
+                <br>1. Research and Development
+                <br>2. Quality Assurance and Control
+                <br>3. Medical and Health-Related Fields
+                <br>4. DNA Extraction and Analysis
+                <br>5. Quality Control Officer in Healthcare Facilities
+                <br>6. Drug Discovery
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Department of Basic Science.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="B.Sc. in Physics.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>A PROJECT BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
