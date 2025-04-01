@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Tech in Electronics & Communication</title>
+    <link rel="stylesheet" href="M.Tech in Electronics & Communication.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>M.Tech in Electronics & Communication</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="M-ELECTRONICS.E-1.jpg" alt=""></span>
+                    <span> <img src="M-ELECTRONICS.E-2.jpg" alt=""></span>
+                    <span> <img src="M-ELECTRONICS.E-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="M.Tech in Electronics & Communication.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>M.Tech in Electronics & Communication</h1><br>
+            <p>M.Tech in Electronics and Communication Engineering (ECE) is a specialized postgraduate program that aims to provide in-depth knowledge of core areas such as analog and digital communication, VLSI design, embedded systems, signal processing, and wireless communication technologies. With a focus on both theoretical and practical learning, the program prepares students to work in cutting-edge industries and research domains. Students gain hands-on experience through projects and internships, enhancing their skills in problem-solving and innovation. Graduates of the program are well-equipped to contribute to areas like telecommunications, defense, electronics, and software development. The program emphasizes technical expertise and the ability to address complex engineering challenges in the rapidly evolving world of electronics and communication.
+                 <br>
+            <br>
+            <h2>Career Opportunities</h2><br>
+            M.Tech in Electronics and Communication Engineering (ECE) graduates have excellent prospects in various industries like telecommunications, electronics, and semiconductor design. They can work as embedded systems engineers, signal processing engineers, or communication systems engineers, designing and maintaining advanced electronic systems. Graduates can also pursue careers in VLSI design, networking, telecom infrastructure, and microelectronics. Roles in research and development (R&D) for innovation in wireless technology, IoT, and satellite communication are also highly sought after. Additionally, they can become technical consultants or system architects in companies focusing on electronics design, defense, and automation, or pursue academic and research opportunities in top institutions.
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Tech in Electronics Engineering.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Department of Electronics Engineering.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

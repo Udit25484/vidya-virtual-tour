@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LLM</title>
+    <link rel="stylesheet" href="LLM.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center> LLM</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="LLM-1.jpg" alt=""></span>
+                    <span> <img src="LLM-2.jpg" alt=""></span>
+                    <span> <img src="LLM-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="LLM.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1> LLM</h1><br>
+            <p>The LLM (Master of Laws) is a postgraduate law degree designed for individuals who wish to specialize in a particular area of law or enhance their legal knowledge. Typically lasting one to two years, the program offers advanced study in fields such as international law, corporate law, human rights, or environmental law. It allows law graduates and professionals to deepen their expertise, develop critical thinking, and engage with complex legal issues. The LLM curriculum often includes research projects, case studies, and seminars to encourage academic growth and practical application. Graduates of the program can pursue higher positions in legal practice, academia, or specialized roles in international organizations, corporations, and government. The degree is especially valuable for those seeking to advance their careers or transition into a new legal field.
+                <br><br> <h2>Career Opportunities</h2><br>
+                The person with a LLM degree can explore a wide range of career opportunities in various fields:<br>
+                1. Legal Practice<br>
+                2. Corporate Sector<br>
+                3. Academia<br>
+                4. Government & Public Sector<br>
+                5. Private Sector & Consultancy<br>
+                6. Alternative Careers<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="LLB.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Ph.D in Law.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

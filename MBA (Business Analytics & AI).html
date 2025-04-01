@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA (Business Analytics & AI)</title>
+    <link rel="stylesheet" href="MBA (Business Analytics & AI).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>MBA (Business Analytics & AI)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MBA Business-1.jpg" alt=""></span>
+                    <span> <img src="MBA Business-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="MBA (Business Analytics & AI).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>MBA (Business Analytics & AI)</h1><br>
+            <p>The Master of Business Administration (MBA) in Business Analytics and AI at Vidya University is a two-year specialized program designed for individuals seeking to excel in the intersection of business management, data analytics, and artificial intelligence. The program integrates core business principles with cutting-edge analytics and AI technologies to prepare students for leadership roles in industries driven by data. Students will develop the skills required to harness big data, build AI-driven models, and use predictive analytics to drive informed decision-making and business transformation. This program emphasizes practical application, strategic problem-solving, and data-driven leadership, equipping students to lead in the age of digital transformation.
+                 <br><br> <h2>Career Opportunities</h2><br>
+                 1. Data Analyst
+                 <br>2. Business Analytics Manager
+                 <br>3. AI Solutions Architect
+                 <br>4. Business Intelligence Consultant
+                 <br>5. AI Research Analyst
+                 <br>6. Digital Transformation Specialist
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="MBA PLUS (Health Care Management).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MBA (Entrepreneurship).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

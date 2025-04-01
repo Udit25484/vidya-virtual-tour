@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Sc. in Mathematics</title>
+    <link rel="stylesheet" href="M.Sc. in Mathematics.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>M.Sc. in Mathematics</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MSC Maths-1.jpg" alt=""></span>
+                    <span> <img src="MSC Maths-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="M.Sc. in Mathematics.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>M.Sc. in Mathematics</h1><br>
+            <p>The Faculty of Applied Sciences offers a two-year postgraduate degree program in Mathematics which endeavors to impart within the students an understanding of the logical, conceptual, theoretical, analytical and deductive skills in mathematics. The program is uniquely designed to develop and sharpen the problem solving traits of each student, through the application of mind. The faculty is equipped with elite league of lecturers and teaching resources from the world’s most renowned IIMs and IITs who provide our students with a highly personalized academic experience. The curriculum is strategically designed to instill within the students an understanding of the fundamental concepts of mathematics such as calculus, trigonometry, algebra, geometry, statistics and various logical theories. The learning methodology is based on the practical application of mind on the real time issues which are affecting the world today and how students can work towards mitigating these issues. The program offers an interdisciplinary approach which allows students to relate their mathematical skills with other disciplines of science and engineering. Beyond the scope of the academics, the Faculty goes on to focus on developing the aptitude of the students, along with other relevant interpersonal skills to develop trained individuals with career competencies in the stock market, corporate sector, industrial sector, military, computer programming and educational firms.
+                  </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="M.Sc. in Mathematics.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href=""><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

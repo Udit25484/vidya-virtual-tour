@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Sc. in Pharmaceutical Science</title>
+    <link rel="stylesheet" href="M.Sc. in Pharmaceutical Science.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>M.Sc. in Pharmaceutical Science</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MSC Pharma-1.jpg" alt=""></span>
+                    <span> <img src="MSC Pharma-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+               
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="M.Sc. in Pharmaceutical Science.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>M.Sc. in Pharmaceutical Science</h1><br>
+            <p>Pharmaceutical Chemistry is the study of drugs and drug development. This discipline includes concepts and processes of drug discovery, delivery, absorption, metabolism, elements of Biomedical Analysis, Pharmacology, Pharmacokinetics and Pharmacodynamics.
+
+                <br>Postgraduates of pharmaceutical chemistry can be hired in different capacities such as Quality Control & Quality Assurance Analyst, Scientist, Researcher, Research Executive, Scientific Data Entry Specialist, Pharmaceutical Patent Analyst, etc.
+                
+                <br>The MSc in Pharmaceutical Chemistry is specifically designed for graduates with a c hemistry-based degree to tailor their expertise towards jobs in the pharmaceutical industry. The pharmaceutical industry is a global industry so the award is particularly attractive for overseas graduates looking to upskill to secure jobs the world over. 
+                <br><br> <h2>Career Opportunities</h2>
+                <br>1. Pharmaceutical analyst
+                <br>2. Quality assurance officer
+                <br>3. Pharmaceutical data science officer
+                <br>4. Process development chemist
+                <br>5. Quality control analyst
+                <br>6. Formulation and development (F&D)
+                <br>7. Analytical/Quality control
+                <br>8. Production
+                <br>9. Government analyst
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="M.Sc. in Microbiology.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Ph.D in Sciences.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

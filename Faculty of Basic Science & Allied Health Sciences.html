@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty of Basic Science & Allied Health Sciences</title>
+    <link rel="stylesheet" href="Faculty of Basic Science & Allied Health Sciences.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Faculty of Basic Science & Allied Health Sciences</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A3935.JPG" alt=""></span>
+                    <span> <img src="166A3920.JPG" alt=""></span>
+                    <span> <img src="166A3963.JPG" alt=""></span>
+                   
+        
+                </div>
+               
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Faculty of applied health & science.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Faculty of Basic Science & Allied Health Sciences</h1><br>
+            <p>The Faculty of Basic Science and Allied Health Sciences at Vidya University is a beacon of interdisciplinary learning and innovation. We aim to nurture the next generation of scientists, healthcare professionals, and researchers who are equipped to tackle the challenges of an ever-evolving world. Offering a wide spectrum of undergraduate programs, the department emphasizes academic excellence, hands-on learning, and research-driven education to prepare students for impactful careers in healthcare and science.
+
+                At the core of the department lies a commitment to fostering intellectual growth and professional development. Students here not only gain theoretical knowledge but also practical expertise through state-of-the-art laboratories, collaborations with industry leaders, and opportunities to engage in groundbreaking research. If you aspire to make a difference in the fields of science and healthcare, this is where your journey begins.</p>
+
+        </div>
+        <div class="course">
+            <h2>Courses Offered :</h2>Vidya University's Faculty of Basic Science & Allied Health Sciences offers various courses.
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="Department of Basic Science.html" "><h4>Department of Basic Science</h4></A></li>
+                    <li><a href="Department of Allied Health Sciences.html" ><h4>Department of Allied Health Sciences</h4></a></li>
+                   
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Faculty of Commerce & Business.HTML"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Faculty of Design Media & Fine Arts.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div>  
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>   
+</body>
+</html>

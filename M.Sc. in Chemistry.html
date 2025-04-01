@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Sc. in Chemistry</title>
+    <link rel="stylesheet" href="M.Sc. in Chemistry.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>M.Sc. in Chemistry</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MSC Chemistry-1.jpg" alt=""></span>
+                    <span> <img src="MSC Chemistry-2.jpg" alt=""></span>
+                    
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="M.Sc. in Chemistry.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>M.Sc. in Chemistry</h1><br>
+            <p>The Faculty of Applied Science offers a 2-year post graduation program in Chemistry which provides a specialized understanding of the various chemical elements in preparation for various careers. The program is research based, thus allowing the students to explore numerous scientific studies so as to provide vital solutions to science based problems. Our curriculum is uniquely designed to impart the knowledge of the fundamental elements of chemistry from quantum mechanics to organic chemistry. The expert resources of this program guide students through a balanced combination of lectures and laboratories which maintain the most engaging student-teacher ratio. As a way of promoting a practical training experience within our students, the program focuses in practical aspects such as chemical instrumentation and techniques making competent scientists in the industry. The program goes to broaden the student’s academic horizons through industrial visits, workshops, seminars and expert talks, all designed to enhance career competences of our students. The elements of chemistry are existent within everything that surrounds us, thus the program focuses in nurturing the post graduate chemistry students in preparation of the various ways in which they can utilize chemical elements for human development.
+                <br><br> <h2>Career Opportunities</h2>
+                1. Quality Control Chemist – Ensure product quality in pharmaceuticals and chemical industries.
+                <br>2. Forensic Expert – Analyze evidence in forensic labs to solve criminal cases.
+                <br>3. Environmental Policy Maker – Develop sustainable policies and regulations.
+                <br>4. Lab Technician – Assist in research labs or industries with experiments and data collection.
+                <br>5. Chemistry Researcher – Conduct scientific research in fields like healthcare and biotechnology.    
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="M.Sc. in Physics.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="M.Sc. in Mathematics.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5></a> 
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

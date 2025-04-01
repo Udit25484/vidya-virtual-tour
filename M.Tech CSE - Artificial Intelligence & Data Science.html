@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Tech CSE - Artificial Intelligence & Data Science</title>
+    <link rel="stylesheet" href="M.Tech CSE - Artificial Intelligence & Data Science.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>M.Tech CSE - Artificial Intelligence & Data Science</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="M-AI-1.jpg" alt=""></span>
+                    <span> <img src="M-AI-2.jpg" alt=""></span>
+                    <span> <img src="M-AI-3.jpg" alt=""></span>
+                   
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="M.Tech CSE - Artificial Intelligence & Data Science.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>M.Tech CSE - Artificial Intelligence & Data Science</h1><br>
+            <p>The M.Tech. in AI and Data Science is an advanced postgraduate program that focuses on the intersection of artificial intelligence, machine learning, and data science. It offers students an in-depth understanding of data analytics, algorithm design, and AI-based solutions, preparing them for leadership roles in the tech industry. The curriculum combines theoretical learning with hands-on experience, covering topics like big data, deep learning, natural language processing, and data mining. Students also engage in research projects to explore cutting-edge developments in AI.
+               <br> <br> <h2>Career Opportunities</h2><br>
+               M.Tech in AI and Data Science offers a wealth of career opportunities in the rapidly growing fields of artificial intelligence and data science. Graduates can work as data scientists, machine learning engineers, or AI specialists, developing intelligent systems and analyzing large datasets to derive insights. Roles in big data analytics, natural language processing (NLP), and computer vision are also prominent. Graduates can also explore positions in research and development, business intelligence, and predictive modeling across industries like healthcare, finance, retail, and technology. Opportunities in AI-driven product development, algorithm design, and automation are abundant, with increasing demand for professionals skilled in AI and data analytics in both the private and public sectors.
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="M.Tech Computer Science & Engineering.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Diploma Computer Science & Engineering.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5>  </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

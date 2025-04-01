@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Sc. in Physics</title>
+    <link rel="stylesheet" href="M.Sc. in Physics.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>M.Sc. in Physics</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MSC Physics-1.jpg" alt=""></span>
+                    <span> <img src="MSC Physics-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="M.Sc. in Physics.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>M.Sc. in Physics</h1><br>
+            <p>He Faculty of Applied Sciences offers a two post-graduate degree in Physics which seeks to impart within the students a comprehensive understanding of various particular elements. This postgraduate degree program takes a more research-based approach to they field as a way of providing students with in-depth expert insights. The growing significance of physics and science research in the welfare and development of humanity has been impacting and transforming the various socio-economic dynamics. The program provides the students with a comprehensive understanding of the various classes of physics from classical physics to quantum physics. To provide students with the much needed practical knowledge and understanding, the Faculty of Applied Sciences is equipped with state of the art facilities of researc h and experimentation. The students get to conduct a series of real-time real search based studies under the guidance of experts who have the know-how and the practical knowledge which is necessary to provide the student with the much-needed training. The student tailored curriculum of VIDYA University is designed in an interdisciplinary approach which allows students to apply fundamentals of physics to other related disciplines such as medicine and engineering. The program will develop the student’s understanding of key subjects like matter, optics, waves, electromagnetism and nuclear physics.
+                <br><br> <h2>Career Opportunities</h2><br>
+                <br>1. Physicist–Research and development in academic institutions or government labs.
+                <br>2. X-Ray Technician–Work in medical imaging within healthcare.
+                <br>3. Lab Supervisor–Manage labs in research or industrial settings.
+                <br>4. Data Analyst–Analyze data in sectors like tech, finance, or environmental science.
+                <br>5. Project Assistant–Support research teams and manage projects.
+                <br>6. Engineering Physicist–Develop technologies in engineering firms.
+                <br>7. Teaching–Educate in schools, colleges, or coaching centers.
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="M.Sc. in Biotechnology.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="M.Sc. in Chemistry.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

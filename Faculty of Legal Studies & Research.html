@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty of Legal Studies & Research</title>
+    <link rel="stylesheet" href="Faculty of Legal Studies & Research.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Faculty of Legal Studies & Research</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A4322.JPG" alt=""></span>
+                    <span> <img src="166A4327.JPG" alt=""></span>
+                    <span> <img src="166A4333.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="166A4339.JPG" alt=""></span>
+                    <span> <img src="166A4324.JPG" alt=""></span>
+                    <span> <img src="166A4350.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="Faculty of Legal Studies & Research.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Faculty of Legal Studies & Research</h1><br>
+            <p>Stepping Towards Legal Excellence
+
+                Vidya University's Faculty of Law stands as a pillar for cultivating future legal minds. It offers a comprehensive suite of programs, catering to students at various stages of their academic journey, including undergraduate LLB, BBA LLB& LLM programs, and a doctoral program.
+                
+                The faculty's curriculum prioritizes a well-rounded approach, seamlessly blending theoretical knowledge with practical applications. Students gain invaluable hands-on experience through moot court competitions, legal aid clinics, and internships, preparing them for the dynamic realities of the legal profession.</p>
+
+        </div>
+        <div class="course">
+            <h2>Courses Offered :</h2>Vidya University's Faculty of Legal Studies & Research offers various courses.
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="BBA LLB.html" "><h4>BBA LLB</h4></A></li>
+                    <li><a href="LLB.html" ><h4>LLB</h4></a></li>
+                    <li><a href="LLM.html" ><h4>LLM</h4></a></li>
+                    <li><a href="Ph.D in Law.html" ><h4>Ph.d in Law</h4></a></li>
+                    
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Faculty of Computer Science & Engineering.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Faculty of Commerce & Business.HTML"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div>    
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script> 
+</body>
+</html>

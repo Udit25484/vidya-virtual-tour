@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Sc. in Microbiology</title>
+    <link rel="stylesheet" href="M.Sc. in Microbiology.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>M.Sc. in Microbiology</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MSC MicroBio-1.jpg" alt=""></span>
+                    <span> <img src="MSC MicroBio-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="M.Sc. in Microbiology.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>M.Sc. in Microbiology</h1><br>
+            <p>With the growing scope of technology in the field of biology, microbiological deals with biological investigations on a micro-level. The department of microbiology under that Faculty of Applied Science offers a two-year Master’s degree program in the field of Microbiology which seeks to develop within the student an understanding of the contemporary elements within the field. The program is research-based and is offered under the University’s Faculty of Applied Sciences. As a way of developing the students’ practical understanding, the provides exposure to various research-based activities. The program focuses on the understanding of microbes such as bacteria, fungi, viruses, algae, immunology etc. This discipline is an interrelated study of other related disciplines such as biochemistry, physiology, cell biology, ecology, evolution and clinical aspects of microorganisms and develops within the students an understanding of host response to these agents. Our expert teaching faculties, not only prepare our students to analyse the past and present discoveries but also train them to embark on pioneering new innovations.
+                <br><br> <h2>Career Opportunities</h2>
+                Graduates of the M.Sc. Microbiology program have a wide range of career options in diverse sectors, including:
+
+                <br>1. Research and Development
+                <br>2. Quality Assurance and Control
+                <br>3. Medical and Healthcare Industries
+                <br>4. DNA Analysis and Genetic Research
+                <br>5. Quality Control in Healthcare Settings
+                <br>6. Drug Discovery and Biotechnology   
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="M.Sc. in Forensics Science.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="M.Sc. in Pharmaceutical Science.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

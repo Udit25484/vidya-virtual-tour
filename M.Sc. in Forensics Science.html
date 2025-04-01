@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Sc. in Forensics Science</title>
+    <link rel="stylesheet" href="M.Sc. in Forensics Science.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>M.Sc. in Forensics Science</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MSC Forensic-1.jpg" alt=""></span>
+                    <span> <img src="MSC Forensic-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="M.Sc. in Forensics Science.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>M.Sc. in Forensics Science</h1><br>
+            <p>The Faculty of Applied Sciences offers a two-year post-graduate degree program in Forensic Sciences which focuses on imparting within the students an in-depth understanding of the investigative aspects of forensic science. The growing technologies have enhanced the scope and rate of crimes, thus resulting in high demand for experts who are coming in conducting scientific investigations on such crime scenes. To provide students with the much needed practical hands-on training, the Faculty is equipped with state of the art facilities for research and laboratory experimentation. The Department of Forensic also works in collaboration with the Faculty of Law to develop a comprehensive understanding of the legal frameworks which operates in line with the scope of forensic science. The study of forensic science is interdisciplinary in nat ure, it correlates with other core science subjects such as chemistry, biology, physics and genetics. The program is conducted under the instruction of expert faculties and professors with unique field expertise who go to shape and train the students in line with all the requirements of the course. The curriculum imparts within the students advanced techniques in collecting, preserving and analysing the various forms of evidence. The students who get to pursue this postgraduate degree program will get to develop an ability to navigate the scope of forensic science and work in the field.
+                <br><br> <h2>Career Opportunities</h2>
+                Graduates of the Forensic Science program can pursue a variety of career paths, such as:
+
+                <br>1. Laboratory Technician
+                <br>2. Laboratory Assistant
+                <br>3. Forensic Freelancer
+                <br>4. Scientific Assistant
+                <br>5. Forensic Consultant
+                <br>6. Technical Writer
+                <br>7. Content Creator    
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="M.Sc. in Physics.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="M.Sc. in Microbiology.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

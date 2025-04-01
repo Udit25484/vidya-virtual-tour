@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty of Education & Sports</title>
+    <link rel="stylesheet" href="Faculty of Education & Sports.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Faculty of Education & Sports</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A4336.JPG" alt=""></span>
+                    <span> <img src="166A4303.JPG" alt=""></span>
+                    <span> <img src="166A4206.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="939A6238.jpg" alt=""></span>
+                    <span> <img src="939A6301.jpg" alt=""></span>
+                    <span> <img src="166A4839.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload="" >
+                <source src="Faculty of education & sports.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Faculty of Education & Sports</h1><br>
+            <p>Vidya University's Faculty of Education & Sports is dedicated to nurturing future educators and sports professionals. We offer a diverse range of programs, from undergraduate to doctoral levels, that provide a strong foundation in education and sports science.
+
+                Our curriculum is designed to blend theoretical knowledge with practical experience. Experienced faculty members guide students through a variety of learning methods, including lectures, seminars, workshops, and hands-on training.
+                
+                Beyond academics, we encourage students to participate in extracurricular activities, sports, and cultural events. These activities promote holistic development and foster essential skills like teamwork, leadership, and communication.
+                
+                Our graduates are well-prepared for a variety of careers in education and sports, including teaching, coaching, sports management, sports journalism, and physical therapy. By choosing Vidya University's Faculty of Education & Sports, you'll be equipped to make a positive impact on society.</p>
+
+        </div>
+        <div class="course">
+            <h2>Courses Offered :</h2>Vidya University's Faculty of Education & Sports offers various courses.
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="Department of Education.html" "><h4>Department of Education</h4></A></li>
+                    <li><a href="Department of Sports.html" ><h4>Department of Sports</h4></a></li>
+                    
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Faculty of Pharmacy.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="VGS.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>    
+</body>
+</html>

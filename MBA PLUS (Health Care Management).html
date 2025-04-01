@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA PLUS (Health Care Management)</title>
+    <link rel="stylesheet" href="MBA PLUS (Health Care Management).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>MBA PLUS (Health Care Management)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MBA Health-1.png.jpg" alt=""></span>
+                    <span> <img src="MBA Health-2.png" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="MBA PLUS (Health Care Management).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>MBA PLUS (Health Care Management)</h1><br>
+            <p>The MBA PLUS at Vidya University provides additional Processes, Learning, Up-skilling, and Specialization, making it a transformative two-year program tailored for aspiring professionals seeking to revolutionize the healthcare sector. By merging core business acumen with advanced healthcare insights, this program equips students to spearhead strategic initiatives and manage complex healthcare systems. Designed to address the dynamic challenges of the industry, the curriculum delves into healthcare operations, policy formulation, financial stewardship, marketing strategies, and strategic leadership. Graduates emerge as empowered leaders, ready to excel in hospitals, pharmaceutical enterprises, health insurance firms, and other pivotal healthcare sectors.
+                 <br><br> <h2>Career Opportunities</h2><br>
+                 1. Hospital Administrator
+                 <br>2. Healthcare Consultant
+                 <br>3. Pharmaceutical Project Manager
+                 <br>4. Healthcare Policy Analyst
+                 <br>5. Health Insurance Manager
+                 <br>6. Health Services Manager
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="MBA PLUS (Aviation Management).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MBA (Business Analytics & AI).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a> 
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

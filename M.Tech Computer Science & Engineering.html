@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Tech Computer Science & Engineering</title>
+    <link rel="stylesheet" href="M.Tech Computer Science & Engineering.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>M.Tech Computer Science & Engineering</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="M-CSE-1.jpg" alt=""></span>
+                    <span> <img src="M-CSE-2.jpg" alt=""></span>
+                    <span> <img src="M-CSE-3.jpg" alt=""></span>
+                   
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="M.Tech Computer Science & Engineering.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>M.Tech Computer Science & Engineering</h1><br>
+            <p>The M.Tech. in Computer Science and Engineering is an advanced program designed to deepen students' expertise in computer science and its applications. The curriculum focuses on specialized areas such as artificial intelligence, machine learning, cybersecurity, software engineering, and data science. Students gain in-depth knowledge through advanced courses, research projects, and industry internships. Emphasizing both theoretical and practical aspects, the program develops critical thinking, problem-solving, and technical skills required for complex computing challenges. It also encourages innovation and research, with opportunities for students to contribute to emerging technologies. Graduates are prepared for leadership roles in academia, research, and the tech industry. The program offers a strong foundation for those aiming to pursue further research or become experts in cutting-edge fields. Ultimately, M.Tech. CSE graduates are equipped to address evolving technological challenges at a global scale.
+                <br><br> <h2>Career Opportunities</h2><br>
+                An M.Tech. in Computer Science & Engineering opens up numerous high-level career opportunities across various sectors. Graduates are well-prepared to pursue advanced roles in both industry and academia.Some of the key career options include:<br>
+                1. Software Architect<br>
+                2. Data Scientist<br>
+                3. Cloud Computing Engineer<br>
+                4. Product Manager<br>
+                5. Faculty/Academic Roles<br>
+            </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Tech CSE- Cyber Security.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="M.Tech CSE - Artificial Intelligence & Data Science.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

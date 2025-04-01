@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA (Entrepreneurship)</title>
+    <link rel="stylesheet" href="MBA (Entrepreneurship).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>MBA (Entrepreneurship)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MBA Enterpreneur-1.jpg" alt=""></span>
+                    <span> <img src="MBA Enterpreneur-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="MBA (Entrepreneurship).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>MBA (Entrepreneurship)</h1><br>
+            <p>The Master of Business Administration (MBA) in Entrepreneurship at Vidya University is designed for dynamic individuals eager to transform innovative ideas into successful ventures. This two-year specialized program provides students with the essential knowledge, tools, and skills to build and manage start-ups, scale businesses, and navigate the challenges of the entrepreneurial ecosystem. With a curriculum that blends fundamental business principles with entrepreneurial strategies, students gain the confidence and expertise to drive their own ventures or contribute to the growth of emerging startups. The program emphasizes hands-on learning, creativity, strategic planning, and financial acumen, preparing students for leadership roles in the entrepreneurial landscape.
+                  <br><br> <h2>Career Opportunities</h2><br>
+                  1. Founder/Co-founder of Startups
+                 <br> 2. Entrepreneurial Consultant
+                  <br>3. Business Development Manager
+                 <br> 4. Venture Capital Analyst
+                  <br>5. Social Entrepreneur
+                  <br>6. Corporate Entrepreneur
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="MBA (Business Analytics & AI).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MBA (HRM).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

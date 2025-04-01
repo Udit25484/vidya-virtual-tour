@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA (HRM)</title>
+    <link rel="stylesheet" href="MBA (HRM).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>MBA (HRM)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MBA HRM-1.jpg" alt=""></span>
+                    <span> <img src="MBA HRM-2.jpg" alt=""></span>
+                   
+                   
+        
+                </div>
+                
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="MBA (HRM).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>MBA (HRM)</h1><br>
+            <p>The Master of Business Administration (MBA) in Human Resource Management at Vidya University is a specialized two-year program designed for individuals who aspire to lead the HR functions in organizations. This program combines core business management principles with advanced HRM strategies to prepare students for leadership roles in the dynamic and evolving HR landscape. Students will gain the knowledge and skills required to manage organizational behaviour, talent acquisition, employee development, performance management, and strategic HR planning. This program emphasizes practical learning, leadership, and strategic HR decision-making, equipping students to manage the workforce effectively in an increasingly globalized and competitive market.
+                  <br><br> <h2>Career Opportunities</h2><br>
+                  1. HR Manager
+                  <br>2. Compensation and Benefits Manager
+                  <br>3. Organizational Development Consultant
+                  <br>4. Employee Relations Manager
+                  <br>5. Training and Development Manager
+                  <br>6. HR Consultant
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="MBA (Entrepreneurship).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MBA (Finance Management).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

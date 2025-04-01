@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Des</title>
+    <link rel="stylesheet" href=" M.Des.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>M.Des</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="M-D-1.jpg" alt=""></span>
+                    <span> <img src="M-D-2.jpg" alt=""></span>
+                    
+                   
+        
+                </div>
+              
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="M.Des.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1> M.Des</h1><br>
+            <p>The M.Des. (Master of Design) program offers an interdisciplinary approach to design, combining creativity, innovation, and technical skills. It covers a broad range of design disciplines, including product design, interaction design, graphic design, and user experience. The program encourages students to explore design thinking, problem-solving, and human-centered design methodologies, preparing them to create impactful solutions for complex societal challenges. Students learn how to integrate aesthetics with functionality and gain hands-on experience through workshops, design projects, and collaborations with industries. The M.Des. program is ideal for individuals looking to become leaders in design, offering a platform to refine design skills and contribute meaningfully to the design world.
+                </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="B.Des (Graphics & UI-UX).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.css"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MFM.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

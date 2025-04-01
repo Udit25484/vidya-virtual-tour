@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty of Computer Science & Engineering</title>
+    <link rel="stylesheet" href="Faculty of Computer Science & Engineering.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Faculty of Computer Science & Engineering</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A3721.JPG" alt=""></span>
+                    <span> <img src="166A3620.JPG" alt=""></span>
+                    <span> <img src="166A3749.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="166A3835.JPG" alt=""></span>
+                    <span> <img src="166A3879.JPG" alt=""></span>
+                    <span> <img src="166A3898 - Copy.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+
+        <div class="audio">
+            <audio controls preload="" >
+                <source src="Faculty of Computer Science & Engineering.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Faculty of Computer Science & Engineering</h1><br>
+            <p>Vidya University faculty of Computer Science and Engineering is dedicated to producing top-notch tech professionals. With experienced faculty, state-of-the-art facilities, and an industry-focused curriculum, the department aims to equip students with the skills and knowledge needed to succeed in the competitive tech industry.
+
+                We offer a blend of theoretical and practical learning, with a strong emphasis on hands-on projects and real-world applications. Students have access to cutting-edge technology and software, allowing them to explore emerging trends and innovate.
+                
+                The department also encourages research and innovation, fostering a culture of creativity and problem-solving. Faculty members actively engage in research, and students are encouraged to participate in coding competitions, hackathons, and other extracurricular activities.</p>
+
+        </div>
+        <div class="course">
+            <h2>Courses Offered :</h2>Vidya University's faculty of Computer Science and Engineering offers various courses.
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="Department of Computer Science & Engineering.html" "><h4>Department of Computer Science & Engineering</h4></A></li>
+                    <li><a href="Department of Computer & Applications.html" ><h4>Department of Computer & Applications</h4></a></li>
+                    <li><a href="Department of Electronics Engineering.html" ><h4>Department of Electronics Engineering</h4></a></li>
+                    <li><a href="Department of Mechanical Engineering.html" ><h4>Department of Mechanical Engineering</h4></a></li>
+                    <li><a href="Department of Electrical Engineering.html" ><h4>Department of Electrical Engineering</h4></a></li>
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="labs">
+            <h2>Labs & Library :</h2>Vidya University faculty of Computer Science and Engineering contains labs for every courses offered and also contains a central library.
+            <div class="library">
+                <ul type="circle">
+                    <li><A HREF="Apple Lab.html" ><h4>Apple Lab</h4></A></li>
+                    <li><A HREF="Computer Lab-1.html" ><h4>Computer Lab-1</h4></A></li>
+                    <li><a href="Computer Lab-2.html" ><h4>Computer Lab-2</h4></a></li>
+                    <li><a href="Computer Lab-3.html" ><h4>Computer Lab-3</h4></a></li>
+                    <li><a href="Central Library.html" ><h4>Prof. BP Sharma Central Library</h4> </a></li>
+    
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Admission Block.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Faculty of Legal Studies & Research.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <center><footer><h4>
+            <a href="members.html">DESIGNED BY PANCHTATVA </h4></a>
+        </footer>
+    </center>
+        
+
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>       
+</body>
+</html>

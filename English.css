@@ -1,20 +1,14 @@
-html, body {
-    overflow: hidden; /* Disables scrolling */
-    height: 100%;
-}
-
 .main{
     width: 100%;
     max-width: 1350px;
     height: auto;
-    min-height: 680px;
+    min-height: 600px;
     background-image:url('texture.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin: auto;
     padding: 20px;
-    height: 100vh; /* Ensures the main container fits within the viewport */
     overflow: hidden;
 }
 

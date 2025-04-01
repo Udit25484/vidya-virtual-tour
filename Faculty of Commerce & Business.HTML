@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty of Commerce & Business</title>
+    <link rel="stylesheet" href="Faculty of Commerce & Business.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>Faculty of Commerce & Business</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="166A4025.JPG" alt=""></span>
+                    <span> <img src="166A4048.JPG" alt=""></span>
+                    <span> <img src="166A4163.JPG" alt=""></span>
+                   
+        
+                </div>
+                <div>
+                    <span> <img src="166A4199.JPG" alt=""></span>
+                    <span> <img src="166A4182.JPG" alt=""></span>
+                    <span> <img src="166A4214.JPG" alt=""></span>
+        
+                </div>
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload="" >
+                <source src="Faculty of Commerce & Business.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>Faculty of Commerce & Business</h1><br>
+            <p>Vidya University's Faculty of Commerce and Business stands as a pillar for cultivating future business leaders. It offers a comprehensive suite of programs, catering to students at various stages of their academic journey, including undergraduate B. Com and BBA programs, postgraduate MBA programs, and a doctoral program.
+
+                The faculty's curriculum prioritizes a well-rounded approach, seamlessly blending theoretical knowledge with practical applications. Students gain invaluable hands-on experience through case studies, projects, and industry collaborations, preparing them for the dynamic realities of the business world.</p>
+
+        </div>
+        <div class="course">
+            <h2>Courses Offered :</h2>Vidya University's Faculty of Commerce & Business offers various courses.
+            <div class="courses">
+                <ul type="circle">
+                    <li><A HREF="Department of Business.html" "><h4>Department of Business</h4></A></li>
+                    <li><a href="Department of Commerce.html" ><h4>Department of Commerce</h4></a></li>
+                    
+    
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="Faculty of Legal Studies & Research.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="Faculty of Basic Science & Allied Health Sciences.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div>   
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>  
+</body>
+</html>

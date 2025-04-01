@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA (Finance Management)</title>
+    <link rel="stylesheet" href="MBA (Finance Management).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>MBA (Finance Management)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MBA Finance-1.jpg" alt=""></span>
+                    <span> <img src="MBA Finance-2.jpg" alt=""></span>
+                  
+                   
+        
+                </div>
+              
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="MBA (Finance Management).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>MBA (Finance Management)</h1><br>
+            <p>The Master of Business Administration (MBA) in Financial Management at Vidya University is a specialized two-year program designed for individuals seeking to excel in the world of finance. The program integrates core business management principles with advanced financial strategies to prepare students for leadership roles in financial institutions, corporate finance, investment management, and other finance-driven sectors. Students will develop the skills required to manage financial operations, assess risk, make strategic financial decisions, and optimize financial performance. This program emphasizes practical learning, financial modelling, and data-driven decision-making, equipping students with the expertise to lead in a rapidly evolving financial landscape.
+                  <br><br> <h2>Career Opportunities</h2><br>
+                  1. Venture Capital Analyst
+                 <br> 2. Corporate Finance Manager
+                  <br>3. Risk Manager
+                 <br> 4. Portfolio Manager
+                 <br> 5. Financial Consultant
+                  <br>6. Tax Advisor
+                  <br>7. FinTech Specialist
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="MBA (HRM).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MBA (Marketing).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

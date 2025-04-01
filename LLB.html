@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LLB</title>
+    <link rel="stylesheet" href="LLB.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center> LLB</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="LLB-1.jpg" alt=""></span>
+                    <span> <img src="LLB-2.jpg" alt=""></span>
+                    <span> <img src="LLB-3.jpg" alt=""></span>
+                   
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="LLB.mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1> LLB</h1><br>
+            <p>The LLB (Bachelor of Laws) is a professional undergraduate law degree that provides students with a comprehensive understanding of legal principles, frameworks, and practices. The program typically spans three years for those who have completed a bachelor's degree. It covers a broad range of subjects including constitutional law, criminal law, contract law, civil procedure, and legal ethics. The course emphasizes critical thinking, legal writing, and practical skills such as advocacy and research. Students also gain exposure to real-world legal issues through internships, moot courts, and legal aid activities. An LLB degree prepares graduates for diverse career paths in legal practice, corporate law, government, and beyond.
+                <br><br> <h2>Career Opportunities</h2><br>
+                The LLB degree opens a wide range of career paths, from traditional legal practice to roles in the corporate, government, academic, and non-profit sectors.<br>
+                1. Legal Practice<br>
+                2. Corporate Sector<br>
+                3. Government Jobs<br>
+                4. Academia & Research<br>
+                5. Non-Profit Sector<br>
+              
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BBA LLB.html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="LLM.html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html">  <h5>DESIGNED BY PANCHTATVA </h5></a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>

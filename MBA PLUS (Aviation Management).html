@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA PLUS (Aviation Management)</title>
+    <link rel="stylesheet" href="MBA PLUS (Aviation Management).css">
+</head>
+<body>
+    <div class="main">
+        <div class="header"> 
+            <img src="vidyalogo1.jpg.png"  width="100px"><br>
+            <h1><center>MBA PLUS (Aviation Management)</center></h1>
+        </div>
+        <div class="gallery-wrap"> 
+            <img src="back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span> <img src="MBA Aviation-1.jpg" alt=""></span>
+                    <span> <img src="MBA Aviation-2.jpg" alt=""></span>
+                    
+        
+                </div>
+                
+        
+            </div>
+    
+            <img src="next.png" id="nextBtn">
+    
+        </div>
+        <div class="audio">
+            <audio controls preload=""  >
+                <source src="MBA PLUS (Aviation Management).mp3" >
+            </audio>
+    
+        </div>
+        <div class="content">
+            <h1>MBA PLUS (Aviation Management)</h1><br>
+            <p>The MBA PLUS at Vidya University provides additional Processes, Learning, Upskilling, and Specializations, making it a cutting-edge postgraduate program designed for ambitious individuals eager to soar in the ever-evolving aviation industry. Spanning two years, this specialized course combines core business acumen with advanced aviation expertise, addressing critical aspects such as operational management, aviation economics, logistics, and regulatory frameworks. The program emphasizes strategic decision-making, leadership development, and practical application, equipping graduates to navigate the complexities of the aviation landscape. With hands-on projects, industry partnerships, and case-based learning, students seamlessly integrate theoretical concepts with real-world challenges, preparing them for pivotal roles in airlines, airports, regulatory agencies, and beyond.
+                 <br><br> <h2>Career Opportunities</h2><br>
+                 1. Airport Manager
+                 <br>2. Airline Operations Manager
+                 <br>3. Aviation Consultant
+                 <br>4. Logistics and Supply Chain Manager
+                 <br>5. Aviation Marketing Specialist
+                 <br>6. Cargo Operations Manager
+        
+                  
+        </div>
+        
+        <div class="footer">
+            <div class="col3">
+                <button class="back"> 
+                    <a href="BBA (Sports Management).html"><h3>Back</h3></a></button>  
+            </div>
+            <div class="col1">
+                <button class="home"> 
+                    <a href="English.html"><h3>Home</h3></a></button>
+
+            </div>
+            <div class="col2">
+                <button class="next">
+                    <a href="MBA PLUS (Health Care Management).html"><h3>Next</h3></a></button>
+
+            </div>
+        </div>
+        <div class="row3">
+           <a href="members.html"> <h5>DESIGNED BY PANCHTATVA </h5> </a>
+        </div>
+    </div> 
+    <script>
+
+        let scrollcontainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+    
+        scrollcontainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollcontainer.scrollLeft += evt.deltaY;
+            scrollcontainer.style.scrollBehavior = "auto";
+        });
+    
+        nextBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+    
+        backBtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior = "smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    
+    </script>             
+</body>
+</html>
